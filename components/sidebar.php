@@ -6,7 +6,7 @@
     >
       <div>
         <div class="relative pb-6">
-          <img src="assets/images/logo.png" alt="Logo" class="w-[100px]" />
+          <span class="text-xl font-bold text-primary">kiracollection art</span>
           <button
             class="size-7 inline-flex items-center justify-center absolute top-0 right-0 rounded-full bg-[rgba(145,158,171,0.08)]"
             id="side-bar-menu-close"

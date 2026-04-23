@@ -10,7 +10,7 @@
           >
             <div>
               <a href='index.html'>
-                <img src="assets/images/footer-logo.svg" alt="logo" />
+                <span class="text-xl font-bold text-white">kiracollection art</span>
               </a>
             </div>
             <p class="text-primary-lighter text-base">
