@@ -1,6 +1,6 @@
   <!-- ========== Footer Section Start ========== -->
     <footer
-      class="md:pb-15 pb-[100px] bg-primary-darker pt-40 xl:rounded-tr-[22px] xl:rounded-tl-[22px]"
+      class="md:pb-15 pb-[100px] bg-primary-darker pt-40"
     >
       <div class="container">
         <!-- ========== Footer Top Section Start ========== -->

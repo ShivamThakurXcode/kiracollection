@@ -2623,292 +2623,41 @@
                 <span class="text-xl font-bold text-primary">kiracollection art</span>
               </a>
             </div>
-            <div class="flex items-center w-full justify-end gap-x-[54px]">
-              <div
-                class="relative search-input-container w-full 2xl:max-w-[800px] xl:max-w-[600px]"
-              >
-                <div class="input-group px-6 pt-3 pb-3 rounded-[100px]">
-                  <div class="input-group-addon" data-align="inline-end">
-                    <i
-                      class="hgi hgi-stroke hgi-search-01 text-gray-500 text-xl"
-                    ></i>
-                  </div>
-                  <input
-                    type="text"
-                    class="peer form-control header-search-input placeholder-transparent focus:placeholder-transparent"
-                    placeholder="Search for the Items"
-                    id="desktop-search"
-                  />
-                  <label
-                    for="desktop-search"
-                    class="absolute left-[14px] top-1/2 -translate-y-1/2 text-xs leading-[18px] transition-all peer-placeholder-shown:text-light-disabled-text peer-placeholder-shown:text-[16px] peer-placeholder-shown:top-1/2 peer-focus:text-[12px] peer-focus:top-0 peer-[:not(:placeholder-shown)]:text-[12px] peer-[:not(:placeholder-shown)]:top-0 bg-white peer-focus:px-1 peer-[:not(:placeholder-shown)]:px-1"
-                  >
-                    Search for the Items
-                  </label>
-                </div>
-
-                <div
-                  data-state="close"
-                  class="search-result-container p-4 absolute w-full top-[calc(100%+10px)] left-0 border border-gray-300 shadow-light-z-12 bg-white rounded-3xl z-9 transform data-[state=close]:translate-y-4 data-[state=close]:opacity-0 data-[state=close]:invisible transition-all duration-300 ease-[cubic-bezier(0.645,0.045,0.355,1)] data-[state=open]:translate-y-0 data-[state=open]:opacity-100 data-[state=open]:visible"
-                >
-                  <div class="flex justify-between items-center mb-4">
-                    <p class="font-semibold text-light-primary-text">
-                      Recent Search
-                    </p>
-                    <button
-                      class="text-primary text-base leading-[26px] font-semibold cursor-pointer"
-                    >
-                      Reset History
-                    </button>
-                  </div>
-                  <div
-                    class="flex items-center gap-x-2 recent-search-list mb-4"
-                  >
-                    <button
-                      class="recent-search-item btn text-sm leading-[22px] font-normal btn-default outline btn-medium pl-3 py-1.5 pr-1.5 rounded-[50px]"
-                    >
-                      Vitamin D Supplement
-                      <span
-                        class="inline-flex items-center justify-center size-4 bg-[rgba(145,158,171,0.32)] rounded-full"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-cancel-01 text-xs text-white"
-                        ></i>
-                      </span>
-                    </button>
-                    <button
-                      class="recent-search-item btn text-sm leading-[22px] font-normal btn-default outline btn-medium pl-3 py-1.5 pr-1.5 rounded-[50px]"
-                    >
-                      Pain Relief Spray
-                      <span
-                        class="inline-flex items-center justify-center size-4 bg-[rgba(145,158,171,0.32)] rounded-full"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-cancel-01 text-xs text-white"
-                        ></i>
-                      </span>
-                    </button>
-                    <button
-                      class="recent-search-item btn text-sm leading-[22px] font-normal btn-default outline btn-medium pl-3 py-1.5 pr-1.5 rounded-[50px]"
-                    >
-                      Baby Thermometer
-                      <span
-                        class="inline-flex items-center justify-center size-4 bg-[rgba(145,158,171,0.32)] rounded-full"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-cancel-01 text-xs text-white"
-                        ></i>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="recommended-search-list-wrapper">
-                    <p
-                      class="text-base font-semibold text-light-primary-text mb-4"
-                    >
-                      Recommended
-                    </p>
-                    <div
-                      class="recommended-search-list flex flex-col gap-y-2 divide-y divide-gray-300"
-                    >
-                      <div
-                        class="flex items-center gap-x-4 py-2 first:pt-0 last:pb-0"
-                      >
-                        <div class="size-10 flex-none rounded-lg bg-[#F4F3F5]">
-                          <img
-                            src="assets/images/vitamin-c.png"
-                            alt="recommended-search-1"
-                          />
-                        </div>
-                        <p
-                          class="text-base font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"
-                        >
-                          <a href="#">Immunity booster</a>
-                        </p>
-                      </div>
-                      <div
-                        class="flex items-center gap-x-4 py-2 first:pt-0 last:pb-0"
-                      >
-                        <div class="size-10 flex-none rounded-lg bg-[#F4F3F5]">
-                          <img
-                            src="assets/images/hand-sanitizer-1.png"
-                            alt="recommended-search-1"
-                          />
-                        </div>
-                        <p
-                          class="text-base font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"
-                        >
-                          <a href="#">Hand Sanitizer 500ml</a>
-                        </p>
-                      </div>
-                      <div
-                        class="flex items-center gap-x-4 py-2 first:pt-0 last:pb-0"
-                      >
-                        <div class="size-10 flex-none rounded-lg bg-[#F4F3F5]">
-                          <img
-                            src="assets/images/combat.png"
-                            alt="recommended-search-1"
-                          />
-                        </div>
-                        <p
-                          class="text-base font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"
-                        >
-                          <a href="#">Heart health supplements</a>
-                        </p>
-                      </div>
-                      <div
-                        class="flex items-center gap-x-4 py-2 first:pt-0 last:pb-0"
-                      >
-                        <div class="size-10 flex-none rounded-lg bg-[#F4F3F5]">
-                          <img
-                            src="assets/images/vitamin-b12.png"
-                            alt="recommended-search-1"
-                          />
-                        </div>
-                        <p
-                          class="text-base font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"
-                        >
-                          <a href="#">Protein powder for women</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="flex items-center w-full justify-end gap-x-6">
+              <!-- Search Icon -->
+              <div class="relative search-input-container">
+                <button class="flex items-center gap-x-2 text-light-primary-text hover:text-primary transition-colors">
+                  <i class="hgi hgi-stroke hgi-search-01 text-xl"></i>
+                  <span class="text-sm">Search</span>
+                </button>
               </div>
 
-              <div class="flex items-center gap-x-6 shrink-0">
-                <ul class="flex items-center gap-x-6">
-                  <li
-                    class="flex items-center gap-x-4 cursor-pointer relative group"
-                  >
-                    <p class="flex items-center">
-                      <span
-                        class="inline-flex items-center justify-center bg-warning w-12 h-12 rounded-full"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-lock-sync-01 text-2xl text-light-primary-text"
-                        ></i>
-                      </span>
-                    </p>
-                    <p
-                      class="flex flex-col text-light-secondary-text text-sm leading-[22px]"
-                    >
-                      Account
-                      <span class="text-base leading-6 text-light-primary-text"
-                        >log in</span
-                      >
-                    </p>
-                    <span
-                      ><i
-                        class="hgi hgi-stroke hgi-arrow-down-01 text-2xl text-light-primary-text"
-                      ></i
-                    ></span>
+              <!-- My Account -->
+              <div class="flex items-center gap-x-4 cursor-pointer relative group">
+                <span class="inline-flex items-center justify-center bg-warning w-12 h-12 rounded-full">
+                  <i class="hgi hgi-stroke hgi-lock-sync-01 text-2xl text-light-primary-text"></i>
+                </span>
+                <p class="flex flex-col text-light-secondary-text text-sm leading-[22px]">
+                  Account
+                  <span class="text-base leading-6 text-light-primary-text">log in</span>
+                </p>
+              </div>
 
-                    <ul
-                      class="absolute right-0 top-full py-2 z-10 w-[250px] max-w-[250px] bg-white rounded-lg shadow-dark-z-24 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0"
-                    >
-                      <li class="px-4 group/item">
-                        <a
-                          href="#"
-                          class="login-page-btn flex items-center py-2 gap-x-2 relative text-light-primary-text group-hover/item:text-primary"
-                        >
-                          <span
-                            class="w-8 h-8 bg-[#F0F0F0] group-hover/item:bg-[rgba(0,171,85,0.08)] inline-flex items-center justify-center rounded-full"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-lock-sync-01 text-base text-light-primary-text group-hover/item:text-primary"
-                            ></i>
-                          </span>
-                          Login
-                        </a>
-                      </li>
-                      <li class="px-4 group/item">
-                        <a
-                          href="#"
-                          class="register-page-btn flex items-center py-2 gap-x-2 relative text-light-primary-text group-hover/item:text-primary"
-                        >
-                          <span
-                            class="w-8 h-8 bg-[#F0F0F0] group-hover/item:bg-[rgba(0,171,85,0.08)] inline-flex items-center justify-center rounded-full"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-id text-base text-light-primary-text group-hover/item:text-primary"
-                            ></i>
-                          </span>
-                          Register
-                        </a>
-                      </li>
-                      <li class="px-4 group/item">
-                        <a
-                          href="#"
-                          class="forgot-password-page-btn flex items-center py-2 gap-x-2 relative text-light-primary-text group-hover/item:text-primary"
-                        >
-                          <span
-                            class="w-8 h-8 bg-[#F0F0F0] group-hover/item:bg-[rgba(0,171,85,0.08)] transition-colors duration-300 inline-flex items-center justify-center rounded-full"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-access text-base text-light-primary-text group-hover/item:text-primary"
-                            ></i>
-                          </span>
-                          Forget Password
-                        </a>
-                      </li>
-                      <li class="px-4 group/item">
-                        <a
-                          href="#"
-                          class="reset-password-page-btn flex items-center py-2 gap-x-2 relative text-light-primary-text group-hover/item:text-primary"
-                        >
-                          <span
-                            class="w-8 h-8 bg-[#F0F0F0] group-hover/item:bg-[rgba(0,171,85,0.08)] transition-colors duration-300 inline-flex items-center justify-center rounded-full"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-password-validation text-base text-light-primary-text group-hover/item:text-primary"
-                            ></i>
-                          </span>
-                          Set Password
-                        </a>
-                      </li>
-                      <li class="px-4 group/item">
-                        <a
-                          href="#"
-                          class="otp-verification-page-btn flex items-center py-2 gap-x-2 relative text-light-primary-text group-hover/item:text-primary"
-                        >
-                          <span
-                            class="w-8 h-8 bg-[#F0F0F0] group-hover/item:bg-[rgba(0,171,85,0.08)] transition-colors duration-300 inline-flex items-center justify-center rounded-full"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-mobile-protection text-base text-light-primary-text group-hover/item:text-primary"
-                            ></i>
-                          </span>
-                          OTP Verification
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="flex items-center">
-                    <button
-                      class="flex items-center gap-x-4 cursor-pointer cart-sidebar-btn"
-                    >
-                      <span
-                        class="inline-flex items-center justify-center bg-warning w-12 h-12 rounded-full"
-                        ><i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-2xl text-light-primary-text"
-                        ></i>
-                      </span>
-                      <span
-                        class="flex flex-col items-start text-sm leading-[22px] text-light-secondary-text"
-                      >
-                        Cart
-                        <span
-                          class="text-base leading-6 text-light-primary-text"
-                          >0- Items</span
-                        >
-                      </span>
-                    </button>
-                  </li>
-                </ul>
+              <!-- Cart Button -->
+              <div class="flex items-center">
+                <button class="flex items-center gap-x-4 cursor-pointer cart-sidebar-btn">
+                  <span class="inline-flex items-center justify-center bg-warning w-12 h-12 rounded-full">
+                    <i class="hgi hgi-stroke hgi-shopping-cart-02 text-2xl text-light-primary-text"></i>
+                  </span>
+                  <span class="flex flex-col items-start text-sm leading-[22px] text-light-secondary-text">
+                    Cart
+                    <span class="text-base leading-6 text-light-primary-text">0- Items</span>
+                  </span>
+                </button>
               </div>
             </div>
           </div>
-          <!-- FOr Desktop Screen End -->
+          <!-- For Desktop Screen End -->
         </div>
       </div>
       <!-- header-middle End -->
@@ -3799,334 +3548,19 @@
             <nav class="main-menu">
               <ul>
                 <li>
-                  <a class="active" href="#">Home </a>
-                  <ul>
-                    <li>
-                      <a href='index.html'> Home 1 </a>
-                    </li>
-                    <li>
-                      <a class='active' href='index-2.html'> Home 2 </a>
-                    </li>
-                    <li>
-                      <a href='index-3.html'> Home 3 </a>
-                    </li>
-                    <li>
-                      <a href='index-4.html'> Home 4 </a>
-                    </li>
-                    <li>
-                      <a href='index-5.html'> Home 5 </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  <a href='about.html'>About Us </a>
+                  <a class="active" href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">Shop </a>
-                  <ul>
-                    <li>
-                      <a href="#">Product Details</a>
-                      <ul>
-                        <li>
-                          <a href='product-details.html'>Product Details Version 1</a
-                          >
-                        </li>
-                        <li>
-                          <a href='product-details-2.html'>Product Details Version 2</a
-                          >
-                        </li>
-                        <li>
-                          <a href='product-details-3.html'>Product Details Version 3</a
-                          >
-                        </li>
-                        <li>
-                          <a href='product-details-4.html'>Product Details Version 4</a
-                          >
-                        </li>
-                        <li>
-                          <a href='product-details-5.html'>Product Details Version 5</a
-                          >
-                        </li>
-                        <li>
-                          <a href='product-details-6.html'>Product Details Version 6</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Shop - Wishlist</a>
-                      <ul>
-                        <li>
-                          <a href='wishlist-style-v1.html'>
-                            Shop - Wishlist
-                          </a>
-                        </li>
-                        <li>
-                          <a href='wishlist-style-v2.html'>
-                            Shop - Wishlist Version 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Shop - Cart</a>
-                      <ul>
-                        <li>
-                          <a href='cart-single-vendor.html'> Shop - Cart </a>
-                        </li>
-                        <li>
-                          <a href='cart-multi-vendor.html'>
-                            Shop - Cart Multi Vendor
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Shop - Checkout</a>
-                      <ul>
-                        <li>
-                          <a href='checkout.html'>
-                            Shop - Checkout Version 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href='checkout-v2.html'>
-                            Shop - Checkout Version 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href='order-successful.html'>Shop - Order Success</a>
-                    </li>
-                    <li>
-                      <a href='compare.html'>Shop - Compare</a>
-                    </li>
-                  </ul>
+                  <a href='about.html'>About Us</a>
                 </li>
                 <li>
-                  <a href="#">Sellers</a>
-
-                  <ul>
-                    <li>
-                      <a href='vendors-grid.html'> Seller Grid </a>
-                    </li>
-                    <li>
-                      <a href='vendors-list.html'> Seller List </a>
-                    </li>
-                    <li>
-                      <a href='vendor-left-sidebar-marketplace.html'>
-                        Seller Market Place v1
-                      </a>
-                    </li>
-                    <li>
-                      <a href='vendor-left-top-marketplace.html'>
-                        Seller Market Place v2
-                      </a>
-                    </li>
-                    <li>
-                      <a href='vendor-account.html'> Seller Account </a>
-                      <a href='vendor-dashboard.html'> Seller Dashboard </a>
-                    </li>
-                  </ul>
+                  <a href="#">Shop</a>
                 </li>
                 <li>
-                  <a href="#">Mega Menu </a>
-
-                  <!-- Dropdown Panel -->
-                  <div class="mega-menu">
-                    <!--  -->
-                    <div class="p-10">
-                      <div
-                        class="grid grid-cols-6 gap-x-4 divide-x divide-[rgba(145,158,171,0.24)]"
-                      >
-                        <!-- GRID -->
-                        <div class="flex flex-col gap-y-1.5 pr-4">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            SHOP GRID
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='shop-left-sidebar-3col.html'>3 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='shop-left-sidebar-4col.html'>4 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='shop-left-sidebar-5col.html'>5 Columns (Left Filter)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-
-                        <!-- GRID WITH BANNER -->
-                        <div class="flex flex-col gap-y-1.5 pr-4">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            GRID WITH BANNER
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='banner-left-sidebar-3col.html'>3 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-left-sidebar-4col.html'>4 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-left-sidebar-5col.html'>5 Columns (Left Filter)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-
-                        <!-- FULL WIDTH LAYOUT -->
-                        <div class="flex flex-col gap-y-1.5 pr-4">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            FULL WIDTH LAYOUT
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='full-banner-3col.html'>Grid - 3 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='full-banner-4col.html'>Grid - 4 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='full-banner-5col.html'>Grid - 5 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='full-banner-6col.html'>Grid - 6 Columns (Banner)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-
-                        <!-- HORIZONTAL FILTER -->
-                        <div class="flex flex-col gap-y-1.5 pr-4">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            Horizontal filter
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='banner-with-horizontal-filter-3col.html'>Grid - 3 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-with-horizontal-filter-4col.html'>Grid - 4 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-with-horizontal-filter-5col.html'>Grid - 5 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-with-horizontal-filter-6col.html'>Grid - 6 Columns (Banner)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-
-                        <!-- TOP BANNER -->
-                        <div class="flex flex-col gap-y-1.5 pr-4">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            Top Banner
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='top-banner-left-sidebar-3col.html'>Grid - 3 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='top-banner-left-sidebar-4col.html'>Grid - 4 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='top-banner-left-sidebar-5col.html'>Grid - 5 Columns (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-list-with-sidebar.html'>List - 1 Column (Left Filter)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-list-without-sidebar-2col.html'>List - 2 Columns (Left Filter)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- BANNER WITH FILTER -->
-                        <div class="flex flex-col gap-y-1.5">
-                          <h5
-                            class="text-sm leading-[22px] uppercase font-semibold"
-                          >
-                            Banner with filter
-                          </h5>
-                          <ul class="flex flex-col gap-y-2">
-                            <li>
-                              <a href='banner-category-filter-3col.html'>Grid - 3 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-category-filter-4col.html'>Grid - 4 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-category-filter-5col.html'>Grid - 5 Columns (Banner)</a
-                              >
-                            </li>
-                            <li>
-                              <a href='banner-category-filter-6col.html'>Grid - 6 Columns (Banner)</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Blog </a>
-                  <ul>
-                    <li><a href='blog-grid.html'>Blog Grid</a></li>
-                    <li><a href='blog-list.html'>Blog List</a></li>
-                    <li><a href='blog-details.html'>Blog Details</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Pages </a>
-
-                  <ul>
-                    <li>
-                      <a href='404.html'> 404 Page </a>
-                    </li>
-                    <li>
-                      <a href='coming-soon.html'> Coming Soon Page </a>
-                    </li>
-                    <li>
-                      <a href='faq.html'> FAQ </a>
-                    </li>
-                    <li><a href='my-account.html'>My Account</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href='contact.html'>Contact </a>
+                  <a href='contact.html'>Contact</a>
                 </li>
               </ul>
             </nav>
@@ -4345,7 +3779,7 @@
               class="flex lg:flex-row xl:flex-col flex-col lg:gap-x-6 xl:gap-x-0 gap-y-[22px]"
             >
               <div
-                class="w-full max-h-[289px] pl-8 py-[78px] rounded-3xl bg-[url(../images/home-2/hero-promo-1.png)] bg-cover bg-center bg-no-repeat lg:w-1/2 xl:w-full"
+                class="w-full max-h-[289px] pl-8 py-[78px] rounded-3xl bg-[url(assets/images/home-2/hero-promo-1.png)] bg-cover bg-center bg-no-repeat lg:w-1/2 xl:w-full"
               >
                 <h3 class="pb-1.5">Your Daily Store.</h3>
                 <p class="pb-4 text-light-primary-text">
