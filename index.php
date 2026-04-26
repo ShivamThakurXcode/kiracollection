@@ -2288,166 +2288,30 @@ include 'data/products.php';
           <div class="xl:col-span-8 col-span-12">
             <div class="relative">
               <div
-                class="home-five-hero-slider rounded-3xl relative md:bg-transparent bg-[#FFD6EF] sellzy-slider"
-                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "loop": true, "arrows": true, "infinite": true, "dots": true, "appendArrows": ".home-five-hero-slider-nav", "autoplay": true, "autoplaySpeed": 7000, "fade": true, "responsive": [{"breakpoint": 1025, "settings": {"arrows": false}}]}'
+                class="rounded-3xl relative md:bg-transparent "
               >
                 <div
-                  class="lg:p-0 p-8 pb-15 md:bg-[url(../images/home-2/hero-1.png)] bg-center bg-no-repeat bg-cover rounded-3xl xl:pl-[112px] lg:pl-20 single-hero-slider-item flex! items-center md:h-[600px]! h-[500px]!"
+                  class="lg:p-0 p-8 pb-15 rounded-3xl xl:pl-[112px] lg:pl-20 flex! items-center md:h-[600px]! h-[500px]!"
+                  style="background-image: url('../images/home-2/hero-main.png'); background-position: center; background-repeat: no-repeat; background-size: cover;"
                   data-wow-delay=".2s"
                 >
                   <!-- Content Section -->
                   <div class="single-hero-slider-content">
                     <div class="flex items-center gap-x-2">
                       <span
-                        class="px-2 py-px text-black text-xs leading-[18px] bg-success-light rounded-[100px]"
+                        class="px-2 py-px text-white text-xs leading-[18px] bg-primary rounded-[100px]"
                         >25% OFF</span
                       >
-                      <h6 class="text-light-primary-text">Exclusive offer</h6>
+                      <h6 class="text-white">Exclusive offer</h6>
                     </div>
-                    <h2 class="py-3">
+                    <h2 class="py-3 text-white">
                       Discover Your Ultimate <br class="lg:block hidden" />
                       Beauty Destination
                     </h2>
-                    <p class="mb-6">
+                    <p class="mb-6 text-white">
                       Experience the joy of effortless beauty with our curated
                       collection <br class="lg:block hidden" />
-                      of must-have products for every day and every mood.s
-                    </p>
-                    <a class='btn btn-primary text-white btn-large rounded-[60px] group py-2 pl-5 pr-3' href='shop-left-sidebar-3col.html'>
-                      Shop Now
-                      <span
-                        class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"
-                        ></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="lg:p-0 p-8 pb-15 md:bg-[url(../images/home-2/hero-2.png)] bg-center bg-no-repeat bg-cover rounded-3xl xl:pl-[112px] lg:pl-20 single-hero-slider-item flex! items-center md:h-[600px]! h-[500px]!"
-                  data-wow-delay=".2s"
-                >
-                  <!-- Content Section -->
-                  <div class="single-hero-slider-content">
-                    <div class="flex items-center gap-x-2">
-                      <span
-                        class="px-2 py-px text-black text-xs leading-[18px] bg-success-light rounded-[100px]"
-                        >25% OFF</span
-                      >
-                      <h6 class="text-light-primary-text">Exclusive offer</h6>
-                    </div>
-                    <h2 class="py-3">
-                      Shop smarter, glow <br class="lg:block hidden" />
-                      better, live beautifully.
-                    </h2>
-                    <p class="mb-6">
-                      All your favorite beauty essentials, thoughtfully curated
-                      to save <br class="lg:block hidden" />
-                      you time and make your self-care effortless and enjoyable.
-                    </p>
-                    <a class='btn btn-primary text-white btn-large rounded-[60px] group py-2 pl-5 pr-3' href='shop-left-sidebar-3col.html'>
-                      Shop Now
-                      <span
-                        class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"
-                        ></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="lg:p-0 p-8 pb-15 md:bg-[url(../images/home-2/hero-3.png)] bg-center bg-no-repeat bg-cover rounded-3xl xl:pl-[112px] lg:pl-20 single-hero-slider-item flex! items-center md:h-[600px]! h-[500px]!"
-                  data-wow-delay=".2s"
-                >
-                  <!-- Content Section -->
-                  <div class="single-hero-slider-content">
-                    <div class="flex items-center gap-x-2">
-                      <span
-                        class="px-2 py-px text-black text-xs leading-[18px] bg-success-light rounded-[100px]"
-                        >25% OFF</span
-                      >
-                      <h6 class="text-light-primary-text">Exclusive offer</h6>
-                    </div>
-                    <h2 class="py-3">
-                      Beauty That Elevates <br class="lg:block hidden" />
-                      Your Everyday
-                    </h2>
-                    <p class="mb-6">
-                      Simplify your beauty routine with our handpicked
-                      essentials,<br class="lg:block hidden" />
-                      designed to keep you glowing from morning to night.
-                    </p>
-                    <a class='btn btn-primary text-white btn-large rounded-[60px] group py-2 pl-5 pr-3' href='shop-left-sidebar-3col.html'>
-                      Shop Now
-                      <span
-                        class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"
-                        ></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="lg:p-0 p-8 pb-15 md:bg-[url(../images/home-2/hero-4.png)] bg-center bg-no-repeat bg-cover rounded-3xl xl:pl-[112px] lg:pl-20 single-hero-slider-item flex! items-center md:h-[600px]! h-[500px]!"
-                  data-wow-delay=".2s"
-                >
-                  <!-- Content Section -->
-                  <div class="single-hero-slider-content">
-                    <div class="flex items-center gap-x-2">
-                      <span
-                        class="px-2 py-px text-black text-xs leading-[18px] bg-success-light rounded-[100px]"
-                        >25% OFF</span
-                      >
-                      <h6 class="text-light-primary-text">Exclusive offer</h6>
-                    </div>
-                    <h2 class="py-3">
-                      Your daily beauty <br class="lg:block hidden" />
-                      essentials, simplified.
-                    </h2>
-                    <p class="mb-6">
-                      From skincare to makeup, discover everything you
-                      <br class="lg:block hidden" />
-                      need to look and feel your best every single day.
-                    </p>
-                    <a class='btn btn-primary text-white btn-large rounded-[60px] group py-2 pl-5 pr-3' href='shop-left-sidebar-3col.html'>
-                      Shop Now
-                      <span
-                        class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"
-                      >
-                        <i
-                          class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"
-                        ></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="lg:p-0 p-8 pb-15 md:bg-[url(../images/home-2/hero-5.png)] bg-center bg-no-repeat bg-cover rounded-3xl xl:pl-[112px] lg:pl-20 single-hero-slider-item flex! items-center md:h-[600px]! h-[500px]!"
-                  data-wow-delay=".2s"
-                >
-                  <!-- Content Section -->
-                  <div class="single-hero-slider-content">
-                    <div class="flex items-center gap-x-2">
-                      <span
-                        class="px-2 py-px text-black text-xs leading-[18px] bg-success-light rounded-[100px]"
-                        >25% OFF</span
-                      >
-                      <h6 class="text-light-primary-text">Exclusive offer</h6>
-                    </div>
-                    <h2 class="py-3">
-                      Your Everyday <br class="lg:block hidden" />
-                      Shopping, Simplified
-                    </h2>
-                    <p class="mb-6">
-                      Enjoy a seamless shopping experience with fast
-                      <br class="lg:block hidden" />
-                      delivery and unbeatable prices.
+                      of must-have products for every day and every mood.
                     </p>
                     <a class='btn btn-primary text-white btn-large rounded-[60px] group py-2 pl-5 pr-3' href='shop-left-sidebar-3col.html'>
                       Shop Now
@@ -2462,9 +2326,6 @@ include 'data/products.php';
                   </div>
                 </div>
               </div>
-              <div
-                class="home-five-hero-slider-nav absolute top-1/2 -translate-y-1/2 right-0 w-full flex items-center justify-between px-6"
-              ></div>
             </div>
           </div>
           <div class="col-span-12 xl:col-span-4">
@@ -2472,7 +2333,7 @@ include 'data/products.php';
               class="flex lg:flex-row xl:flex-col flex-col lg:gap-x-6 xl:gap-x-0 gap-y-[22px]"
             >
                <div
-                class="pl-8 py-[78px] max-h-[289px] rounded-3xl md:bg-[url(../images/home-2/hero-2.png)] bg-cover bg-center bg-no-repeat w-full lg:w-1/2 xl:w-full"
+                class="pl-8 py-[78px] max-h-[289px] rounded-3xl md:bg-[url(./images/home-2/promo-1.png)] bg-cover bg-center bg-no-repeat w-full lg:w-1/2 xl:w-full"
               >
                 <h3 class="pb-1.5">Your Daily Store.</h3>
                 <p class="pb-4 text-light-primary-text">
@@ -2549,7 +2410,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Moisturizers
+              Lippan Art
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2568,7 +2429,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Skin Serums
+              Mandala Art
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2587,7 +2448,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Foundations
+              Wall Decor
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2606,7 +2467,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Blush & Bronzers
+              Custom Art
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2625,7 +2486,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Lipsticks & Lip Glosses
+              New Arrivals
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2644,7 +2505,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Hair Oils & Serums
+              Best Sellers
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2663,7 +2524,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Highlighters
+              Gift Ideas
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2682,26 +2543,7 @@ include 'data/products.php';
             <p
               class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
             >
-              Nail Polishes
-            </p>
-          </div>
-          <!-- ========== Single Product Card End ========== -->
-          <!-- ========== Single Product Card Start ========== -->
-          <div
-            data-wow-delay="1s"
-            class="mx-3 wow animate__animated animate__fadeInUp"
-          >
-            <div class="overflow-hidden rounded-full">
-              <img
-                src="assets/images/home-2/category-bg-6.png"
-                alt="Category"
-                class="rounded-full transition-transform duration-300 ease-in-out hover:scale-[1.15]"
-              />
-            </div>
-            <p
-              class="text-center pt-6 font-semibold text-light-primary-text hover:text-primary"
-            >
-              Hair Oils & Serums
+              Premium Designs
             </p>
           </div>
           <!-- ========== Single Product Card End ========== -->
@@ -2710,770 +2552,6 @@ include 'data/products.php';
     </section>
     <!-- ========== Category Section End ========== -->
 
-    <!-- ========== Top Offer Products Section Start ========== -->
-    <section class="mb-[70px]">
-      <div
-        class="w-full relative bg-primary"
-      >
-        <div class="container py-12">
-          <!-- Header Section -->
-          <div class="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-              <h3
-                data-wow-delay=".2s"
-                class="wow animate__animated animate__fadeInUp mb-2 text-white"
-              >
-                Today's Top Offer
-              </h3>
-              <p
-                data-wow-delay=".2s"
-                class="wow animate__animated animate__fadeInUp text-white"
-              >
-                Up to 69% discount for limited time 🔥
-              </p>
-            </div>
-            <div
-              data-wow-delay=".2s"
-              class="wow animate__animated animate__fadeInUp flex items-center gap-x-5"
-            >
-              <div
-                class="limited-time-countdown flex items-center justify-center gap-x-1 bg-success-lighter py-[9px] px-6 rounded-[50px] mx-auto sellzy-countdown"
-              >
-                <h5 class="text-light-primary-text">Ends in:</h5>
-                <h5 class="days text-light-primary-text">00</h5>
-                <h5 class="text-light-primary-text">&colon;</h5>
-                <h5 class="hours text-light-primary-text">00</h5>
-                <h5 class="text-light-primary-text">&colon;</h5>
-                <h5 class="minutes text-light-primary-text">00</h5>
-                <h5 class="text-light-primary-text">&colon;</h5>
-                <h5 class="seconds text-light-primary-text">00</h5>
-              </div>
-              <div
-                class="home-four-picks-slider-nav home-two-top-offer-slider-nav items-center justify-center gap-x-6 lg:flex hidden"
-              ></div>
-            </div>
-          </div>
-          <div class="home-four-picks-slider-wrapper">
-            <div
-              data-slick='{"slidesToShow": 5, "slidesToScroll": 1, "loop": true, "arrows": true, "infinite": true, "appendArrows": ".home-four-picks-slider-nav", "autoplay": true, "autoplaySpeed": 7000, "responsive": [{"breakpoint": 1441, "settings": {"slidesToShow": 5}}, {"breakpoint": 1025, "settings": {"slidesToShow": 3}}, {"breakpoint": 769, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
-              class="home-four-picks-slider -mx-3 sellzy-slider"
-            >
-              <?php 
-              $firstProduct = $homeFourPicksProducts[0];
-              $card = new ProductCard($firstProduct, 'white-bg', '0.2s');
-              echo "<div class='mx-3'>" . $card->render() . "</div>";
-              ?>
-              <!-- ========== Single Product Card Start ========== -->
-              <div
-                class="mx-3 wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <div class="bg-white rounded-2xl product-card-1 p-4 group">
-                  <div class="product-image-container relative">
-                    <div
-                      class="product-image rounded-xl mb-4 overflow-hidden h-[300px]"
-                    >
-                      <a href="#">
-                        <img
-                          src="assets/images/home-2/product-image-7.png"
-                          alt="product-2"
-                          class="group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover"
-                        />
-                      </a>
-                    </div>
-
-                    <div
-                      class="product-btn-actions absolute bottom-0 right-0 left-0 flex justify-center z-9 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:bottom-3"
-                    >
-                      <ul class="flex items-center gap-x-px">
-                        <li>
-                          <a aria-label='Add to Wishlist' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tl-sm rounded-bl-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='wishlist-style-v1.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-secondary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a aria-label='Compare' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='compare.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-reload text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            aria-label="Quick view"
-                            class="quick-view-sidebar-btn product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tr-sm rounded-br-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5"
-                            href="#"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-view text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product-content">
-                    <span
-                      class="product-discount-badge inline-block relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.html')] after:bg-no-repeat after:bg-contain uppercase"
-                      >SALES</span
-                    >
-
-                    <p class="py-3 text-sm leading-[22px]">
-                      Store Name/Category
-                    </p>
-
-                    <h6 class="text-[18px] leading-7 font-bold pb-3">
-                      <a href='product-details.html'>Nebulizer Ultracare</a>
-                    </h6>
-                    <div class="price-section flex items-center gap-x-3 mb-3">
-                      <span
-                        class="current-price text-[16px] leading-6 font-semibold text-light-primary-text"
-                        >$28.56</span
-                      >
-                      <span
-                        class="old-price text-sm leading-[22px] text-light-disabled-text line-through"
-                        >$29.56</span
-                      >
-                      <span
-                        class="discount-percentage text-sm leading-[22px] font-semibold text-error"
-                        >10% OFF</span
-                      >
-                    </div>
-                    <div class="rating-section flex items-center mb-3">
-                      <div
-                        class="bg-[url('../images/star-icon.png')] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]"
-                      >
-                        <div
-                          style="width: 80%"
-                          class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"
-                        ></div>
-                      </div>
-                      <span
-                        class="text-sm leading-[22px] font-normal inline-block ml-1"
-                        >(118)</span
-                      >
-                    </div>
-                    <div class="deal-progress flex flex-col gap-y-1 mb-3">
-                      <div
-                        class="progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden"
-                      >
-                        <div
-                          style="width: 60%"
-                          class="progress-bar h-full bg-warning rounded-[50px]"
-                        ></div>
-                      </div>
-                      <div class="deal-stock flex items-center justify-between">
-                        <div class="stock-sold flex items-center gap-x-2.5">
-                          <p class="text-[16px] leading-6">Sold:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            4
-                          </p>
-                        </div>
-                        <div
-                          class="stock-remaining flex items-center gap-x-2.5"
-                        >
-                          <p class="text-[16px] leading-6">Available:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            200
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn-section flex items-center gap-x-4">
-                      <a class='size-11 flex flex-none items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-300' href='wishlist-style-v1.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-favourite text-xl text-light-secondary-text"
-                        ></i>
-                      </a>
-                      <a class='btn btn-primary rounded-full font-semibold text-sm leading-6 px-6.5 py-2 flex-1' href='cart-single-vendor.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"
-                        ></i>
-
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== Single Product Card End ========== -->
-              <!-- ========== Single Product Card Start ========== -->
-              <div
-                class="mx-3 wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <div class="bg-white rounded-2xl product-card-1 p-4 group">
-                  <div class="product-image-container relative">
-                    <div
-                      class="product-image rounded-xl mb-4 overflow-hidden h-[300px]"
-                    >
-                      <a href="#">
-                        <img
-                          src="assets/images/home-2/product-image-8.png"
-                          alt="product-3"
-                          class="group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover"
-                        />
-                      </a>
-                    </div>
-
-                    <div
-                      class="product-btn-actions absolute bottom-0 right-0 left-0 flex justify-center z-9 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:bottom-3"
-                    >
-                      <ul class="flex items-center gap-x-px">
-                        <li>
-                          <a aria-label='Add to Wishlist' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tl-sm rounded-bl-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='wishlist-style-v1.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-secondary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a aria-label='Compare' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='compare.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-reload text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            aria-label="Quick view"
-                            class="quick-view-sidebar-btn product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tr-sm rounded-br-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5"
-                            href="#"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-view text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product-content">
-                    <span
-                      class="product-discount-badge inline-block relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.html')] after:bg-no-repeat after:bg-contain uppercase"
-                      >SALES</span
-                    >
-
-                    <p class="py-3 text-sm leading-[22px]">
-                      Store Name/Category
-                    </p>
-
-                    <h6 class="text-[18px] leading-7 font-bold pb-3">
-                      <a href='product-details.html'>Nebulizer Ultracare</a>
-                    </h6>
-                    <div class="price-section flex items-center gap-x-3 mb-3">
-                      <span
-                        class="current-price text-[16px] leading-6 font-semibold text-light-primary-text"
-                        >$28.56</span
-                      >
-                      <span
-                        class="old-price text-sm leading-[22px] text-light-disabled-text line-through"
-                        >$29.56</span
-                      >
-                      <span
-                        class="discount-percentage text-sm leading-[22px] font-semibold text-error"
-                        >10% OFF</span
-                      >
-                    </div>
-                    <div class="rating-section flex items-center mb-3">
-                      <div
-                        class="bg-[url('../images/star-icon.png')] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]"
-                      >
-                        <div
-                          style="width: 80%"
-                          class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"
-                        ></div>
-                      </div>
-                      <span
-                        class="text-sm leading-[22px] font-normal inline-block ml-1"
-                        >(118)</span
-                      >
-                    </div>
-                    <div class="deal-progress flex flex-col gap-y-1 mb-3">
-                      <div
-                        class="progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden"
-                      >
-                        <div
-                          style="width: 60%"
-                          class="progress-bar h-full bg-warning rounded-[50px]"
-                        ></div>
-                      </div>
-                      <div class="deal-stock flex items-center justify-between">
-                        <div class="stock-sold flex items-center gap-x-2.5">
-                          <p class="text-[16px] leading-6">Sold:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            4
-                          </p>
-                        </div>
-                        <div
-                          class="stock-remaining flex items-center gap-x-2.5"
-                        >
-                          <p class="text-[16px] leading-6">Available:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            200
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn-section flex items-center gap-x-4">
-                      <a class='size-11 flex flex-none items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-300' href='wishlist-style-v1.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-favourite text-xl text-light-secondary-text"
-                        ></i>
-                      </a>
-                      <a class='btn btn-primary rounded-full font-semibold text-sm leading-6 px-6.5 py-2 flex-1' href='cart-single-vendor.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"
-                        ></i>
-
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== Single Product Card End ========== -->
-              <!-- ========== Single Product Card Start ========== -->
-              <div
-                class="mx-3 wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.5s"
-              >
-                <div class="bg-white rounded-2xl product-card-1 p-4 group">
-                  <div class="product-image-container relative">
-                    <div
-                      class="product-image rounded-xl mb-4 overflow-hidden h-[300px]"
-                    >
-                      <a href="#">
-                        <img
-                          src="assets/images/home-2/product-image-9.png"
-                          alt="product-4"
-                          class="group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover"
-                        />
-                      </a>
-                    </div>
-
-                    <div
-                      class="product-btn-actions absolute bottom-0 right-0 left-0 flex justify-center z-9 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:bottom-3"
-                    >
-                      <ul class="flex items-center gap-x-px">
-                        <li>
-                          <a aria-label='Add to Wishlist' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tl-sm rounded-bl-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='wishlist-style-v1.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-secondary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a aria-label='Compare' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='compare.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-reload text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            aria-label="Quick view"
-                            class="quick-view-sidebar-btn product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tr-sm rounded-br-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5"
-                            href="#"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-view text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product-content">
-                    <span
-                      class="product-discount-badge inline-block relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.html')] after:bg-no-repeat after:bg-contain uppercase"
-                      >SALES</span
-                    >
-
-                    <p class="py-3 text-sm leading-[22px]">
-                      Store Name/Category
-                    </p>
-
-                    <h6 class="text-[18px] leading-7 font-bold pb-3">
-                      <a href='product-details.html'>Nebulizer Ultracare</a>
-                    </h6>
-                    <div class="price-section flex items-center gap-x-3 mb-3">
-                      <span
-                        class="current-price text-[16px] leading-6 font-semibold text-light-primary-text"
-                        >$28.56</span
-                      >
-                      <span
-                        class="old-price text-sm leading-[22px] text-light-disabled-text line-through"
-                        >$29.56</span
-                      >
-                      <span
-                        class="discount-percentage text-sm leading-[22px] font-semibold text-error"
-                        >10% OFF</span
-                      >
-                    </div>
-                    <div class="rating-section flex items-center mb-3">
-                      <div
-                        class="bg-[url('../images/star-icon.png')] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]"
-                      >
-                        <div
-                          style="width: 80%"
-                          class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"
-                        ></div>
-                      </div>
-                      <span
-                        class="text-sm leading-[22px] font-normal inline-block ml-1"
-                        >(118)</span
-                      >
-                    </div>
-                    <div class="deal-progress flex flex-col gap-y-1 mb-3">
-                      <div
-                        class="progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden"
-                      >
-                        <div
-                          style="width: 60%"
-                          class="progress-bar h-full bg-warning rounded-[50px]"
-                        ></div>
-                      </div>
-                      <div class="deal-stock flex items-center justify-between">
-                        <div class="stock-sold flex items-center gap-x-2.5">
-                          <p class="text-[16px] leading-6">Sold:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            4
-                          </p>
-                        </div>
-                        <div
-                          class="stock-remaining flex items-center gap-x-2.5"
-                        >
-                          <p class="text-[16px] leading-6">Available:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            200
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn-section flex items-center gap-x-4">
-                      <a class='size-11 flex flex-none items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-300' href='wishlist-style-v1.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-favourite text-xl text-light-secondary-text"
-                        ></i>
-                      </a>
-                      <a class='btn btn-primary rounded-full font-semibold text-sm leading-6 px-6.5 py-2 flex-1' href='cart-single-vendor.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"
-                        ></i>
-
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== Single Product Card End ========== -->
-              <!-- ========== Single Product Card Start ========== -->
-              <div
-                class="mx-3 wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.6s"
-              >
-                <div class="bg-white rounded-2xl product-card-1 p-4 group">
-                  <div class="product-image-container relative">
-                    <div
-                      class="product-image rounded-xl mb-4 overflow-hidden h-[300px]"
-                    >
-                      <a href="#">
-                        <img
-                          src="assets/images/home-2/product-image-10.png"
-                          alt="product-5"
-                          class="group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover"
-                        />
-                      </a>
-                    </div>
-
-                    <div
-                      class="product-btn-actions absolute bottom-0 right-0 left-0 flex justify-center z-9 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:bottom-3"
-                    >
-                      <ul class="flex items-center gap-x-px">
-                        <li>
-                          <a aria-label='Add to Wishlist' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tl-sm rounded-bl-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='wishlist-style-v1.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-secondary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a aria-label='Compare' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='compare.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-reload text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            aria-label="Quick view"
-                            class="quick-view-sidebar-btn product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tr-sm rounded-br-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5"
-                            href="#"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-view text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product-content">
-                    <span
-                      class="product-discount-badge inline-block relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.html')] after:bg-no-repeat after:bg-contain uppercase"
-                      >SALES</span
-                    >
-
-                    <p class="py-3 text-sm leading-[22px]">
-                      Store Name/Category
-                    </p>
-
-                    <h6 class="text-[18px] leading-7 font-bold pb-3">
-                      <a href='product-details.html'>Nebulizer Ultracare</a>
-                    </h6>
-                    <div class="price-section flex items-center gap-x-3 mb-3">
-                      <span
-                        class="current-price text-[16px] leading-6 font-semibold text-light-primary-text"
-                        >$28.56</span
-                      >
-                      <span
-                        class="old-price text-sm leading-[22px] text-light-disabled-text line-through"
-                        >$29.56</span
-                      >
-                      <span
-                        class="discount-percentage text-sm leading-[22px] font-semibold text-error"
-                        >10% OFF</span
-                      >
-                    </div>
-                    <div class="rating-section flex items-center mb-3">
-                      <div
-                        class="bg-[url('../images/star-icon.png')] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]"
-                      >
-                        <div
-                          style="width: 80%"
-                          class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"
-                        ></div>
-                      </div>
-                      <span
-                        class="text-sm leading-[22px] font-normal inline-block ml-1"
-                        >(118)</span
-                      >
-                    </div>
-                    <div class="deal-progress flex flex-col gap-y-1 mb-3">
-                      <div
-                        class="progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden"
-                      >
-                        <div
-                          style="width: 60%"
-                          class="progress-bar h-full bg-warning rounded-[50px]"
-                        ></div>
-                      </div>
-                      <div class="deal-stock flex items-center justify-between">
-                        <div class="stock-sold flex items-center gap-x-2.5">
-                          <p class="text-[16px] leading-6">Sold:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            4
-                          </p>
-                        </div>
-                        <div
-                          class="stock-remaining flex items-center gap-x-2.5"
-                        >
-                          <p class="text-[16px] leading-6">Available:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            200
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn-section flex items-center gap-x-4">
-                      <a class='size-11 flex flex-none items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-300' href='wishlist-style-v1.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-favourite text-xl text-light-secondary-text"
-                        ></i>
-                      </a>
-                      <a class='btn btn-primary rounded-full font-semibold text-sm leading-6 px-6.5 py-2 flex-1' href='cart-single-vendor.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"
-                        ></i>
-
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== Single Product Card End ========== -->
-              <!-- ========== Single Product Card Start ========== -->
-              <div
-                class="mx-3 wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.7s"
-              >
-                <div class="bg-white rounded-2xl product-card-1 p-4 group">
-                  <div class="product-image-container relative">
-                    <div
-                      class="product-image rounded-xl mb-4 overflow-hidden h-[300px]"
-                    >
-                      <a href="#">
-                        <img
-                          src="assets/images/home-2/product-image-8.png"
-                          alt="product-6"
-                          class="group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover"
-                        />
-                      </a>
-                    </div>
-
-                    <div
-                      class="product-btn-actions absolute bottom-0 right-0 left-0 flex justify-center z-9 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:bottom-3"
-                    >
-                      <ul class="flex items-center gap-x-px">
-                        <li>
-                          <a aria-label='Add to Wishlist' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tl-sm rounded-bl-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='wishlist-style-v1.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-secondary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a aria-label='Compare' class='product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5' href='compare.html'>
-                            <i
-                              class="hgi hgi-stroke hgi-reload text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            aria-label="Quick view"
-                            class="quick-view-sidebar-btn product-btn-action-item relative size-11 bg-white inline-flex items-center justify-center rounded-tr-sm rounded-br-sm before:absolute before:left-[calc(50%-8px)] before:bottom-full before:z-9 before:border-8 before:border-transparent before:border-t-black before:opacity-0 before:invisible before:-mb-3.5 hover:before:opacity-100 hover:before:visible before:transition-all before:duration-300 after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:rounded-sm after:bg-gray-800 after:whitespace-nowrap after:text-white after:text-xs after:leading-[18px] after:py-[3px] after:px-2 after:content-[attr(aria-label)] after:opacity-0 after:invisible after:transition-all after:duration-300 hover:after:opacity-100 hover:after:visible hover:after:-translate-y-2.5 hover:before:-translate-y-2.5"
-                            href="#"
-                          >
-                            <i
-                              class="hgi hgi-stroke hgi-view text-2xl leading-6 text-light-primary-text"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product-content">
-                    <span
-                      class="product-discount-badge inline-block relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.html')] after:bg-no-repeat after:bg-contain uppercase"
-                      >SALES</span
-                    >
-
-                    <p class="py-3 text-sm leading-[22px]">
-                      Store Name/Category
-                    </p>
-
-                    <h6 class="text-[18px] leading-7 font-bold pb-3">
-                      <a href='product-details.html'>Nebulizer Ultracare</a>
-                    </h6>
-                    <div class="price-section flex items-center gap-x-3 mb-3">
-                      <span
-                        class="current-price text-[16px] leading-6 font-semibold text-light-primary-text"
-                        >$28.56</span
-                      >
-                      <span
-                        class="old-price text-sm leading-[22px] text-light-disabled-text line-through"
-                        >$29.56</span
-                      >
-                      <span
-                        class="discount-percentage text-sm leading-[22px] font-semibold text-error"
-                        >10% OFF</span
-                      >
-                    </div>
-                    <div class="rating-section flex items-center mb-3">
-                      <div
-                        class="bg-[url('../images/star-icon.png')] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]"
-                      >
-                        <div
-                          style="width: 80%"
-                          class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"
-                        ></div>
-                      </div>
-                      <span
-                        class="text-sm leading-[22px] font-normal inline-block ml-1"
-                        >(118)</span
-                      >
-                    </div>
-                    <div class="deal-progress flex flex-col gap-y-1 mb-3">
-                      <div
-                        class="progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden"
-                      >
-                        <div
-                          style="width: 60%"
-                          class="progress-bar h-full bg-warning rounded-[50px]"
-                        ></div>
-                      </div>
-                      <div class="deal-stock flex items-center justify-between">
-                        <div class="stock-sold flex items-center gap-x-2.5">
-                          <p class="text-[16px] leading-6">Sold:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            4
-                          </p>
-                        </div>
-                        <div
-                          class="stock-remaining flex items-center gap-x-2.5"
-                        >
-                          <p class="text-[16px] leading-6">Available:</p>
-                          <p
-                            class="text-[16px] leading-6 text-light-primary-text"
-                          >
-                            200
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn-section flex items-center gap-x-4">
-                      <a class='size-11 flex flex-none items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-300' href='wishlist-style-v1.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-favourite text-xl text-light-secondary-text"
-                        ></i>
-                      </a>
-                      <a class='btn btn-primary rounded-full font-semibold text-sm leading-6 px-6.5 py-2 flex-1' href='cart-single-vendor.html'>
-                        <i
-                          class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"
-                        ></i>
-
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== Single Product Card End ========== -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== Top Offer Products Section End ========== -->
 
     <!-- ========== Most Loved Products Section Start ========== -->
     <section class="pb-[70px]">
@@ -11161,7 +10239,7 @@ include 'data/products.php';
             class="mx-3 wow animate__animated animate__fadeInUp"
           >
             <div
-              class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(../images/home-2/promo-bg-3.jpg)] bg-left bg-cover bg-no-repeat"
+              class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(../images/home-2/promo-1.png)] bg-left bg-cover bg-no-repeat"
             >
               <div class="py-10 bg-primary-light rounded-b-2xl">
                 <h4 class="pb-2">Your Daily Skin Ritual</h4>
@@ -11176,7 +10254,7 @@ include 'data/products.php';
             class="mx-3 wow animate__animated animate__fadeInUp"
           >
             <div
-              class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(../images/home-2/promo-bg-4.jpg)] bg-left bg-cover bg-no-repeat"
+              class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(../images/home-2/promo-2.png)] bg-left bg-cover bg-no-repeat"
             >
               <div class="py-10 bg-[#84A9FF] rounded-b-2xl">
                 <h4 class="pb-2">Where Glow Meets Care</h4>
