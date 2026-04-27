@@ -9,7 +9,7 @@
   <?php
   include 'components/links.php';
   include 'components/ProductCard.php';
-  include 'data/products.php';
+  include_once 'data/products.php';
   ?>
 </head>
 
