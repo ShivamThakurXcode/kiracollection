@@ -1012,4 +1012,140 @@
     ]
 ];
 
+// Function to get individual product details by ID
+function getProductById($productId) {
+    global $homeFourPicksProducts, $topRateProducts, $topItemsProducts, $categoryPromoProducts, 
+           $mostLovedProducts, $productsSectionProducts, $limitedTimeProducts, $favouriteCategoryProducts;
+    
+    $allProducts = array_merge(
+        $homeFourPicksProducts ?? [],
+        $topRateProducts ?? [],
+        $topItemsProducts ?? [],
+        $categoryPromoProducts ?? [],
+        $mostLovedProducts ?? [],
+        $productsSectionProducts ?? [],
+        $limitedTimeProducts ?? [],
+        $favouriteCategoryProducts ?? []
+    );
+    
+    foreach ($allProducts as $product) {
+        if (isset($product['id']) && $product['id'] == $productId) {
+            // Add detailed information for product detail page
+            $product['images'] = [
+                $product['image'],
+                'images/category/product-2.png',
+                'images/category/product-3.png',
+                'images/category/product-1.png',
+                'images/category/product-2.png',
+                'images/category/product-3.png'
+            ];
+            $product['description'] = 'This beautiful handcrafted piece showcases traditional artistry with modern design. Each piece is carefully crafted by skilled artisans using time-honored techniques passed down through generations. Perfect for adding a touch of elegance to any space.';
+            $product['materials'] = 'POP Clay, Mirror Work, Natural Colors';
+            $product['dimensions'] = '12" x 12" x 1"';
+            $product['weight'] = '1.2 kg';
+            $product['care_instructions'] = 'Dust with soft cloth. Keep away from direct sunlight and moisture. Handle with care.';
+            $product['sku'] = 'SKU-' . str_pad($product['id'], 3, '0', STR_PAD_LEFT);
+            $product['size_options'] = ['Small', 'Medium', 'Large', 'Extra Large'];
+            $product['color_options'] = [
+                ['name' => 'Natural White', 'hex' => '#F5F0E8', 'image' => ''],
+                ['name' => 'Cream Beige', 'hex' => '#E8D5B7', 'image' => ''],
+                ['name' => 'Terracotta', 'hex' => '#C67B5C', 'image' => ''],
+                ['name' => 'Multicolor', 'hex' => 'linear-gradient(135deg, #E8D5B7, #C67B5C, #8B5E3C)', 'image' => '']
+            ];
+            $product['additional_info'] = [
+                'Handcrafted' => 'Yes',
+                'Origin' => 'India',
+                'Style' => 'Traditional',
+                'Finish' => 'Matte'
+            ];
+            return $product;
+        }
+    }
+    
+    // Return default product if not found
+    return [
+        'id' => 1,
+        'name' => 'Traditional Lippan Art Mirror Frame - Peacock Design',
+        'category' => 'Lippan Art',
+        'image' => 'images/category/product-1.png',
+        'images' => [
+            'images/category/product-1.png',
+            'images/category/product-2.png',
+            'images/category/product-3.png'
+        ],
+        'current_price' => '₹2,499',
+        'old_price' => '₹3,199',
+        'discount_percentage' => '22% OFF',
+        'discount_badge' => 'BESTSELLER',
+        'rating' => 5,
+        'reviews' => 234,
+        'sold' => 89,
+        'available' => 45,
+        'description' => 'This beautiful handcrafted piece showcases traditional artistry with modern design.',
+        'materials' => 'POP Clay, Mirror Work',
+        'dimensions' => '12" x 12" x 1"',
+        'weight' => '1.2 kg',
+        'care_instructions' => 'Dust with soft cloth.',
+        'sku' => 'SKU-001',
+        'size_options' => ['Small', 'Medium', 'Large'],
+        'color_options' => [
+            ['name' => 'Natural White', 'hex' => '#F5F0E8'],
+            ['name' => 'Cream Beige', 'hex' => '#E8D5B7']
+        ],
+        'additional_info' => []
+    ];
+}
+
+// Function to get related products
+function getRelatedProducts($currentProductId, $category = null, $limit = 4) {
+    global $homeFourPicksProducts, $topRateProducts, $topItemsProducts, $categoryPromoProducts, 
+           $mostLovedProducts, $productsSectionProducts, $limitedTimeProducts, $favouriteCategoryProducts;
+    
+    $allProducts = array_merge(
+        $homeFourPicksProducts ?? [],
+        $topRateProducts ?? [],
+        $topItemsProducts ?? [],
+        $categoryPromoProducts ?? [],
+        $mostLovedProducts ?? [],
+        $productsSectionProducts ?? [],
+        $limitedTimeProducts ?? [],
+        $favouriteCategoryProducts ?? []
+    );
+    
+    $related = [];
+    foreach ($allProducts as $product) {
+        if (isset($product['id']) && $product['id'] != $currentProductId) {
+            if ($category === null || $product['category'] === $category) {
+                $related[] = $product;
+                if (count($related) >= $limit) {
+                    break;
+                }
+            }
+        }
+    }
+    
+    // If not enough related products by category, get any products
+    if (count($related) < $limit) {
+        foreach ($allProducts as $product) {
+            if (isset($product['id']) && $product['id'] != $currentProductId) {
+                $alreadyAdded = false;
+                foreach ($related as $r) {
+                    if ($r['id'] == $product['id']) {
+                        $alreadyAdded = true;
+                        break;
+                    }
+                }
+                if (!$alreadyAdded) {
+                    $related[] = $product;
+                    if (count($related) >= $limit) {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    
+    return array_slice($related, 0, $limit);
+}
+
 ?>

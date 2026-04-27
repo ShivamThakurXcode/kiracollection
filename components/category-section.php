@@ -1,4 +1,4 @@
-<?php include 'data/products.php'; ?>
+<?php include_once 'data/products.php'; ?>
 
 <!-- ========== Category Section Start ========== -->
 <section class="py-[70px]">

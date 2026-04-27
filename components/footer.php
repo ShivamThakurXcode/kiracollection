@@ -9,7 +9,7 @@
             class="md:col-span-12 col-span-12 xl:col-span-3 flex flex-col gap-y-6"
           >
             <div>
-              <a href='index.html'>
+              <a href='index.php'>
                 <span class="text-xl font-bold text-white">kiracollection art</span>
               </a>
             </div>
@@ -136,7 +136,7 @@
                     class="hgi hgi-stroke hgi-arrow-right-01 text-xl text-primary-lighter"
                   ></i>
                 </span>
-                <a class='text-primary-lighter font-semibold hover:underline' href='contact.html'>Contact Us</a
+                <a class='text-primary-lighter font-semibold hover:underline' href='contact.php'>Contact Us</a
                 >
               </li>
               <li class="py-1.5 flex items-center gap-x-2">
@@ -226,7 +226,7 @@
                     class="hgi hgi-stroke hgi-arrow-right-01 text-xl text-primary-lighter"
                   ></i>
                 </span>
-                <a class='text-primary-lighter font-semibold hover:underline' href='faq.html'>FAQs</a
+                <a class='text-primary-lighter font-semibold hover:underline' href='#'>FAQs</a
                 >
               </li>
             </ul>
@@ -392,7 +392,7 @@
       <div class="container">
         <ul class="flex items-center justify-between footer-bottom-nav -mt-px">
           <li class="group">
-            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='index.html'><span class="inline-flex items-center justify-center">
+            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='index.php'><span class="inline-flex items-center justify-center">
                 <i
                   class="hgi hgi-stroke hgi-home-01 text-2xl leading-6 text-light-primary-text"
                 ></i></span
@@ -400,7 +400,7 @@
             >
           </li>
           <li class="group">
-            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='cart-single-vendor.html'><span class="inline-flex items-center justify-center">
+            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='#'><span class="inline-flex items-center justify-center">
                 <i
                   class="hgi hgi-stroke hgi-package-moving text-2xl leading-6 text-light-primary-text"
                 ></i></span
@@ -408,7 +408,7 @@
             >
           </li>
           <li class="group">
-            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='wishlist-style-v1.html'><span class="inline-flex items-center justify-center">
+            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='#'><span class="inline-flex items-center justify-center">
                 <i
                   class="hgi hgi-stroke hgi-favourite text-2xl leading-6 text-light-primary-text"
                 ></i></span
@@ -416,7 +416,7 @@
             >
           </li>
           <li class="group">
-            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='my-account.html'><span class="inline-flex items-center justify-center">
+            <a class='footer-bottom-nav-btn flex items-center flex-col gap-y-1 border-t-2 border-transparent text-sm leading-[22px] text-light-primary-text px-[9px] pt-2.5 pb-1' href='#'><span class="inline-flex items-center justify-center">
                 <i
                   class="hgi hgi-stroke hgi-user-circle text-2xl leading-6 text-light-primary-text"
                 ></i></span
