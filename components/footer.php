@@ -378,7 +378,7 @@
         <div
           class="text-center text-white bg-[url('images/bottom-border.html')] pt-[22px] bg-center pb-px bg-no-repeat"
         >
-          2026 Copyright By Themeforest Powered By Createuiux
+          2026 by kiracollection art, and developed by Dynexia Solutions
         </div>
         <!-- ========== Footer Bottom Section End ========== -->
       </div>
