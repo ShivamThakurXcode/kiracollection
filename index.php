@@ -2620,7 +2620,7 @@
           <div class="xl:flex items-center hidden">
             <div>
               <a href='index.html'>
-                <span class="text-xl font-bold text-primary">kiracollection art</span>
+                <span class="text-xl font-bold text-primary">ecommerce</span>
               </a>
             </div>
             <div class="flex items-center w-full justify-end gap-x-6">
@@ -2705,7 +2705,7 @@
               </div>
               <div>
                 <a href='index.html'>
-                <span class="text-xl font-bold text-primary">kiracollection art</span>
+                <span class="text-xl font-bold text-primary">ecommerce</span>
               </a>
               </div>
               <div class="xl:hidden flex items-center gap-x-4">
@@ -2890,7 +2890,7 @@
           <div class="hidden relative items-center justify-between xl:flex">
             <div class="relative">
               <a href='index.html' class="text-2xl font-bold text-primary">
-                Kiracollection art
+                ecommerce
               </a>
               <div>
                 <ul
