@@ -61,12 +61,12 @@ class ProductCard {
         
         return "
         <div class='product-image-container relative'>
-            <div class='product-image rounded-xl mb-4 overflow-hidden h-[300px]'>
+            <div class='product-image rounded-xl mb-4 overflow-hidden h-[300px] bg-primary-lighter'>
                 <a href='{$productUrl}'>
                     <img 
                         src='{$imageUrl}' 
                         alt='{$productName}' 
-                        class='group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 bg-[#F4F3F5] h-full w-full object-cover'
+                        class='group-hover:scale-110 transition-all transform group-hover:-rotate-3 ease-in-out duration-300 h-full w-full object-cover'
                     />
                 </a>
             </div>
@@ -111,7 +111,6 @@ class ProductCard {
             {$this->renderProductName()}
             {$this->renderPriceSection()}
             {$this->renderRatingSection()}
-            {$this->renderDealProgress()}
             {$this->renderActionSection()}
         </div>";
     }
@@ -183,38 +182,7 @@ class ProductCard {
             <div class='bg-[url(\"../images/star-icon.png\")] w-[90px] h-4.5 bg-repeat-x overflow-hidden bg-position-[0_0]'>
                 <div style='width: {$ratingWidth}%' class='bg-[url(\"../images/star-icon.png\")] h-4.5 bg-repeat-x bg-position-[0_-18px]'></div>
             </div>
-            <span class='text-sm leading-[22px] font-normal inline-block ml-1'>({$reviews})</span>
         </div>";
-    }
-    
-    /**
-     * Render deal progress section if available
-     */
-    private function renderDealProgress() {
-        if (isset($this->product['sold']) && isset($this->product['available'])) {
-            $sold = $this->product['sold'];
-            $available = $this->product['available'];
-            $total = $sold + $available;
-            $progressWidth = $total > 0 ? ($sold / $total) * 100 : 0;
-            
-            return "
-            <div class='deal-progress flex flex-col gap-y-1 mb-3'>
-                <div class='progress w-full h-1.5 bg-warning-lighter rounded-[50px] overflow-hidden'>
-                    <div style='width: {$progressWidth}%' class='progress-bar h-full bg-warning rounded-[50px]'></div>
-                </div>
-                <div class='deal-stock flex items-center justify-between'>
-                    <div class='stock-sold flex items-center gap-x-2.5'>
-                        <p class='text-[16px] leading-6'>Sold:</p>
-                        <p class='text-[16px] leading-6 text-light-primary-text'>{$sold}</p>
-                    </div>
-                    <div class='stock-remaining flex items-center gap-x-2.5'>
-                        <p class='text-[16px] leading-6'>Available:</p>
-                        <p class='text-[16px] leading-6 text-light-primary-text'>{$available}</p>
-                    </div>
-                </div>
-            </div>";
-        }
-        return '';
     }
     
     /**

@@ -1,394 +1,1014 @@
 <?php
 /**
  * Product Data Arrays for Different Home Page Sections
+ * Category: Lippan Art, Mandala Design, Home Decoration & Indian Traditional Arts
+ * All prices in Indian Rupees (₹)
  */
 
 // Home Four Picks Slider Products
-$homeFourPicksProducts = [
+ $homeFourPicksProducts = [
     [
         'id' => 1,
-        'name' => 'Nebulizer Ultracare',
-        'category' => 'Medical Devices',
-        'image' => 'assets/images/home-2/product-image-6.png',
-        'url' => 'product-details.html',
-        'current_price' => '$28.56',
-        'old_price' => '$29.56',
-        'discount_percentage' => '10% OFF',
-        'discount_badge' => 'SALES',
-        'rating' => 4,
-        'reviews' => 118,
-        'sold' => 4,
-        'available' => 200
+        'name' => 'Traditional Lippan Art Mirror Frame - Peacock Design',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-peacock-mirror.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,499',
+        'old_price' => '₹3,199',
+        'discount_percentage' => '22% OFF',
+        'discount_badge' => 'BESTSELLER',
+        'rating' => 5,
+        'reviews' => 234,
+        'sold' => 89,
+        'available' => 45
     ],
     [
         'id' => 2,
-        'name' => 'Digital Thermometer',
-        'category' => 'Health Monitoring',
-        'image' => 'assets/images/home-2/product-image-7.png',
-        'url' => 'product-details.html',
-        'current_price' => '$15.99',
-        'old_price' => '$19.99',
-        'discount_percentage' => '20% OFF',
+        'name' => 'Sacred Geometry Mandala Wall Art - Lotus',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-lotus-wall.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,899',
+        'old_price' => '₹2,499',
+        'discount_percentage' => '24% OFF',
         'discount_badge' => 'SALES',
         'rating' => 4.5,
-        'reviews' => 89,
-        'sold' => 12,
-        'available' => 150
+        'reviews' => 178,
+        'sold' => 67,
+        'available' => 60
     ],
     [
         'id' => 3,
-        'name' => 'Blood Pressure Monitor',
-        'category' => 'Health Monitoring',
-        'image' => 'assets/images/home-2/product-image-8.png',
-        'url' => 'product-details.html',
-        'current_price' => '$45.00',
+        'name' => 'Handcrafted Lippan Art Wall Panel - Tree of Life',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-tree-life.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹4,999',
         'old_price' => '',
         'discount_percentage' => '',
-        'discount_badge' => '',
+        'discount_badge' => 'NEW',
         'rating' => 5,
-        'reviews' => 203,
-        'sold' => 8,
-        'available' => 75
+        'reviews' => 56,
+        'sold' => 12,
+        'available' => 20
     ],
     [
         'id' => 4,
-        'name' => 'Pulse Oximeter',
-        'category' => 'Health Monitoring',
-        'image' => 'assets/images/home-2/product-image-9.png',
-        'url' => 'product-details.html',
-        'current_price' => '$25.50',
-        'old_price' => '$30.00',
-        'discount_percentage' => '15% OFF',
+        'name' => 'Dot Mandala Coaster Set - Pack of 6',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-coaster-set.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹699',
+        'old_price' => '₹899',
+        'discount_percentage' => '22% OFF',
         'discount_badge' => 'SALES',
-        'rating' => 4,
-        'reviews' => 67,
-        'sold' => 15,
-        'available' => 100
+        'rating' => 4.5,
+        'reviews' => 312,
+        'sold' => 145,
+        'available' => 200
     ],
     [
         'id' => 5,
-        'name' => 'Face Masks Pack',
-        'category' => 'Personal Protection',
-        'image' => 'assets/images/home-2/product-image-10.png',
-        'url' => 'product-details.html',
-        'current_price' => '$12.99',
+        'name' => 'Lippan Art Decorative Plate - Circular Motif',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-decorative-plate.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹999',
         'old_price' => '',
         'discount_percentage' => '',
         'discount_badge' => '',
-        'rating' => 3.5,
-        'reviews' => 45,
-        'sold' => 25,
-        'available' => 300
+        'rating' => 4,
+        'reviews' => 98,
+        'sold' => 54,
+        'available' => 80
     ]
 ];
 
 // Top Rate Products
-$topRateProducts = [
+ $topRateProducts = [
     [
         'id' => 6,
-        'name' => 'Vitamin C Supplement',
-        'category' => 'Vitamins & Supplements',
-        'image' => 'assets/images/home-2/product-image-11.png',
-        'url' => 'product-details.html',
-        'current_price' => '$18.75',
-        'old_price' => '$22.00',
-        'discount_percentage' => '15% OFF',
+        'name' => 'Large Mandala Canvas Print - Cosmic Spiral (24")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-cosmic-canvas.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹3,499',
+        'old_price' => '₹4,299',
+        'discount_percentage' => '19% OFF',
         'discount_badge' => 'POPULAR',
         'rating' => 5,
-        'reviews' => 342,
-        'sold' => 45,
-        'available' => 120
+        'reviews' => 456,
+        'sold' => 123,
+        'available' => 35
     ],
     [
         'id' => 7,
-        'name' => 'Hand Sanitizer',
-        'category' => 'Personal Care',
-        'image' => 'assets/images/home-2/product-image-12.png',
-        'url' => 'product-details.html',
-        'current_price' => '$8.99',
+        'name' => 'Lippan Art Room Divider Panel - 3 Panel Set',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-room-divider.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹8,999',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => 'PREMIUM',
+        'rating' => 5,
+        'reviews' => 89,
+        'sold' => 18,
+        'available' => 10
+    ],
+    [
+        'id' => 8,
+        'name' => 'Mandala Wooden Wall Clock - 16" Diameter',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-wood-clock.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,199',
+        'old_price' => '₹2,799',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => 'SALES',
+        'rating' => 4.5,
+        'reviews' => 267,
+        'sold' => 78,
+        'available' => 40
+    ],
+    [
+        'id' => 9,
+        'name' => 'Mini Lippan Art Frame Set - Pack of 3 (8" each)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-mini-frame-set.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,499',
         'old_price' => '',
         'discount_percentage' => '',
         'discount_badge' => '',
         'rating' => 4.5,
-        'reviews' => 178,
-        'sold' => 67,
-        'available' => 250
+        'reviews' => 198,
+        'sold' => 92,
+        'available' => 110
     ],
     [
-        'id' => 8,
-        'name' => 'First Aid Kit',
-        'category' => 'Emergency Supplies',
-        'image' => 'assets/images/home-2/product-image-13.png',
-        'url' => 'product-details.html',
-        'current_price' => '$35.00',
-        'old_price' => '$42.00',
-        'discount_percentage' => '17% OFF',
+        'id' => 10,
+        'name' => 'Mandala Dreamcatcher Wall Hanging - Feather Design',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-dreamcatcher.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,299',
+        'old_price' => '₹1,699',
+        'discount_percentage' => '24% OFF',
         'discount_badge' => 'SALES',
         'rating' => 4.5,
-        'reviews' => 234,
-        'sold' => 18,
-        'available' => 85
+        'reviews' => 334,
+        'sold' => 156,
+        'available' => 75
     ],
     [
-        'id' => 9,
-        'name' => 'Pain Relief Gel',
-        'category' => 'Pain Management',
-        'image' => 'assets/images/home-2/product-image-14.png',
-        'url' => 'product-details.html',
-        'current_price' => '$14.50',
+        'id' => 11,
+        'name' => 'Lippan Art Photo Frame - 12" x 16" with Mirror Work',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-photo-frame.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,799',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => '',
+        'rating' => 4,
+        'reviews' => 145,
+        'sold' => 63,
+        'available' => 55
+    ]
+];
+
+// Top Items Products
+ $topItemsProducts = [
+    [
+        'id' => 12,
+        'name' => 'Lippan Art Round Wall Plate - 18" with Traditional Motifs',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-round-plate-18.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,299',
+        'old_price' => '₹2,999',
+        'discount_percentage' => '23% OFF',
+        'discount_badge' => 'HOT',
+        'rating' => 5,
+        'reviews' => 289,
+        'sold' => 167,
+        'available' => 50
+    ],
+    [
+        'id' => 13,
+        'name' => 'Dot Mandala Painted Tray - Serving & Decor (14")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-painted-tray.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹899',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 213,
+        'sold' => 134,
+        'available' => 90
+    ],
+    [
+        'id' => 14,
+        'name' => 'Lippan Art Entrance Door Frame Decor - 36" x 80"',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-door-frame.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹6,499',
+        'old_price' => '₹8,499',
+        'discount_percentage' => '24% OFF',
+        'discount_badge' => 'SALES',
+        'rating' => 5,
+        'reviews' => 76,
+        'sold' => 28,
+        'available' => 15
+    ],
+    [
+        'id' => 15,
+        'name' => 'Mandala String Art - Heart Pattern (12")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-string-art-heart.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,199',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => 'TRENDING',
+        'rating' => 5,
+        'reviews' => 423,
+        'sold' => 201,
+        'available' => 120
+    ],
+    [
+        'id' => 16,
+        'name' => 'Lippan Art Pooja Room Panel - Om & Swastik Design',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-pooja-panel.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹3,799',
+        'old_price' => '₹4,999',
+        'discount_percentage' => '24% OFF',
+        'discount_badge' => 'SALES',
+        'rating' => 5,
+        'reviews' => 167,
+        'sold' => 74,
+        'available' => 30
+    ],
+    [
+        'id' => 17,
+        'name' => 'Mandala LED Backlit Wall Art - Glowing Spiral (20")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-led-backlit.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,999',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => 'NEW',
+        'rating' => 4.5,
+        'reviews' => 92,
+        'sold' => 41,
+        'available' => 35
+    ]
+];
+
+// Category Promo Products
+ $categoryPromoProducts = [
+    [
+        'id' => 18,
+        'name' => 'Grand Lippan Art Feature Wall Kit - 8ft x 10ft',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-feature-wall-kit.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹14,999',
+        'old_price' => '₹19,999',
+        'discount_percentage' => '25% OFF',
+        'discount_badge' => 'DEAL',
+        'rating' => 5,
+        'reviews' => 34,
+        'sold' => 8,
+        'available' => 10
+    ],
+    [
+        'id' => 19,
+        'name' => 'Mandala MDF Cutout Set - DIY Painting (6" Set of 8)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-mdf-diy-set.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹599',
         'old_price' => '',
         'discount_percentage' => '',
         'discount_badge' => '',
         'rating' => 4,
         'reviews' => 156,
-        'sold' => 34,
-        'available' => 200
-    ],
-    [
-        'id' => 10,
-        'name' => 'Digital Scale',
-        'category' => 'Health Monitoring',
-        'image' => 'assets/images/home-2/product-image-15.png',
-        'url' => 'product-details.html',
-        'current_price' => '$28.00',
-        'old_price' => '$35.00',
-        'discount_percentage' => '20% OFF',
-        'discount_badge' => 'SALES',
-        'rating' => 4.5,
-        'reviews' => 289,
-        'sold' => 22,
-        'available' => 95
-    ],
-    [
-        'id' => 11,
-        'name' => 'Sleep Aid Tablets',
-        'category' => 'Sleep & Relaxation',
-        'image' => 'assets/images/home-2/product-image-16.png',
-        'url' => 'product-details.html',
-        'current_price' => '$19.99',
-        'old_price' => '',
-        'discount_percentage' => '',
-        'discount_badge' => '',
-        'rating' => 3.5,
-        'reviews' => 98,
-        'sold' => 41,
-        'available' => 150
-    ]
-];
-
-// Top Items Products
-$topItemsProducts = [
-    [
-        'id' => 12,
-        'name' => 'Face Shield',
-        'category' => 'Personal Protection',
-        'image' => 'assets/images/home-2/product-image-17.png',
-        'url' => 'product-details.html',
-        'current_price' => '$6.99',
-        'old_price' => '$9.99',
-        'discount_percentage' => '30% OFF',
-        'discount_badge' => 'HOT',
-        'rating' => 4,
-        'reviews' => 145,
-        'sold' => 89,
-        'available' => 400
-    ],
-    [
-        'id' => 13,
-        'name' => 'Gloves Box',
-        'category' => 'Personal Protection',
-        'image' => 'assets/images/home-2/product-image-18.png',
-        'url' => 'product-details.html',
-        'current_price' => '$11.50',
-        'old_price' => '',
-        'discount_percentage' => '',
-        'discount_badge' => '',
-        'rating' => 4.5,
-        'reviews' => 267,
-        'sold' => 156,
-        'available' => 500
-    ],
-    [
-        'id' => 14,
-        'name' => 'Antibacterial Soap',
-        'category' => 'Personal Care',
-        'image' => 'assets/images/home-2/product-image-19.png',
-        'url' => 'product-details.html',
-        'current_price' => '$7.25',
-        'old_price' => '$8.99',
-        'discount_percentage' => '19% OFF',
-        'discount_badge' => 'SALES',
-        'rating' => 4,
-        'reviews' => 189,
-        'sold' => 78,
-        'available' => 350
-    ],
-    [
-        'id' => 15,
-        'name' => 'Immunity Booster',
-        'category' => 'Vitamins & Supplements',
-        'image' => 'assets/images/home-2/product-image-20.png',
-        'url' => 'product-details.html',
-        'current_price' => '$24.99',
-        'old_price' => '',
-        'discount_percentage' => '',
-        'discount_badge' => '',
-        'rating' => 5,
-        'reviews' => 412,
-        'sold' => 92,
-        'available' => 180
-    ],
-    [
-        'id' => 16,
-        'name' => 'Compression Stockings',
-        'category' => 'Medical Supplies',
-        'image' => 'assets/images/home-2/product-image-21.png',
-        'url' => 'product-details.html',
-        'current_price' => '$32.00',
-        'old_price' => '$40.00',
-        'discount_percentage' => '20% OFF',
-        'discount_badge' => 'SALES',
-        'rating' => 4.5,
-        'reviews' => 223,
-        'sold' => 31,
-        'available' => 120
-    ],
-    [
-        'id' => 17,
-        'name' => 'Air Purifier',
-        'category' => 'Home Health',
-        'image' => 'assets/images/home-2/product-image-22.png',
-        'url' => 'product-details.html',
-        'current_price' => '$89.99',
-        'old_price' => '',
-        'discount_percentage' => '',
-        'discount_badge' => '',
-        'rating' => 4.5,
-        'reviews' => 367,
-        'sold' => 15,
-        'available' => 45
-    ]
-];
-
-// Category Promo Products
-$categoryPromoProducts = [
-    [
-        'id' => 18,
-        'name' => 'Wheelchair Premium',
-        'category' => 'Mobility Aids',
-        'image' => 'assets/images/home-2/product-image-23.png',
-        'url' => 'product-details.html',
-        'current_price' => '$299.00',
-        'old_price' => '$399.00',
-        'discount_percentage' => '25% OFF',
-        'discount_badge' => 'DEAL',
-        'rating' => 5,
-        'reviews' => 89,
-        'sold' => 5,
-        'available' => 20
-    ],
-    [
-        'id' => 19,
-        'name' => 'Walking Cane',
-        'category' => 'Mobility Aids',
-        'image' => 'assets/images/home-2/product-image-24.png',
-        'url' => 'product-details.html',
-        'current_price' => '$45.50',
-        'old_price' => '',
-        'discount_percentage' => '',
-        'discount_badge' => '',
-        'rating' => 4,
-        'reviews' => 67,
-        'sold' => 12,
-        'available' => 80
+        'sold' => 234,
+        'available' => 300
     ],
     [
         'id' => 20,
-        'name' => 'Hearing Aid Device',
-        'category' => 'Hearing Devices',
-        'image' => 'assets/images/home-2/product-image-25.png',
-        'url' => 'product-details.html',
-        'current_price' => '$189.99',
-        'old_price' => '$249.99',
-        'discount_percentage' => '24% OFF',
+        'name' => 'Lippan Art TV Unit Backdrop Panel - 6ft x 4ft',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/lippan-tv-backdrop.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹9,999',
+        'old_price' => '₹12,999',
+        'discount_percentage' => '23% OFF',
         'discount_badge' => 'SALES',
-        'rating' => 4.5,
-        'reviews' => 134,
-        'sold' => 8,
-        'available' => 35
+        'rating' => 5,
+        'reviews' => 45,
+        'sold' => 14,
+        'available' => 12
     ],
     [
         'id' => 21,
-        'name' => 'Orthopedic Pillow',
-        'category' => 'Comfort & Support',
-        'image' => 'assets/images/home-2/product-image-26.png',
-        'url' => 'product-details.html',
-        'current_price' => '$38.00',
+        'name' => 'Mandala Stained Glass Suncatcher - Rainbow (10")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/mandala-stained-glass.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,599',
         'old_price' => '',
         'discount_percentage' => '',
         'discount_badge' => '',
-        'rating' => 4,
-        'reviews' => 201,
-        'sold' => 28,
-        'available' => 150
+        'rating' => 4.5,
+        'reviews' => 189,
+        'sold' => 87,
+        'available' => 65
     ]
 ];
 
 // Category Cards (Simple category display)
-$categoryCards = [
+ $categoryCards = [
     [
         'id' => 1,
-        'name' => 'Moisturizers',
-        'image' => 'assets/images/home-2/category-1.png',
+        'name' => 'Lippan Art Mirrors',
+        'image' => 'assets/images/home-2/cat-lippan-mirrors.png',
         'url' => '#'
     ],
     [
         'id' => 2,
-        'name' => 'Skin Serums',
-        'image' => 'assets/images/home-2/category-2.png',
+        'name' => 'Mandala Wall Art',
+        'image' => 'assets/images/home-2/cat-mandala-wall.png',
         'url' => '#'
     ],
     [
         'id' => 3,
-        'name' => 'Foundations',
-        'image' => 'assets/images/home-2/category-3.png',
+        'name' => 'Lippan Wall Panels',
+        'image' => 'assets/images/home-2/cat-lippan-panels.png',
         'url' => '#'
     ],
     [
         'id' => 4,
-        'name' => 'Blush & Bronzers',
-        'image' => 'assets/images/home-2/category-4.png',
+        'name' => 'Dot Mandala Decor',
+        'image' => 'assets/images/home-2/cat-dot-mandala.png',
         'url' => '#'
     ],
     [
         'id' => 5,
-        'name' => 'Lipsticks & Lip Glosses',
-        'image' => 'assets/images/home-2/category-5.png',
+        'name' => 'Lippan Photo Frames',
+        'image' => 'assets/images/home-2/cat-lippan-frames.png',
         'url' => '#'
     ],
     [
         'id' => 6,
-        'name' => 'Hair Oils & Serums',
-        'image' => 'assets/images/home-2/category-6.png',
+        'name' => 'Mandala Clocks',
+        'image' => 'assets/images/home-2/cat-mandala-clocks.png',
         'url' => '#'
     ],
     [
         'id' => 7,
-        'name' => 'Highlighters',
-        'image' => 'assets/images/home-2/category-7.png',
+        'name' => 'Decorative Plates',
+        'image' => 'assets/images/home-2/cat-decor-plates.png',
         'url' => '#'
     ],
     [
         'id' => 8,
-        'name' => 'Nail Polishes',
-        'image' => 'assets/images/home-2/category-8.png',
+        'name' => 'Mandala Tableware',
+        'image' => 'assets/images/home-2/cat-mandala-tableware.png',
         'url' => '#'
     ],
+];
+
+// Most Loved Products
+ $mostLovedProducts = [
     [
-        'id' => 9,
-        'name' => 'Hair Oils & Serums',
-        'image' => 'assets/images/home-2/category-9.png',
-        'url' => '#'
+        'id' => 22,
+        'name' => 'Lippan Art Mirror Frame - Floral Border Design (12" Round)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/loved-lippan-floral-mirror.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,899',
+        'old_price' => '₹2,399',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 367,
+        'sold' => 189,
+        'available' => 70
+    ],
+    [
+        'id' => 23,
+        'name' => 'Mandala Wall Painting - Acrylic on Canvas (18" Square)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/loved-mandala-acrylic.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,799',
+        'old_price' => '₹3,499',
+        'discount_percentage' => '20% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 298,
+        'sold' => 145,
+        'available' => 40
+    ],
+    [
+        'id' => 24,
+        'name' => 'Lippan Art Rectangle Panel - Elephant Motif (24" x 18")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/loved-lippan-elephant.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹3,299',
+        'old_price' => '₹4,199',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 234,
+        'sold' => 112,
+        'available' => 35
+    ],
+    [
+        'id' => 25,
+        'name' => 'Mandala Table Lamp - Ceramic Handpainted (8" Height)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/loved-mandala-lamp.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,499',
+        'old_price' => '₹1,899',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 421,
+        'sold' => 198,
+        'available' => 55
+    ],
+    [
+        'id' => 26,
+        'name' => 'Lippan Art Key Holder - Multi Hook with Mirror (16")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/loved-lippan-key-holder.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹999',
+        'old_price' => '₹1,299',
+        'discount_percentage' => '23% OFF',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 345,
+        'sold' => 223,
+        'available' => 90
+    ],
+    [
+        'id' => 27,
+        'name' => 'Mandala Bookmark Set - Handpainted Metal (Set of 5)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/loved-mandala-bookmarks.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹399',
+        'old_price' => '₹499',
+        'discount_percentage' => '20% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 512,
+        'sold' => 389,
+        'available' => 250
+    ]
+];
+
+// Products Section (Main Grid)
+ $productsSectionProducts = [
+    [
+        'id' => 28,
+        'name' => 'Lippan Art Square Mirror - Geometric Pattern (10")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/grid-lippan-square-mirror.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,599',
+        'old_price' => '₹1,999',
+        'discount_percentage' => '20% OFF',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 178,
+        'sold' => 76,
+        'available' => 65
+    ],
+    [
+        'id' => 29,
+        'name' => 'Mandala Wall Decal - Removable Vinyl (30" Circle)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/grid-mandala-decal.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹799',
+        'old_price' => '₹999',
+        'discount_percentage' => '20% OFF',
+        'discount_badge' => '',
+        'rating' => 4,
+        'reviews' => 234,
+        'sold' => 156,
+        'available' => 180
+    ],
+    [
+        'id' => 30,
+        'name' => 'Lippan Art Circle Frame - Abstract Waves (14" Round)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/grid-lippan-abstract-waves.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹2,099',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 145,
+        'sold' => 58,
+        'available' => 45
+    ],
+    [
+        'id' => 31,
+        'name' => 'Mandala Stone Painting Set - River Rock Art (Set of 4)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/grid-mandala-stone-paint.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹849',
+        'old_price' => '₹1,099',
+        'discount_percentage' => '23% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 267,
+        'sold' => 134,
+        'available' => 100
+    ],
+    [
+        'id' => 32,
+        'name' => 'Lippan Art Headboard Panel - King Size (6ft Width)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/grid-lippan-headboard.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹7,999',
+        'old_price' => '₹9,999',
+        'discount_percentage' => '20% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 67,
+        'sold' => 19,
+        'available' => 12
+    ],
+    [
+        'id' => 33,
+        'name' => 'Mandala Wind Chime - Bamboo & Metal (22" Length)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/grid-mandala-wind-chime.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹699',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => '',
+        'rating' => 4,
+        'reviews' => 189,
+        'sold' => 98,
+        'available' => 120
+    ],
+    [
+        'id' => 34,
+        'name' => 'Lippan Art Tray - Serving with Handles (16" Oval)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/grid-lippan-tray.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,299',
+        'old_price' => '₹1,699',
+        'discount_percentage' => '24% OFF',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 156,
+        'sold' => 72,
+        'available' => 55
+    ],
+    [
+        'id' => 35,
+        'name' => 'Mandala Journal - Handbound Leather (6" x 8")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/grid-mandala-journal.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹599',
+        'old_price' => '',
+        'discount_percentage' => '',
+        'discount_badge' => '',
+        'rating' => 4.5,
+        'reviews' => 298,
+        'sold' => 167,
+        'available' => 140
+    ],
+    [
+        'id' => 36,
+        'name' => 'Lippan Art Console Table Top - Inlay Work (36" x 18")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/grid-lippan-console-top.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹5,499',
+        'old_price' => '₹6,999',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => '',
+        'rating' => 5,
+        'reviews' => 45,
+        'sold' => 11,
+        'available' => 18
+    ],
+    [
+        'id' => 37,
+        'name' => 'Mandala Phone Stand - Resin Handmade (4" Base)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/grid-mandala-phone-stand.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹449',
+        'old_price' => '₹599',
+        'discount_percentage' => '25% OFF',
+        'discount_badge' => '',
+        'rating' => 4,
+        'reviews' => 378,
+        'sold' => 245,
+        'available' => 200
+    ]
+];
+
+// Limited Time Products
+ $limitedTimeProducts = [
+    [
+        'id' => 38,
+        'name' => 'Lippan Art Hexagon Shelf Set - Wall Mounted (3 Pieces, 8" each)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/flash-lippan-hex-shelf.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,799',
+        'old_price' => '₹2,499',
+        'discount_percentage' => '28% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 198,
+        'sold' => 87,
+        'available' => 25
+    ],
+    [
+        'id' => 39,
+        'name' => 'Mandala Tapestry - Cotton Printed (60" x 90")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/flash-mandala-tapestry.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹899',
+        'old_price' => '₹1,499',
+        'discount_percentage' => '40% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 345,
+        'sold' => 178,
+        'available' => 40
+    ],
+    [
+        'id' => 40,
+        'name' => 'Lippan Art Clock - Round with Mirror Pieces (16")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/flash-lippan-clock.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,999',
+        'old_price' => '₹2,799',
+        'discount_percentage' => '29% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 5,
+        'reviews' => 223,
+        'sold' => 98,
+        'available' => 20
+    ],
+    [
+        'id' => 41,
+        'name' => 'Mandala Candle Holder Set - Iron Craft (Set of 3, 4"/6"/8")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/flash-mandala-candle-holder.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,099',
+        'old_price' => '₹1,699',
+        'discount_percentage' => '35% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 267,
+        'sold' => 134,
+        'available' => 35
+    ],
+    [
+        'id' => 42,
+        'name' => 'Lippan Art Coaster Set - Pack of 4 with Holder (4" each)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/flash-lippan-coasters.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹599',
+        'old_price' => '₹999',
+        'discount_percentage' => '40% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4,
+        'reviews' => 412,
+        'sold' => 267,
+        'available' => 60
+    ],
+    [
+        'id' => 43,
+        'name' => 'Mandala Floating Shelf - Wooden Cutout (12" x 12")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/flash-mandala-float-shelf.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹799',
+        'old_price' => '₹1,199',
+        'discount_percentage' => '33% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4,
+        'reviews' => 156,
+        'sold' => 78,
+        'available' => 30
+    ],
+    [
+        'id' => 44,
+        'name' => 'Lippan Art Name Plate - Customizable (18" x 6")',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/flash-lippan-name-plate.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹899',
+        'old_price' => '₹1,399',
+        'discount_percentage' => '36% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 5,
+        'reviews' => 534,
+        'sold' => 312,
+        'available' => 80
+    ],
+    [
+        'id' => 45,
+        'name' => 'Mandala Table Runner - Handblock Printed (72" x 14")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/flash-mandala-table-runner.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹649',
+        'old_price' => '₹999',
+        'discount_percentage' => '35% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 289,
+        'sold' => 145,
+        'available' => 70
+    ],
+    [
+        'id' => 46,
+        'name' => 'Lippan Art Pendant Lamp Shade - Dome Shape (10" Diameter)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/flash-lippan-lamp-shade.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,499',
+        'old_price' => '₹2,199',
+        'discount_percentage' => '32% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 134,
+        'sold' => 56,
+        'available' => 22
+    ],
+    [
+        'id' => 47,
+        'name' => 'Mandala Pot Set - Terracotta Handpainted (4"/6"/8")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/flash-mandala-pot-set.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹1,199',
+        'old_price' => '₹1,899',
+        'discount_percentage' => '37% OFF',
+        'discount_badge' => 'FLASH',
+        'rating' => 4.5,
+        'reviews' => 198,
+        'sold' => 89,
+        'available' => 40
+    ]
+];
+
+// Favourite Category Products
+ $favouriteCategoryProducts = [
+    [
+        'id' => 48,
+        'name' => 'Premium Lippan Art Wall Mural - Desert Scene (4ft x 6ft)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/fav-lippan-mural-desert.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹11,999',
+        'old_price' => '₹15,999',
+        'discount_percentage' => '25% OFF',
+        'discount_badge' => 'PREMIUM',
+        'rating' => 5,
+        'reviews' => 23,
+        'sold' => 6,
+        'available' => 8
+    ],
+    [
+        'id' => 49,
+        'name' => 'Sacred Mandala Thangka Style Painting - Gold Leaf (24")',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/fav-mandala-thangka.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹5,499',
+        'old_price' => '₹6,999',
+        'discount_percentage' => '21% OFF',
+        'discount_badge' => 'PREMIUM',
+        'rating' => 5,
+        'reviews' => 67,
+        'sold' => 28,
+        'available' => 15
+    ],
+    [
+        'id' => 50,
+        'name' => 'Lippan Art Ceiling Medallion - Circular Rosette (24" Diameter)',
+        'category' => 'Lippan Art',
+        'image' => 'assets/images/home-2/fav-lippan-ceiling-medallion.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹3,999',
+        'old_price' => '₹5,199',
+        'discount_percentage' => '23% OFF',
+        'discount_badge' => 'PREMIUM',
+        'rating' => 5,
+        'reviews' => 34,
+        'sold' => 9,
+        'available' => 12
+    ],
+    [
+        'id' => 51,
+        'name' => 'Mandala Floor Rug - Handwoven Jute (5ft Diameter Round)',
+        'category' => 'Mandala Art',
+        'image' => 'assets/images/home-2/fav-mandala-jute-rug.png',
+        'url' => 'product-details.php',
+        'current_price' => '₹3,299',
+        'old_price' => '₹4,499',
+        'discount_percentage' => '27% OFF',
+        'discount_badge' => 'PREMIUM',
+        'rating' => 4.5,
+        'reviews' => 112,
+        'sold' => 45,
+        'available' => 25
+    ]
+];
+
+// Size Options Helper (Reusable across products)
+ $productSizeOptions = [
+    'small' => [
+        'label' => 'Small',
+        'dimension' => '6" - 8"',
+        'price_multiplier' => 0.6
+    ],
+    'medium' => [
+        'label' => 'Medium',
+        'dimension' => '10" - 14"',
+        'price_multiplier' => 1.0
+    ],
+    'large' => [
+        'label' => 'Large',
+        'dimension' => '16" - 24"',
+        'price_multiplier' => 1.6
+    ],
+    'x_large' => [
+        'label' => 'Extra Large',
+        'dimension' => '30" - 36"',
+        'price_multiplier' => 2.4
+    ],
+    'custom' => [
+        'label' => 'Custom Size',
+        'dimension' => 'As Required',
+        'price_multiplier' => 0  // Priced separately
+    ]
+];
+
+// Color Options Helper
+ $productColorOptions = [
+    'natural_white' => ['label' => 'Natural White', 'hex' => '#F5F0E8'],
+    'cream_beige' => ['label' => 'Cream Beige', 'hex' => '#E8D5B7'],
+    'terracotta' => ['label' => 'Terracotta', 'hex' => '#C67B5C'],
+    'multicolor' => ['label' => 'Multicolor', 'hex' => 'linear-gradient(135deg, #E8D5B7, #C67B5C, #8B5E3C)'],
+    'gold_accent' => ['label' => 'Gold Accent', 'hex' => '#D4A843'],
+    'mirror_work' => ['label' => 'Mirror Work', 'hex' => '#C0C0C0']
+];
+
+// Material Options Helper
+ $productMaterialOptions = [
+    'pop_clay' => ['label' => 'POP Clay', 'description' => 'Plaster of Paris with clay mixture'],
+    'mdf_board' => ['label' => 'MDF Board', 'description' => 'Medium Density Fibreboard base'],
+    'wooden' => ['label' => 'Wooden Base', 'description' => 'Natural wood with Lippan work'],
+    'canvas' => ['label' => 'Canvas', 'description' => 'Handpainted on quality canvas'],
+    'iron_metal' => ['label' => 'Iron/Metal', 'description' => 'Wrought iron with art work'],
+    'terracotta' => ['label' => 'Terracotta', 'description' => 'Natural clay baked finish']
+];
+
+// Filter Options for Shop Page
+ $shopFilterOptions = [
+    'categories' => [
+        ['value' => 'lippan-art', 'label' => 'Lippan Art', 'count' => 48],
+        ['value' => 'mandala-art', 'label' => 'Mandala Art', 'count' => 52],
+        ['value' => 'wall-decor', 'label' => 'Wall Decor', 'count' => 35],
+        ['value' => 'tableware', 'label' => 'Tableware & Trays', 'count' => 18],
+        ['value' => 'mirrors', 'label' => 'Mirror Frames', 'count' => 22],
+        ['value' => 'clocks', 'label' => 'Art Clocks', 'count' => 12],
+        ['value' => 'diy-kits', 'label' => 'DIY Art Kits', 'count' => 15],
+        ['value' => 'custom-orders', 'label' => 'Custom Orders', 'count' => 8]
+    ],
+    'sizes' => [
+        ['value' => 'small', 'label' => 'Small (6"-8")', 'count' => 28],
+        ['value' => 'medium', 'label' => 'Medium (10"-14")', 'count' => 42],
+        ['value' => 'large', 'label' => 'Large (16"-24")', 'count' => 35],
+        ['value' => 'x_large', 'label' => 'Extra Large (30"-36")', 'count' => 18],
+        ['value' => 'custom', 'label' => 'Custom Size', 'count' => 8]
+    ],
+    'price_ranges' => [
+        ['value' => '0-500', 'label' => 'Under ₹500', 'count' => 15],
+        ['value' => '500-1000', 'label' => '₹500 - ₹1,000', 'count' => 32],
+        ['value' => '1000-2500', 'label' => '₹1,000 - ₹2,500', 'count' => 45],
+        ['value' => '2500-5000', 'label' => '₹2,500 - ₹5,000', 'count' => 28],
+        ['value' => '5000-10000', 'label' => '₹5,000 - ₹10,000', 'count' => 14],
+        ['value' => '10000-above', 'label' => 'Above ₹10,000', 'count' => 6]
+    ],
+    'materials' => [
+        ['value' => 'pop_clay', 'label' => 'POP Clay', 'count' => 38],
+        ['value' => 'mdf_board', 'label' => 'MDF Board', 'count' => 25],
+        ['value' => 'wooden', 'label' => 'Wooden', 'count' => 18],
+        ['value' => 'canvas', 'label' => 'Canvas', 'count' => 22],
+        ['value' => 'iron_metal', 'label' => 'Iron/Metal', 'count' => 12],
+        ['value' => 'terracotta', 'label' => 'Terracotta', 'count' => 10]
+    ],
+    'ratings' => [
+        ['value' => '5', 'label' => '5 Stars', 'count' => 24],
+        ['value' => '4', 'label' => '4 Stars & Above', 'count' => 68],
+        ['value' => '3', 'label' => '3 Stars & Above', 'count' => 82]
+    ],
+    'sort_options' => [
+        ['value' => 'popularity', 'label' => 'Popularity'],
+        ['value' => 'newest', 'label' => 'Newest First'],
+        ['value' => 'price_low', 'label' => 'Price: Low to High'],
+        ['value' => 'price_high', 'label' => 'Price: High to Low'],
+        ['value' => 'rating', 'label' => 'Highest Rated'],
+        ['value' => 'discount', 'label' => 'Biggest Discount']
+    ]
+];
+
+// Size-wise variant data for a single product (example for variant selection)
+ $productVariantsExample = [
+    [
+        'variant_id' => 'LA-PM-S',
+        'product_id' => 1,
+        'size' => 'Small',
+        'dimension' => '8" Round',
+        'current_price' => '₹1,299',
+        'old_price' => '₹1,699',
+        'weight' => '800g',
+        'sku' => 'LIP-PM-08-WH-S',
+        'available' => 30
+    ],
+    [
+        'variant_id' => 'LA-PM-M',
+        'product_id' => 1,
+        'size' => 'Medium',
+        'dimension' => '12" Round',
+        'current_price' => '₹2,499',
+        'old_price' => '₹3,199',
+        'weight' => '1.5kg',
+        'sku' => 'LIP-PM-12-WH-M',
+        'available' => 45
+    ],
+    [
+        'variant_id' => 'LA-PM-L',
+        'product_id' => 1,
+        'size' => 'Large',
+        'dimension' => '18" Round',
+        'current_price' => '₹3,999',
+        'old_price' => '₹5,199',
+        'weight' => '2.8kg',
+        'sku' => 'LIP-PM-18-WH-L',
+        'available' => 20
+    ],
+    [
+        'variant_id' => 'LA-PM-XL',
+        'product_id' => 1,
+        'size' => 'Extra Large',
+        'dimension' => '24" Round',
+        'current_price' => '₹5,999',
+        'old_price' => '₹7,499',
+        'weight' => '4.2kg',
+        'sku' => 'LIP-PM-24-WH-XL',
+        'available' => 10
+    ],
+    [
+        'variant_id' => 'LA-PM-C',
+        'product_id' => 1,
+        'size' => 'Custom',
+        'dimension' => 'As Required',
+        'current_price' => '₹0',
+        'old_price' => '',
+        'weight' => 'Varies',
+        'sku' => 'LIP-PM-CUS-WH',
+        'available' => -1  // -1 = made to order
     ]
 ];
 
