@@ -1,3 +1,5 @@
+<?php include_once 'data/products.php'; ?>
+
 <!-- ========== Limited Time Section Start ========== -->
 <section class="mb-[70px]">
     <div class="w-full relative bg-primary">
@@ -26,9 +28,9 @@
                         <?php foreach (array_slice($productsSectionProducts, 0, 6) as $product): ?>
                             <div class="p-3">
                                 <div class="p-4 bg-white rounded-2xl flex items-center flex-col md:flex-row gap-4">
-                                    <a class='md:size-32 size-full flex-none rounded-2xl bg-[#FFEFF6]' href='product-details.html'><img src="<?= $product['image'] ?>" alt="product-1" class="w-full h-full object-cover rounded-2xl" /></a>
+                                    <a class='md:size-32 size-full flex-none rounded-2xl bg-[#FFEFF6]' href='product-detail.php?id=<?= $product['id'] ?>'><img src="<?= $product['image'] ?>" alt="product-1" class="w-full h-full object-cover rounded-2xl" /></a>
                                     <div class="flex-1 flex flex-col gap-y-[15px]">
-                                        <p class="font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"><a href='product-details.html'><?= $product['name'] ?></a></p>
+                                        <p class="font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"><a href='product-detail.php?id=<?= $product['id'] ?>'><?= $product['name'] ?></a></p>
                                         <div class="flex justify-between">
                                             <div class="flex flex-col gap-y-[15px]">
                                                 <div class="rating-section flex items-center">
@@ -36,7 +38,7 @@
                                                         <div style="width: 80%" class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"></div>
                                                     </div><span class="text-sm leading-[22px] font-normal inline-block ml-1"><?= $product['reviews'] ?></span>
                                                 </div>
-                                                <div class="price-section flex items-center gap-x-3"><span class="current-price font-semibold text-light-primary-text"><?= $product['currentPrice'] ?></span><span class="old-price text-sm leading-[22px] font-normal text-light-disabled-text line-through"><?= $product['oldPrice'] ?></span></div>
+                                                <div class="price-section flex items-center gap-x-3"><span class="current-price font-semibold text-light-primary-text"><?= $product['current_price'] ?></span><span class="old-price text-sm leading-[22px] font-normal text-light-disabled-text line-through"><?= $product['old_price'] ?></span></div>
                                             </div>
                                             <div class="flex items-end"><a class='btn btn-primary btn-large rounded-[100px] group py-2.5 px-[22px]' href='cart-single-vendor.html'><i class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"></i> Add</a></div>
                                         </div>
@@ -55,9 +57,9 @@
                         <?php foreach (array_slice($productsSectionProducts, 3, 6) as $product): ?>
                             <div class="p-3">
                                 <div class="p-4 bg-white rounded-2xl flex items-center flex-col md:flex-row gap-4">
-                                    <a class='md:size-32 size-full flex-none rounded-2xl bg-[#FFEFF6]' href='product-details.html'><img src="<?= $product['image'] ?>" alt="product-1" class="w-full h-full object-cover rounded-2xl" /></a>
+                                    <a class='md:size-32 size-full flex-none rounded-2xl bg-[#FFEFF6]' href='product-detail.php?id=<?= $product['id'] ?>'><img src="<?= $product['image'] ?>" alt="product-1" class="w-full h-full object-cover rounded-2xl" /></a>
                                     <div class="flex-1 flex flex-col gap-y-[15px]">
-                                        <p class="font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"><a href='product-details.html'><?= $product['name'] ?></a></p>
+                                        <p class="font-semibold text-light-primary-text hover:text-primary transition-colors duration-300"><a href='product-detail.php?id=<?= $product['id'] ?>'><?= $product['name'] ?></a></p>
                                         <div class="flex justify-between">
                                             <div class="flex flex-col gap-y-[15px]">
                                                 <div class="rating-section flex items-center">
@@ -65,7 +67,7 @@
                                                         <div style="width: 80%" class="bg-[url('../images/star-icon.png')] h-4.5 bg-repeat-x bg-position-[0_-18px]"></div>
                                                     </div><span class="text-sm leading-[22px] font-normal inline-block ml-1"><?= $product['reviews'] ?></span>
                                                 </div>
-                                                <div class="price-section flex items-center gap-x-3"><span class="current-price font-semibold text-light-primary-text"><?= $product['currentPrice'] ?></span><span class="old-price text-sm leading-[22px] font-normal text-light-disabled-text line-through"><?= $product['oldPrice'] ?></span></div>
+                                                <div class="price-section flex items-center gap-x-3"><span class="current-price font-semibold text-light-primary-text"><?= $product['current_price'] ?></span><span class="old-price text-sm leading-[22px] font-normal text-light-disabled-text line-through"><?= $product['old_price'] ?></span></div>
                                             </div>
                                             <div class="flex items-end"><a class='btn btn-primary btn-large rounded-[100px] group py-2.5 px-[22px]' href='cart-single-vendor.html'><i class="hgi hgi-stroke hgi-shopping-cart-02 text-xl text-white"></i> Add</a></div>
                                         </div>

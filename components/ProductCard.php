@@ -57,7 +57,8 @@ class ProductCard {
     private function renderProductImage() {
         $imageUrl = $this->product['image'] ?? 'assets/images/product-placeholder.png';
         $productName = $this->product['name'] ?? 'Product';
-        $productUrl = $this->product['url'] ?? '#';
+        $productId = $this->product['id'] ?? 1;
+        $productUrl = 'product-detail.php?id=' . $productId;
         
         return "
         <div class='product-image-container relative'>
@@ -141,7 +142,8 @@ class ProductCard {
      */
     private function renderProductName() {
         $name = $this->product['name'] ?? 'Product Name';
-        $url = $this->product['url'] ?? 'product-details.html';
+        $productId = $this->product['id'] ?? 1;
+        $url = 'product-detail.php?id=' . $productId;
         return "
         <h6 class='text-[18px] leading-7 font-bold pb-3'>
             <a href='{$url}'>{$name}</a>
