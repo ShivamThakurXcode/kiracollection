@@ -1,6 +1,7 @@
 <?php
 // Load product data
 require_once 'data/products.php';
+require_once 'components/ProductCard.php';
 
 // Get product ID from URL parameter, default to 1
 $productId = isset($_GET['id']) ? intval($_GET['id']) : 1;
