@@ -10,12 +10,11 @@
           >
             <div>
               <a href='index.php'>
-                <span class="text-xl font-bold text-white">kiracollection art</span>
+                <span class="text-xl font-bold text-white">Kiracollection Art</span>
               </a>
             </div>
             <p class="text-primary-lighter text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Discover exquisite handcrafted lippan art, sacred mandala designs, and elegant home decor pieces. Each piece is crafted with love and tradition to transform your living space.
             </p>
             <div class="flex flex-wrap gap-x-4 gap-y-4">
               <a
@@ -327,7 +326,7 @@
                   ></i>
                 </span>
                 <p class="text-primary-lighter font-semibold">
-                  2715 Ash Dr. San Jose, South Dakota 83475
+                  Sneh Vandan House, opposite shilpgram parking, tajganj Agra
                 </p>
               </li>
               <li class="flex items-center gap-x-3">
@@ -338,7 +337,7 @@
                   ></i>
                 </span>
                 <p class="text-primary-lighter font-semibold">
-                  Call Us: (239) 555-0108
+                  Call Us: 8979111484
                 </p>
               </li>
               <li class="flex items-center gap-x-3">
@@ -349,7 +348,7 @@
                   ></i>
                 </span>
                 <p class="text-primary-lighter font-semibold">
-                  sara.cruz@example.com
+                  info@kiracollectionart.com
                 </p>
               </li>
               <li class="flex items-center gap-x-3">
@@ -360,7 +359,7 @@
                   ></i>
                 </span>
                 <p class="text-primary-lighter font-semibold">
-                  sara.cruz@example.com
+                  support@kiracollectionart.com
                 </p>
               </li>
             </ul>
@@ -378,7 +377,7 @@
         <div
           class="text-center text-white bg-[url('images/bottom-border.html')] pt-[22px] bg-center pb-px bg-no-repeat"
         >
-          2026 by kiracollection art, and developed by Dynexia Solutions
+          2026 by Kiracollection Art, and developed by Dynexia Solutions
         </div>
         <!-- ========== Footer Bottom Section End ========== -->
       </div>

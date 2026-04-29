@@ -16,9 +16,9 @@
                 Need Support ?
                 <span>Call Us</span>
                 <a
-                  href="#"
+                  href="tel:8979111484"
                   class="bg-warning py-px px-2 text-xs leading-4.5 rounded-[60px] text-gray-800"
-                  >(480) 555-0103</a
+                  >8979111484</a
                 >
               </p>
             </div>
@@ -30,7 +30,7 @@
                   ><i
                     class="hgi hgi-stroke hgi-discount-01 text-white text-xl"
                   ></i></span
-                >Fashion Category
+                >Art Collection
                 <span
                   class="bg-warning py-px px-2 text-xs leading-4.5 rounded-[60px] text-gray-800"
                   >25% OFF</span
@@ -115,7 +115,7 @@
               </div>
               <div>
                 <a href='index.html'>
-                <span class="text-xl font-bold text-primary">art</span>
+                <span class="text-xl font-bold text-primary">Kiracollection Art</span>
               </a>
               </div>
               <div class="xl:hidden flex items-center gap-x-4">
@@ -300,7 +300,7 @@
           <div class="hidden relative items-center justify-between xl:flex">
             <div class="relative">
               <a href='index.html' class="text-2xl font-bold text-primary">
-                art
+                Kiracollection Art
               </a>
               <div>
                 <ul

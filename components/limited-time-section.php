@@ -4,8 +4,8 @@
         <div class="container py-12">
             <div class="flex flex-col md:flex-row items-center justify-between mb-8">
                 <div class="text-center md:text-left mb-4 md:mb-0">
-                    <h3 data-wow-delay=".2s" class="wow animate__animated animate__fadeInUp mb-2 text-white">Limited Time Deals</h3>
-                    <p data-wow-delay=".2s" class="wow animate__animated animate__fadeInUp text-white">Up to 69% discount for limited time 🔥</p>
+                    <h3 data-wow-delay=".2s" class="wow animate__animated animate__fadeInUp mb-2 text-white">Limited Time Art Deals</h3>
+                    <p data-wow-delay=".2s" class="wow animate__animated animate__fadeInUp text-white">Up to 69% discount on handcrafted art pieces 🔥</p>
                 </div>
                 <div data-wow-delay=".2s" class="wow animate__animated animate__fadeInUp flex items-center"><a class='btn btn-primary bg-white text-primary-darker font-semibold btn-large rounded-[60px] text-sm leading-6 group py-1.5 pl-3 pr-2' href='shop-left-sidebar-3col.html'>View All Products <span class="size-8 bg-primary inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"><i class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-lighter"></i></span></a></div>
             </div>
@@ -13,8 +13,8 @@
                 <div class="bg-white rounded-[32px] pt-8 pb-12 xl:col-span-4 col-span-12 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                     <div class="mb-3"><img alt="product-1" class="max-w-[512px] w-full xl:max-h-[361px] h-full bg-cover mx-auto rounded-2xl" src="assets/images/home-2/product-image-21.png" /></div>
                     <div class="text-center px-15">
-                        <h3 class="mb-4">Stay Fit. Stay Healthy.</h3>
-                        <p class="text-light-primary-text mb-4">Discover Vitamins, Supplements, Skincare & Immunity Boosters — All in One Place.</p><a href="#" class="btn btn-primary btn-large rounded-[60px] group py-2 pl-5 pr-3">Explore Wellness <span class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"><i class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"></i></span></a>
+                        <h3 class="mb-4">Art for Your Soul.</h3>
+                        <p class="text-light-primary-text mb-4">Discover Handcrafted Lippan Art, Sacred Mandalas & Elegant Home Decor — All in One Place.</p><a href="#" class="btn btn-primary btn-large rounded-[60px] group py-2 pl-5 pr-3">Explore Art Collection <span class="size-8 bg-white inline-flex items-center justify-center rounded-full rotate-[-40deg] transform group-hover:rotate-0 transition-all duration-300"><i class="hgi hgi-stroke hgi-arrow-right-02 text-xl text-primary-darker"></i></span></a>
                     </div>
                 </div>
                 <div class="xl:col-span-4 col-span-12 lg:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
