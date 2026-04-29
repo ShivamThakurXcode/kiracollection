@@ -43,7 +43,6 @@
 
   <?php include 'components/most-loved-products-section.php' ?>
 
-  <?php include 'components/offer-section.php' ?>
 
   <?php include 'components/products-section.php' ?>
 

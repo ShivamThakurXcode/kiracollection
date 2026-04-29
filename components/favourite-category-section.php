@@ -23,7 +23,7 @@
                 $bgStyle = strpos($promo[3], 'bg-') === 0 ? $promo[3] : "bg-[{$promo[3]}]";
             ?>
                 <div data-wow-delay="<?= $delay ?>" class="mx-3 wow animate__animated animate__fadeInUp">
-                    <div class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(assets/images/home-2/<?= $promo[2] ?>)] bg-left bg-cover bg-no-repeat relative overflow-hidden">
+                    <div class="flex flex-col justify-end text-center min-h-[520px] rounded-2xl bg-[url(../assets/images/home-2/<?= $promo[2] ?>)] bg-left bg-cover bg-no-repeat relative overflow-hidden">
                         <div class="py-10 <?= $bgStyle ?> rounded-b-2xl relative z-10">
                             <h4 class="pb-2 text-xl font-bold"><?= $promo[0] ?></h4>
                             <p class="text-gray-900 font-semibold"><?= $promo[1] ?></p>

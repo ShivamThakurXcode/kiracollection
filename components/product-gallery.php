@@ -10,7 +10,7 @@ if (!isset($product)) {
 }
 
 $images = $product['images'] ?? [];
-$defaultImage = $product['image'] ?? 'assets/images/category/product-1.png';
+$defaultImage = $product['image'] ?? 'images/product/p-1.jpeg';
 
 // If no images array, use default image repeated
 if (empty($images)) {

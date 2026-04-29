@@ -1,6 +1,6 @@
   <!-- ========== Footer Section Start ========== -->
     <footer
-      class="md:pb-15 pb-[100px] bg-primary-darker pt-40"
+      class="md:pb-15 pb-[100px] bg-primary-darker pt-8 border-t border-gray-300"
     >
       <div class="container">
         <!-- ========== Footer Top Section Start ========== -->
@@ -10,7 +10,7 @@
           >
             <div>
               <a href='index.php'>
-                <span class="text-xl font-bold text-white">Kiracollection Art</span>
+                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-14 w-auto">
               </a>
             </div>
             <p class="text-primary-lighter text-base">
@@ -326,7 +326,7 @@
                   ></i>
                 </span>
                 <p class="text-primary-lighter font-semibold">
-                  Sneh Vandan House, opposite shilpgram parking, tajganj Agra
+                  Sneh Vandan House, <br> Opposite Shilpgram <br> Parking,  Tajganj Agra
                 </p>
               </li>
               <li class="flex items-center gap-x-3">
@@ -375,9 +375,9 @@
 
         <!-- ========== Footer Bottom Section Start ========== -->
         <div
-          class="text-center text-white bg-[url('images/bottom-border.html')] pt-[22px] bg-center pb-px bg-no-repeat"
+          class="text-center border-t border-[rgba(145,158,171,0.24)] text-white  pt-[22px] bg-center pb-px bg-no-repeat"
         >
-          2026 by Kiracollection Art, and developed by Dynexia Solutions
+          © 2026 Kiracollection Art | Developed by Dynexia IT Solutions
         </div>
         <!-- ========== Footer Bottom Section End ========== -->
       </div>

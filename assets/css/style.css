@@ -7734,6 +7734,10 @@ Preloader Css
   animation: smoothSpin 2s linear infinite;
 }
 
+.preloader .no-spin {
+  animation: none !important;
+}
+
 @keyframes smoothSpin {
   0% {
     transform: rotate(0deg);
