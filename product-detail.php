@@ -64,9 +64,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
     <?php include 'components/header.php'; ?>
     <!-- ========== Header End ========== -->
 
-    <!-- ========== Breadcrumb Start ========== -->
-    <?php include 'components/breadcrumb.php'; ?>
-    <!-- ========== Breadcrumb End ========== -->
+    <!-- ========== Breadcrumb Removed ========== -->
 
     <!-- ========== Product Details Section Start ========== -->
     <section>

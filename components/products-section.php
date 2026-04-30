@@ -2,10 +2,10 @@
 <section class="pb-[70px]">
     <div class="container">
         <div class="mb-10 text-center">
-            <h3 data-wow-delay=".2s" class="pb-6 wow animate__animated animate__fadeInUp">Our Products</h3>
+            <h3 data-wow-delay=".2s" class="pb-6 wow animate__animated animate__fadeInUp">Our Art Collection</h3>
             <div data-wow-delay=".2s" class="flex items-center justify-center gap-x-4 wow animate__animated animate__fadeInUp">
                 <div class="flex gap-x-4 overflow-x-scroll lg:overflow-x-visible home-two-product-filter">
-                    <?php foreach (['all-products' => 'All Products', 'moisturizers' => 'Moisturizers', 'sunscreens' => 'Sunscreens', 'foundations' => 'Foundations', 'lipsticks' => 'Lipsticks & Lip Glosses', 'eyeshadows' => 'Eyeshadows'] as $tabId => $tabName): ?>
+                    <?php foreach (['all-products' => 'All Art', 'lippan-art' => 'Lippan Art', 'mandala-art' => 'Mandala Art', 'wall-decor' => 'Wall Decor', 'mirrors' => 'Mirror Art', 'home-decor' => 'Home Decor'] as $tabId => $tabName): ?>
                         <button data-tab="<?= $tabId ?>" class="btn btn-default outline btn-large py-2.5 px-[22px] rounded-[55px] <?= ($tabId === 'all-products') ? '' : 'shadow-none' ?>"><?= $tabName ?></button>
                     <?php endforeach; ?>
                 </div>
@@ -15,11 +15,11 @@
             <?php
             $tabProducts = [
                 'all-products' => $productsSectionProducts,
-                'moisturizers' => $productsSectionProducts,
-                'sunscreens' => $productsSectionProducts,
-                'foundations' => $productsSectionProducts,
-                'lipsticks' => $productsSectionProducts,
-                'eyeshadows' => $productsSectionProducts
+                'lippan-art' => $productsSectionProducts,
+                'mandala-art' => $productsSectionProducts,
+                'wall-decor' => $productsSectionProducts,
+                'mirrors' => $productsSectionProducts,
+                'home-decor' => $productsSectionProducts
             ];
 
             foreach ($tabProducts as $tabId => $products): ?>

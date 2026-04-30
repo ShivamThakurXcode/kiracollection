@@ -16,9 +16,9 @@
                 Need Support ?
                 <span>Call Us</span>
                 <a
-                  href="#"
+                  href="tel:8979111484"
                   class="bg-warning py-px px-2 text-xs leading-4.5 rounded-[60px] text-gray-800"
-                  >(480) 555-0103</a
+                  >8979111484</a
                 >
               </p>
             </div>
@@ -30,7 +30,7 @@
                   ><i
                     class="hgi hgi-stroke hgi-discount-01 text-white text-xl"
                   ></i></span
-                >Fashion Category
+                >Art Collection
                 <span
                   class="bg-warning py-px px-2 text-xs leading-4.5 rounded-[60px] text-gray-800"
                   >25% OFF</span
@@ -115,7 +115,7 @@
               </div>
               <div>
                 <a href='index.html'>
-                <span class="text-xl font-bold text-primary">art</span>
+                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-14 w-auto">
               </a>
               </div>
               <div class="xl:hidden flex items-center gap-x-4">
@@ -299,8 +299,8 @@
         <div class="container">
           <div class="hidden relative items-center justify-between xl:flex">
             <div class="relative">
-              <a href='index.html' class="text-2xl font-bold text-primary">
-                art
+              <a href='index.html'>
+                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-16 w-auto">
               </a>
               <div>
                 <ul
@@ -975,12 +975,27 @@
               </ul>
             </nav>
             <div class="flex items-center gap-x-6">
-              <!-- Search Icon -->
+              <!-- Search Input -->
               <div class="relative search-input-container">
-                <button class="flex items-center gap-x-2 text-light-primary-text hover:text-primary transition-colors">
-                  <i class="hgi hgi-stroke hgi-search-01 text-xl"></i>
-                  <span class="text-sm">Search</span>
-                </button>
+                <div class="input-group px-4 py-2 rounded-[100px] border border-gray-200">
+                  <div class="input-group-addon inline-flex justify-center items-center" data-align="inline-end">
+                    <span class="inline-flex justify-center items-center">
+                      <i class="hgi hgi-stroke hgi-search-01 text-xl text-gray-500"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    id="desktop-search"
+                    class="peer form-control header-search-input placeholder-transparent focus:placeholder-transparent"
+                    placeholder="Search for the Items"
+                  />
+                  <label
+                    for="desktop-search"
+                    class="absolute left-[14px] top-1/2 -translate-y-1/2 text-xs leading-[18px] transition-all peer-placeholder-shown:text-light-disabled-text peer-placeholder-shown:text-[16px] peer-placeholder-shown:top-1/2 peer-focus:text-[12px] peer-focus:top-0 peer-[:not(:placeholder-shown)]:text-[12px] peer-[:not(:placeholder-shown)]:top-0 bg-white peer-focus:px-1 peer-[:not(:placeholder-shown)]:px-1"
+                  >
+                    Search for the Items
+                  </label>
+                </div>
               </div>
 
               <!-- My Account -->

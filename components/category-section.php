@@ -5,8 +5,8 @@
     <div class="container">
         <div class="md:flex md:justify-between md:items-center mb-10">
             <div class="text-center md:text-left wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                <h3 class="pb-3">Shop By Category</h3>
-                <p>Up to 69% discount for limited time 🔥</p>
+                <h3 class="pb-3">Shop By Art Category</h3>
+                <p>Up to 69% discount on handcrafted art pieces 🔥</p>
             </div>
             <div data-wow-delay=".2s" class="home-two-category-slider-nav md:flex items-center justify-between gap-x-6 hidden wow animate__animated animate__fadeInUp"></div>
         </div>

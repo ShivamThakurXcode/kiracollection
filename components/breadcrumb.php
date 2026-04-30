@@ -2,7 +2,7 @@
 $pageTitle = $pageTitle ?? 'Page';
 ?>
 <!-- ========== Breadcrumb Section Start ========== -->
-<div class="py-12">
+<div class="pb-12">
   <div class="container">
     <div class="breadcrumb">
       <ul>
