@@ -10,7 +10,7 @@
           >
             <div>
               <a href='index.php'>
-                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-14 w-auto">
+                <img src="images/logo-footer.png" alt="Kiracollection Art" class="h-14 w-auto">
               </a>
             </div>
             <p class="text-primary-lighter text-base">

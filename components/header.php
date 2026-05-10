@@ -1,16 +1,16 @@
 <!-- ========== HEADER Section Start ========== -->
     <header>
       <!-- header-top start -->
-      <div class="bg-primary header-top">
+      <div class="bg-amber-50 header-top">
         <div class="container py-0">
           <div class="flex items-center xl:justify-between justify-center">
             <div class="xl:flex items-center gap-x-6 hidden">
               <p
-                class="flex items-center gap-x-2 text-white text-sm leading-[22px]"
+                class="flex items-center gap-x-2 text-gray-800 text-sm leading-[22px]"
               >
                 <span
                   ><i
-                    class="hgi hgi-stroke hgi-customer-support text-xl text-white"
+                    class="hgi hgi-stroke hgi-customer-support text-xl text-gray-800"
                   ></i>
                 </span>
                 Need Support ?
@@ -24,11 +24,11 @@
             </div>
             <div class="text-center py-0">
               <p
-                class="flex items-center gap-x-[7px] text-white text-sm leading-[22px] font-dm-sans"
+                class="flex items-center gap-x-[7px] text-gray-800 text-sm leading-[22px] font-dm-sans"
               >
                 <span class="inline-flex items-center"
                   ><i
-                    class="hgi hgi-stroke hgi-discount-01 text-white text-xl"
+                    class="hgi hgi-stroke hgi-discount-01 text-gray-800 text-xl"
                   ></i></span
                 >Art Collection
                 <span
@@ -40,27 +40,27 @@
             </div>
 
             <div class="hidden xl:flex">
-              <ul class="flex items-center text-white">
+              <ul class="flex items-center text-gray-800">
                 <li>
-                  <a class='text-sm leading-[22px] text-white pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-primary-light after:right-0 after:top-1/2 after:-translate-y-1/2' href='about.html'>About us</a
+                  <a class='text-sm leading-[22px] text-gray-800 pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-gray-300 after:right-0 after:top-1/2 after:-translate-y-1/2' href='about.html'>About us</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-sm leading-[22px] text-white pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-primary-light after:right-0 after:top-1/2 after:-translate-y-1/2"
+                    class="text-sm leading-[22px] text-gray-800 pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-gray-300 after:right-0 after:top-1/2 after:-translate-y-1/2"
                     >My Account</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-sm leading-[22px] text-white pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-primary-light after:right-0 after:top-1/2 after:-translate-y-1/2"
+                    class="text-sm leading-[22px] text-gray-800 pr-[19px] mr-[19px] py-0 relative after:absolute after:h-7.5 after:w-px after:bg-gray-300 after:right-0 after:top-1/2 after:-translate-y-1/2"
                     >My Wishlist</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-sm leading-[22px] text-white py-0"
+                  <a href="#" class="text-sm leading-[22px] text-gray-800 py-0"
                     >Order Tracking</a
                   >
                 </li>
@@ -73,7 +73,7 @@
 
 
       <!-- Mobile Menu Start -->
-      <div class="border border-gray-300 xl:border-0 sticky-header">
+      <div class="border border-gray-300 xl:border-0 sticky-header bg-amber-50">
         <div class="pb-4 pt-3 block xl:hidden">
           <div class="container">
             <div class="flex justify-between items-center">
@@ -115,7 +115,7 @@
               </div>
               <div>
                 <a href='index.html'>
-                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-14 w-auto">
+                <img src="images/logo-header.png" alt="Kiracollection Art" class="h-14 w-auto">
               </a>
               </div>
               <div class="xl:hidden flex items-center gap-x-4">
@@ -294,13 +294,13 @@
 
       <!-- header-bottom End -->
       <div
-        class="border border-gray-300 hidden xl:flex header-bottom sticky-header border-r-0 border-l-0"
+        class="border border-gray-300 hidden xl:flex header-bottom sticky-header border-r-0 border-l-0 bg-amber-50"
       >
         <div class="container">
           <div class="hidden relative items-center justify-between xl:flex">
             <div class="relative">
               <a href='index.html'>
-                <img src="images/header-logo.png" alt="Kiracollection Art" class="h-16 w-auto">
+                <img src="images/logo-header.png" alt="Kiracollection Art" class="h-16 w-auto">
               </a>
               <div>
                 <ul
