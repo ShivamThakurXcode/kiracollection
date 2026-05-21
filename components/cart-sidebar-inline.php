@@ -1,53 +1,47 @@
 <!-- Cart Sidebar Start -->
-<div data-state="close" class="cart-sidebar flex fixed xl:top-[30px] xl:right-[22px] right-0 top-0 xl:h-[calc(100vh-52px)] h-full z-99 max-w-[600px] w-full bg-white xl:rounded-2xl rounded-none transition-all duration-250 ease-[cubic-bezier(0.645,0.045,0.355,1)] data-[state=open]:translate-x-0 data-[state=open]:opacity-100 data-[state=open]:visible data-[state=close]:translate-x-[200px] data-[state=close]:opacity-0 data-[state=close]:invisible">
-    <div class="cart-products xl:max-w-[600px] w-full h-full flex flex-col justify-between">
-        <div class="cart-products-header pt-6 px-6 pb-4 border-b border-gray-300 flex flex-col gap-y-1 relative">
-            <h5>Cart Products</h5>
-            <p>1 Item in Cart</p>
-            <button data-close-sidebar=".cart-sidebar" class="close-sidebar-btn absolute top-6 right-6 cursor-pointer inline-flex items-center justify-center size-9 rounded-full bg-[rgba(145,158,171,0.08)]">
-                <i class="hgi hgi-stroke hgi-multiplication-sign text-xl leading-5 text-light-primary-text"></i>
-            </button>
-        </div>
-        <div class="cart-products-content p-6 flex flex-col gap-y-4 overflow-y-auto h-[calc(100%-250px)]">
-            <?php for ($i = 0; $i < 5; $i++): ?>
-                <div class="cart-product-item flex flex-col sm:flex-row items-center sm:gap-x-4 gap-y-2 sm:gap-y-0 p-4 border border-gray-300 rounded-2xl">
-                    <a class='cart-product-item-image sm:w-[102px] sm:h-[102px] rounded-xl bg-[#F4F3F5] overflow-hidden relative' href='product-details.html'>
-                        <img src="assets/images/home-3/watermelon.png" alt="Product Image" class="w-full h-full object-cover rounded-xl" />
-                    </a>
-                    <div class="cart-product-item-content flex flex-col gap-y-2 flex-1 w-full">
-                        <div class="flex items-center justify-between gap-x-2">
-                            <h6 class="text-base font-semibold"><a href='product-details.html'>Fresh Bask Basket Fruits</a></h6>
-                            <div class="cart-edit-remove flex items-center gap-x-3">
-                                <button><i class="hgi hgi-stroke hgi-edit-02 text-xl text-light-primary-text"></i></button>
-                                <button><i class="hgi hgi-stroke hgi-delete-01 text-xl text-light-primary-text"></i></button>
-                            </div>
-                        </div>
-                        <p class="text-sm leading-[22px]">Color: Black, Size: 250 ML</p>
-                        <div class="flex items-center justify-between">
-                            <div class="price-section flex items-center gap-x-3">
-                                <span class="current-price text-base font-semibold text-light-primary-text">$27.49</span>
-                                <span class="old-price text-base text-light-disabled-text line-through">$39.99</span>
-                            </div>
-                            <div class="border border-gray-300 inline-flex items-center justify-center rounded-[80px] max-w-[108px] py-2.5 px-4">
-                                <button class="inline-flex items-center justify-center hover:text-primary"><i class="hgi hgi-stroke hgi-remove-circle text-2xl leading-6"></i></button>
-                                <input type="text" readonly value="1" class="border-0 w-full grow text-center focus:outline-none font-semibold" />
-                                <button class="inline-flex items-center justify-center hover:text-primary"><i class="hgi hgi-stroke hgi-add-circle text-2xl leading-6"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endfor; ?>
-        </div>
-        <div class="cart-products-footer p-6 border-t border-gray-300 flex flex-col gap-y-4">
-            <div class="cart-subtotal flex items-center justify-between">
-                <h5>Subtotal</h5>
-                <h5>$27.49</h5>
-            </div>
-            <div class="cart-buttons flex items-center gap-x-4">
-                <a class='btn btn-default outline btn-large rounded-[80px] flex-1 shadow-none' href='cart-single-vendor.html'>View Cart</a>
-                <a class='btn btn-primary btn-large rounded-[80px] flex-1' href='checkout.html'>Proceed to Checkout</a>
-            </div>
-        </div>
+<div data-state="close" class="cart-sidebar fixed xl:top-[30px] xl:right-[22px] right-0 top-0 xl:h-[calc(100vh-52px)] h-full z-99 max-w-[480px] w-full bg-white xl:rounded-2xl rounded-none shadow-2xl transition-all duration-250 ease-[cubic-bezier(0.645,0.045,0.355,1)] data-[state=open]:translate-x-0 data-[state=open]:opacity-100 data-[state=open]:visible data-[state=close]:translate-x-[200px] data-[state=close]:opacity-0 data-[state=close]:invisible">
+  <div class="cart-products w-full h-full flex flex-col">
+    <!-- Header -->
+    <div class="px-6 py-5 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-primary-lighter to-amber-50">
+      <div>
+        <h5 class="text-lg font-bold text-light-primary-text">Shopping Cart</h5>
+        <p class="text-sm text-light-secondary-text"><span id="cartItemsCount">0</span> Item(s) in Cart</p>
+      </div>
+      <button data-close-sidebar=".cart-sidebar" class="close-sidebar-btn cursor-pointer inline-flex items-center justify-center size-9 rounded-full bg-white hover:bg-primary-lighter transition-colors shadow-sm">
+        <i class="hgi hgi-stroke hgi-multiplication-sign text-xl leading-5 text-light-primary-text"></i>
+      </button>
     </div>
+
+    <!-- Cart Items -->
+    <div id="cartItemsContainer" class="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+      <!-- Rendered by JavaScript -->
+    </div>
+
+    <!-- Empty Cart -->
+    <div id="cartEmptyState" class="flex-1 flex flex-col items-center justify-center px-6 py-10 hidden">
+      <div class="w-20 h-20 rounded-full bg-primary-lighter flex items-center justify-center mb-4">
+        <i class="hgi hgi-stroke hgi-shopping-cart-01 text-4xl text-primary/60"></i>
+      </div>
+      <p class="text-lg font-semibold text-light-primary-text mb-1">Your cart is empty</p>
+      <p class="text-sm text-light-secondary-text mb-6 text-center">Looks like you haven't added any items yet</p>
+      <a href="shop.php" class="btn btn-primary rounded-[60px] px-6 py-2.5 text-sm font-semibold">Start Shopping</a>
+    </div>
+
+    <!-- Footer -->
+    <div id="cartFooter" class="border-t border-gray-200 p-5 space-y-3 bg-gray-50/50">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-medium text-light-secondary-text">Subtotal</span>
+        <span id="cartSubtotal" class="text-lg font-bold text-primary">₹0</span>
+      </div>
+      <div class="flex items-center gap-x-3">
+        <a href="cart.php" class="flex-1 btn btn-default outline shadow-none border border-gray-300 hover:border-primary hover:text-primary rounded-[60px] py-2.5 text-sm font-semibold text-center transition-colors">
+          View Cart
+        </a>
+        <a href="checkout.php" class="flex-1 btn btn-primary rounded-[60px] py-2.5 text-sm font-semibold text-center transition-all hover:shadow-lg hover:shadow-primary/20">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Cart Sidebar End -->

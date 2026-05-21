@@ -12,7 +12,6 @@
 
 <body>
 
-  <?php include 'components/preloader.php' ?>
 
   <?php include 'components/modal-overlay.php' ?>
 
@@ -36,7 +35,16 @@
 
   <?php include "components/header.php" ?>
 
+  <!-- Breadcrumb Section -->
+  <?php
+  $pageTitle = 'About Us';
+  $breadcrumbBg = 'images/breadcrumb/b-1.jpg';
+  include 'components/breadcrumb.php';
+  ?>
+
   <?php include 'components/about-content.php' ?>
+
+  <?php include 'components/testimonials-section.php' ?>
 
   <?php include 'components/subscribe-section.php' ?>
 
@@ -45,17 +53,9 @@
   <?php include 'components/scripts.php' ?>
 
   <script>
-    console.log('Page started loading at:', new Date().toISOString());
-    window.addEventListener('load', function() {
-      console.log('Page fully loaded at:', new Date().toISOString());
-      setTimeout(function() {
-        var preloader = document.getElementById('preloader');
-        if (preloader && preloader.style.display !== 'none') {
-          console.log('Forcing preloader to hide');
-          preloader.style.display = 'none';
-          preloader.classList.add('loaded');
-        }
-      }, 3000);
+    window.addEventListener('load', function () {
+      var preloader = document.getElementById('preloader');
+      if (preloader) preloader.classList.add('hidden');
     });
   </script>
 

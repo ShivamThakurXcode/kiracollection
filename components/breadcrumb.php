@@ -1,23 +1,19 @@
 <?php
 $pageTitle = $pageTitle ?? 'Page';
+$breadcrumbBg = $breadcrumbBg ?? 'images/breadcrumb/b-2.jpg';
 ?>
 <!-- ========== Breadcrumb Section Start ========== -->
-<div class="pb-12">
+<section class="breadcrumb-hero" style="background-image: url('<?php echo htmlspecialchars($breadcrumbBg); ?>');">
+  <div class="breadcrumb-hero__overlay"></div>
   <div class="container">
-    <div class="breadcrumb">
-      <ul>
-        <li>
-          <a href='index.php'>
-            <span>
-              <i class="hgi hgi-stroke hgi-home-01 text-[20px]"></i>
-            </span>
-            Home
-          </a>
-        </li>
-        <li class="text-light-disabled-text">&#8226;</li>
-        <li><span><?php echo htmlspecialchars($pageTitle); ?></span></li>
-      </ul>
+    <div class="breadcrumb-hero__content">
+      <h1 class="breadcrumb-hero__title"><?php echo htmlspecialchars($pageTitle); ?></h1>
+      <div class="breadcrumb-hero__trail">
+        <a href='index.php'>Home</a>
+        <span>»</span>
+        <span><?php echo htmlspecialchars($pageTitle); ?></span>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <!-- ========== Breadcrumb Section End ========== -->
