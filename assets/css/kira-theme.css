@@ -1,0 +1,144 @@
+/*
+ * KiraCollection Art — Admin-Matching Theme
+ * Colors mirror the admin panel: olive green #556b2f, gold #ffd700, cream #fffbeb
+ */
+
+/* ── Global body & page background ── */
+body {
+  background-color: #fffbeb !important;
+  color: #212529;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', sans-serif;
+  color: #212529;
+}
+
+/* ── Sticky header stays cream (not white) ── */
+.sticky-header.sticky-top {
+  background-color: #fffbeb !important;
+  border-bottom: 1px solid #dfe3e8 !important;
+  box-shadow: 0 2px 8px rgba(145, 158, 171, 0.10) !important;
+}
+
+/* ── Main nav hover & active ── */
+.main-menu > ul > li > a:hover,
+.main-menu > ul > li > a.active {
+  color: #556b2f !important;
+}
+
+.main-menu > ul > li > a.active {
+  font-weight: 700;
+}
+
+/* ── Buttons — admin style ── */
+.btn-primary {
+  background-color: #556b2f !important;
+  color: #fff !important;
+  border-radius: 60px !important;
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.18) !important;
+}
+.btn-primary:hover {
+  background-color: #3d5a1f !important;
+  box-shadow: 0 6px 16px rgba(85, 107, 47, 0.24) !important;
+}
+
+.btn-primary.outline {
+  background-color: transparent !important;
+  color: #556b2f !important;
+  border: 1.5px solid #556b2f !important;
+  box-shadow: none !important;
+}
+.btn-primary.outline:hover {
+  background-color: #e8f5e8 !important;
+}
+
+/* ── Form focus rings — admin green ── */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #556b2f !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(85, 107, 47, 0.10) !important;
+}
+
+/* ── Product card borders — admin card style ── */
+.product-card,
+.border.border-gray-300.rounded-2xl,
+.bg-white.rounded-2xl.border {
+  border-color: #dfe3e8 !important;
+}
+
+/* ── Category section circle bg ── */
+.home-two-category-slider .overflow-hidden.rounded-full {
+  background-color: #e8f5e8 !important;
+}
+
+/* ── Breadcrumb overlay — olive tint ── */
+.breadcrumb-hero__overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(61, 90, 31, 0.70) 0%,
+    rgba(85, 107, 47, 0.50) 100%
+  ) !important;
+}
+
+.breadcrumb-hero__trail {
+  background: rgba(85, 107, 47, 0.18) !important;
+  border: 1px solid rgba(255, 215, 0, 0.30) !important;
+}
+
+/* ── Scroll-to-top button ── */
+#scroll-to-top,
+.scroll-to-top-btn {
+  background-color: #556b2f !important;
+}
+
+/* ── Section headings — admin typography ── */
+section h2, section h3 {
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* ── Search result container border ── */
+.search-result-container {
+  border-color: #dfe3e8 !important;
+  box-shadow: 0 8px 24px rgba(145, 158, 171, 0.14) !important;
+}
+
+/* ── Wishlist page / account tabs active ── */
+.tab-btn.border-amber-500 {
+  border-color: #556b2f !important;
+  color: #556b2f !important;
+}
+
+/* ── Shop filter active sort pill ── */
+a[style*="bg-amber"],
+.bg-amber-500.text-white {
+  background-color: #556b2f !important;
+}
+
+/* ── Dropdown menu item icon bg ── */
+#dropdownMenu .bg-amber-100 {
+  background-color: #e8f5e8 !important;
+}
+#dropdownMenu .text-amber-700 {
+  color: #556b2f !important;
+}
+
+/* ── Pagination active ── */
+.blog-pagination li a.active,
+.comment-pagination li a.active {
+  background-color: #556b2f !important;
+  border-color: #556b2f !important;
+  color: #fff !important;
+}
+
+/* ── Newsletter strip ── */
+section.kira-newsletter {
+  background-color: #556b2f !important;
+}
+
+/* ── Footer floating buttons ── */
+/* WhatsApp stays green, Call button matches admin primary */

@@ -1,16 +1,16 @@
 <!-- ========== Newsletter Strip ========== -->
-<section style="background:#f59e0b; padding:40px 0;">
+<section style="background:#556b2f; padding:40px 0;">
   <div class="container">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
         <h3 style="font-size:1.375rem;font-weight:700;color:#fff;margin-bottom:4px;">Stay Updated with New Art Arrivals</h3>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.85);">Subscribe for exclusive offers and first access to new collections.</p>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.80);">Subscribe for exclusive offers and first access to new collections.</p>
       </div>
       <form class="flex items-center gap-2 w-full md:w-auto" onsubmit="return false;" style="min-width:0;">
         <input type="email" placeholder="Enter your email address"
           style="flex:1;min-width:0;padding:10px 16px;border-radius:6px;border:none;outline:none;font-size:0.875rem;color:#1a1a1a;background:#fff;" />
         <button type="submit"
-          style="flex-shrink:0;padding:10px 20px;border-radius:6px;background:#1a1a1a;color:#fff;font-size:0.875rem;font-weight:600;border:none;cursor:pointer;white-space:nowrap;">
+          style="flex-shrink:0;padding:10px 20px;border-radius:6px;background:#ffd700;color:#3d5a1f;font-size:0.875rem;font-weight:700;border:none;cursor:pointer;white-space:nowrap;">
           Subscribe
         </button>
       </form>
@@ -187,7 +187,7 @@
   <!-- Call -->
   <a href="tel:8979111484"
     title="Call Us Now" aria-label="Call Us Now"
-    style="width:44px;height:44px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.2);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;"
+    style="width:44px;height:44px;border-radius:50%;background:#556b2f;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.2);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;"
     onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 18px rgba(0,0,0,0.28)'"
     onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"

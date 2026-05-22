@@ -31,3 +31,6 @@
 
     <!-- ========== Custom CSS ========== -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ========== KiraCollection Admin-Matching Theme ========== -->
+    <link rel="stylesheet" href="assets/css/kira-theme.css" />
