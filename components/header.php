@@ -98,16 +98,16 @@
 
         <div class="flex items-center gap-x-2">
           <a href="wishlist.php" aria-label="Wishlist"
-            class="relative size-11 rounded-xl flex items-center justify-center transition-colors"
-            style="background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
+            class="size-11 rounded-xl flex items-center justify-center transition-colors"
+            style="position:relative;background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
             <i class="hgi hgi-stroke hgi-favourite text-xl" style="color:#556b2f;"></i>
-            <span class="wishlist-count absolute -top-1 -right-1 bg-error text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center leading-none">0</span>
+            <span class="wishlist-count" style="position:absolute;top:-5px;right:-5px;min-width:17px;height:17px;background:#cb0233;color:#fff;font-size:10px;font-weight:700;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;line-height:1;border:2px solid #fff;">0</span>
           </a>
           <button aria-label="Cart"
-            class="relative size-11 rounded-xl flex items-center justify-center transition-colors cart-sidebar-btn"
-            style="background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
+            class="size-11 rounded-xl flex items-center justify-center transition-colors cart-sidebar-btn"
+            style="position:relative;background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
             <i class="hgi hgi-stroke hgi-shopping-cart-01 text-xl" style="color:#556b2f;"></i>
-            <span class="cart-count absolute -top-1 -right-1 bg-error text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center leading-none">0</span>
+            <span class="cart-count" style="position:absolute;top:-5px;right:-5px;min-width:17px;height:17px;background:#cb0233;color:#fff;font-size:10px;font-weight:700;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;line-height:1;border:2px solid #fff;">0</span>
           </button>
         </div>
       </div>
@@ -319,18 +319,18 @@
 
           <!-- Wishlist -->
           <a href="wishlist.php" aria-label="Wishlist"
-            class="relative size-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors"
-            style="background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
+            class="size-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors"
+            style="position:relative;background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
             <i class="hgi hgi-stroke hgi-favourite text-xl" style="color:#556b2f;"></i>
-            <span class="wishlist-count absolute -top-1 -right-1 bg-error text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center leading-none">0</span>
+            <span class="wishlist-count" style="position:absolute;top:-5px;right:-5px;min-width:17px;height:17px;background:#cb0233;color:#fff;font-size:10px;font-weight:700;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;line-height:1;border:2px solid #fff;">0</span>
           </a>
 
           <!-- Cart -->
           <button aria-label="Cart"
-            class="relative size-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors cart-sidebar-btn"
-            style="background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
+            class="size-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors cart-sidebar-btn"
+            style="position:relative;background:#e8f5e8;" onmouseover="this.style.background='#a8d5a8'" onmouseout="this.style.background='#e8f5e8'">
             <i class="hgi hgi-stroke hgi-shopping-cart-02 text-xl" style="color:#556b2f;"></i>
-            <span class="cart-count absolute -top-1 -right-1 bg-error text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center leading-none">0</span>
+            <span class="cart-count" style="position:absolute;top:-5px;right:-5px;min-width:17px;height:17px;background:#cb0233;color:#fff;font-size:10px;font-weight:700;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;line-height:1;border:2px solid #fff;">0</span>
           </button>
 
         </div>
