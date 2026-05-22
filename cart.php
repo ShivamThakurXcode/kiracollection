@@ -51,10 +51,21 @@
         </button>
       </div>
 
-      <div class="grid grid-cols-12 gap-x-6 gap-y-8">
+      <!-- Empty State -->
+      <div id="cartEmptyState" class="hidden text-center py-20">
+        <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="hgi hgi-stroke hgi-shopping-cart-01 text-5xl text-gray-300"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Your cart is empty</h3>
+        <p class="text-gray-400 mb-6">Browse our handcrafted art collection and find something you love.</p>
+        <a href="shop.php" class="btn btn-primary rounded-[60px] px-8 py-3 inline-block">Browse Products</a>
+      </div>
+
+      <div id="cartContent" class="grid grid-cols-12 gap-x-6 gap-y-8">
         <div class="xl:col-span-8 col-span-12">
           <div class="border border-gray-200 rounded-2xl overflow-hidden bg-white">
-            <table class="w-full cart-table">
+            <div class="overflow-x-auto">
+            <table class="w-full cart-table min-w-[500px]">
               <thead class="bg-primary-lighter">
                 <tr>
                   <th class="text-left font-semibold text-primary-dark px-4 py-3 text-sm uppercase tracking-wide">
@@ -71,6 +82,7 @@
               </thead>
               <tbody id="cartTableBody"></tbody>
             </table>
+            </div>
           </div>
         </div>
 
@@ -132,9 +144,9 @@
               </label>
 
               <div class="space-y-3">
-                <a href="checkout.php"
+                <button id="checkoutBtn"
                   class="btn btn-primary w-full py-3 rounded-[80px] text-center font-semibold block">Proceed to
-                  Checkout</a>
+                  Checkout</button>
                 <a href="shop.php"
                   class="btn btn-default outline shadow-none w-full py-3 rounded-[80px] text-center font-semibold border border-gray-300 hover:border-primary hover:text-primary transition-colors block">
                   Continue Shopping
@@ -144,7 +156,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- /#cartContent -->
     </div>
   </section>
 
@@ -178,6 +190,18 @@
         if (!window.getCart || !window.updateCartQuantity || !window.removeFromCart) return;
 
         var items = window.getCart();
+        var empty = document.getElementById('cartEmptyState');
+        var content = document.getElementById('cartContent');
+        if (empty && content) {
+          if (!items.length) {
+            empty.classList.remove('hidden');
+            content.classList.add('hidden');
+          } else {
+            empty.classList.add('hidden');
+            content.classList.remove('hidden');
+          }
+        }
+
         var tbody = document.getElementById('cartTableBody');
         var countEl = document.getElementById('cartItemsCount');
         var subtotalEl = document.getElementById('cartSubtotal');
@@ -279,6 +303,33 @@
             window.removeFromCart(id);
             renderCartPage();
           });
+        });
+      }
+
+      // Show/hide empty state
+      var allItems = window.getCart ? window.getCart() : [];
+      var emptyState = document.getElementById('cartEmptyState');
+      var cartContent = document.getElementById('cartContent');
+      if (emptyState && cartContent) {
+        if (allItems.length === 0) {
+          emptyState.classList.remove('hidden');
+          cartContent.classList.add('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+          cartContent.classList.remove('hidden');
+        }
+      }
+
+      // Checkout button validation
+      var checkoutBtn = document.getElementById('checkoutBtn');
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', function () {
+          var current = window.getCart ? window.getCart() : [];
+          if (!current.length) {
+            alert('Your cart is empty. Please add items before proceeding.');
+            return;
+          }
+          window.location.href = 'checkout.php';
         });
       }
 

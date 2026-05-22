@@ -53,6 +53,8 @@
 
   <?php include 'components/testimonials-section.php' ?>
 
+  <?php include 'components/reels-section.php' ?>
+
   <?php include 'components/blog-section.php' ?>
 
   <?php include 'components/subscribe-section.php' ?>

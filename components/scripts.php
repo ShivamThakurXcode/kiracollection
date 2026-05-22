@@ -6,7 +6,7 @@
     <script src="assets/js/vendor/jquery.counterup-2.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/vendor/nouislider.min.js"></script>
-    <!-- <script src="assets/js/vendor/wow.min.js"></script> -->
+    <script src="assets/js/vendor/wow.min.js"></script>
 
     <!-- ========== Custom JS ========== -->
     <script src="assets/js/main.js"></script>

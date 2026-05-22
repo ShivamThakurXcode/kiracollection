@@ -10,3 +10,7 @@ $db_host = 'localhost';
 $db_name = 'kira_collection';
 $db_user = 'root';
 $db_pass = 'root';
+
+// Razorpay Payment Gateway - UPDATE these with your actual keys
+$razorpay_key_id = 'YOUR_RAZORPAY_KEY_ID'; // UPDATE: Razorpay Key ID from dashboard
+$razorpay_key_secret = 'YOUR_RAZORPAY_KEY_SECRET'; // UPDATE: Razorpay Key Secret from dashboard

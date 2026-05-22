@@ -289,20 +289,59 @@
                     class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
                     onchange="updateFilters()" />
                 </div>
-                <div class="flex gap-2">
+                <div class="flex gap-2 flex-wrap">
                   <button onclick="setPriceRange(0, 500)"
                     class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">Under ₹500</button>
-                  <button onclick="setPriceRange(500, 1000)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹500-₹1000</button>
-                  <button onclick="setPriceRange(1000, 2500)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹1000-₹2500</button>
+                  <button onclick="setPriceRange(500, 1500)"
+                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹500-₹1500</button>
                 </div>
-                <div class="flex gap-2">
-                  <button onclick="setPriceRange(2500, 5000)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹2500-₹5000</button>
-                  <button onclick="setPriceRange(5000, 10000)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">Above ₹5000</button>
+                <div class="flex gap-2 flex-wrap">
+                  <button onclick="setPriceRange(1500, 3000)"
+                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹1500-₹3000</button>
+                  <button onclick="setPriceRange(3000, 10000)"
+                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">Above ₹3000</button>
                 </div>
+              </div>
+            </div>
+
+            <!-- Material Filter -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s">
+              <h3 class="text-lg font-bold text-light-primary-text mb-4">Material</h3>
+              <div class="space-y-2">
+                <?php
+                $materials = ['POP Clay', 'MDF Board', 'Canvas', 'Wooden', 'Iron/Metal', 'Terracotta'];
+                $selected_materials = isset($_GET['materials']) ? (array)$_GET['materials'] : [];
+                foreach ($materials as $mat):
+                ?>
+                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
+                  <input type="checkbox" name="material[]" value="<?= urlencode($mat) ?>"
+                    <?= in_array(urlencode($mat), array_map('urlencode', $selected_materials)) ? 'checked' : '' ?>
+                    onchange="updateFilters()" class="text-primary rounded" />
+                  <?= htmlspecialchars($mat) ?>
+                </label>
+                <?php endforeach; ?>
+              </div>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.55s">
+              <h3 class="text-lg font-bold text-light-primary-text mb-4">Rating</h3>
+              <?php $selected_rating = isset($_GET['rating']) ? $_GET['rating'] : ''; ?>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
+                  <input type="radio" name="rating" value="" <?= !$selected_rating ? 'checked' : '' ?> onchange="updateFilters()" />
+                  All Ratings
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
+                  <input type="radio" name="rating" value="4" <?= $selected_rating === '4' ? 'checked' : '' ?> onchange="updateFilters()" />
+                  <span class="text-amber-400">★★★★</span> 4★ &amp; above
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
+                  <input type="radio" name="rating" value="3" <?= $selected_rating === '3' ? 'checked' : '' ?> onchange="updateFilters()" />
+                  <span class="text-amber-400">★★★</span> 3★ &amp; above
+                </label>
               </div>
             </div>
 
@@ -311,7 +350,7 @@
 
         <!-- Products Grid -->
         <div class="xl:col-span-9 col-span-12">
-          <!-- Header -->
+          <!-- Header + Sort Bar -->
           <div
             class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 wow animate__animated animate__fadeInUp"
             data-wow-delay="0.2s">
@@ -323,7 +362,25 @@
                 Showing <?= count($paginated_products) ?> of <?= $total_products ?> products
               </p>
             </div>
-
+            <div class="flex items-center gap-3 flex-shrink-0">
+              <span class="text-sm text-gray-500">Sort by:</span>
+              <div class="flex flex-wrap gap-2">
+                <?php
+                $sortOptions = [
+                  'newest' => 'Newest',
+                  'price-low' => 'Price ↑',
+                  'price-high' => 'Price ↓',
+                  'name' => 'Name A-Z',
+                ];
+                foreach ($sortOptions as $key => $label):
+                ?>
+                <a href="?<?= buildQueryString(['sort' => $key]) ?>"
+                  class="px-3 py-1.5 rounded-full text-xs font-medium border transition-colors <?= $sort === $key ? 'bg-amber-500 text-white border-amber-500' : 'border-gray-300 text-gray-600 hover:border-amber-400 hover:text-amber-600' ?>">
+                  <?= $label ?>
+                </a>
+                <?php endforeach; ?>
+              </div>
+            </div>
           </div>
 
           <!-- Products -->
@@ -431,13 +488,17 @@
       const minPrice = document.getElementById('min-price').value;
       const maxPrice = document.getElementById('max-price').value;
       const category = document.querySelector('input[name="category"]:checked')?.value || '';
+      const rating = document.querySelector('input[name="rating"]:checked')?.value || '';
+      const materials = Array.from(document.querySelectorAll('input[name="material[]"]:checked')).map(el => el.value);
 
-      const params = {};
-      if (minPrice) params.min_price = minPrice;
-      if (maxPrice) params.max_price = maxPrice;
-      if (category) params.category = category;
+      const urlParams = new URLSearchParams();
+      if (minPrice) urlParams.set('min_price', minPrice);
+      if (maxPrice) urlParams.set('max_price', maxPrice);
+      if (category) urlParams.set('category', category);
+      if (rating) urlParams.set('rating', rating);
+      materials.forEach(m => urlParams.append('materials[]', m));
 
-      window.location.href = '?' + buildQueryString(params);
+      window.location.href = 'shop.php?' + urlParams.toString();
     }
 
     function setPriceRange(min, max) {
