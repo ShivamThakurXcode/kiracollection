@@ -132,8 +132,8 @@ unset($_SESSION['contact_success'], $_SESSION['contact_error']);
           <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
             <i class="hgi hgi-stroke hgi-call text-white text-xl"></i>
           </div>
-          <h4 class="font-semibold text-light-primary-text mb-2">Phone</h4>
-          <a href="tel:8979111484" class="text-primary hover:underline font-medium">8979111484</a>
+          <h4 class="font-semibold text-light-primary-text mb-2">Call or WhatsApp</h4>
+          <a href="tel:8979111484" class="text-primary hover:underline font-medium">+91 89791 11484</a>
         </div>
 
         <div
@@ -142,7 +142,7 @@ unset($_SESSION['contact_success'], $_SESSION['contact_error']);
           <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
             <i class="hgi hgi-stroke hgi-mail-01 text-white text-xl"></i>
           </div>
-          <h4 class="font-semibold text-light-primary-text mb-2">Email</h4>
+          <h4 class="font-semibold text-light-primary-text mb-2">Email Us</h4>
           <a href="mailto:info@kiracollectionart.com"
             class="text-primary hover:underline font-medium">info@kiracollectionart.com</a>
         </div>
@@ -153,18 +153,18 @@ unset($_SESSION['contact_success'], $_SESSION['contact_error']);
           <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
             <i class="hgi hgi-stroke hgi-location-01 text-white text-xl"></i>
           </div>
-          <h4 class="font-semibold text-light-primary-text mb-2">Address</h4>
-          <p class="text-light-secondary-text text-sm">Sneh Vandan House, Opposite Shilpgram Parking, Tajganj Agra</p>
+          <h4 class="font-semibold text-light-primary-text mb-2">Find Us in Agra</h4>
+          <p class="text-light-secondary-text text-sm">Sneh Vandan House, Opposite Shilpgram Parking, Tajganj, Agra</p>
         </div>
       </div>
 
       <!-- Contact Form -->
       <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
         <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-[0_14px_40px_rgba(85,107,47,0.08)]">
-          <h2 class="text-2xl md:text-3xl font-bold text-light-primary-text mb-6">Get in Touch</h2>
+          <h2 class="text-2xl md:text-3xl font-bold text-light-primary-text mb-6">We'd Love to Hear from You</h2>
           <p class="text-light-secondary-text mb-8 text-lg leading-[26px]">
-            Have questions about our art pieces? Need help with your order? We're here to help! Fill out the form
-            below and we'll get back to you within 24 hours.
+            Looking for a specific piece? Interested in a custom order? Need help with your delivery?
+            Drop us a message and we'll get back to you within 24 hours.
           </p>
           <?php if ($contactSuccess): ?>
             <div

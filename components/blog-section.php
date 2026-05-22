@@ -8,6 +8,17 @@ $latest_blogs = array_slice($blogs, 0, 4);
 ?>
 <section class="pb-[70px]">
     <div class="container">
+        <?php if (!empty($latest_blogs)): ?>
+        <div class="md:flex md:justify-between md:items-end mb-10">
+          <div class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+            <h3 class="mb-2">From Our Art Journal</h3>
+            <p class="text-light-secondary-text">Stories, techniques, and inspiration from our artisans</p>
+          </div>
+          <a href="blog.php" class="btn btn-primary rounded-[60px] py-2 px-6 text-sm mt-4 md:mt-0 wow animate__animated animate__fadeInUp inline-block" data-wow-delay=".3s">
+            View All Posts
+          </a>
+        </div>
+        <?php endif; ?>
         <div class="grid grid-cols-12 gap-6">
             <?php if (!empty($latest_blogs)): ?>
                 <?php

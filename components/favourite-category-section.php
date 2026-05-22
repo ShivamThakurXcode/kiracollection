@@ -3,7 +3,7 @@
     <div class="container">
         <div class="md:flex md:justify-between md:items-center mb-10">
             <div class="text-center md:text-left wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                <h3>Category Favorites</h3>
+                <h3>Browse by Collection</h3>
             </div>
             <div class="flex items-center gap-x-5">
                 <div data-wow-delay=".2s"
@@ -15,11 +15,11 @@
             class="home-two-category-promo-slider -mx-3 sellzy-slider">
             <?php
             $promoCategories = [
-                ['Traditional Lippan Art', '45 Products', 'p-1.jpeg', 'bg-primary'],
-                ['Sacred Mandala Designs', '68 Products', 'p-2.png', 'bg-primary'],
-                ['Wall Art Decor', '52 Products', 'p-3.jpeg', 'bg-primary'],
-                ['Mirror Art Pieces', '38 Products', 'p-4.png', 'bg-primary'],
-                ['Home Decor Collection', '75 Products', 'p-5.jpeg', 'bg-primary']
+                ['Lippan Art', 'Clay & Mirror Masterpieces', 'p-1.jpeg', 'bg-primary'],
+                ['Mandala Art', 'Sacred Geometry Designs', 'p-2.png', 'bg-primary'],
+                ['Wall Decor', 'Statement Wall Pieces', 'p-3.jpeg', 'bg-primary'],
+                ['Mirror Art', 'Reflective Handcrafted Frames', 'p-4.png', 'bg-primary'],
+                ['Home Decor', 'Artisan Home Accents', 'p-5.jpeg', 'bg-primary']
             ];
             foreach ($promoCategories as $index => $promo):
                 $delay = (0.2 + ($index * 0.1)) . 's';

@@ -12,7 +12,7 @@
           <div class="w-full md:pt-[56px] pb-10">
 
             <h2 class="pb-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-              Crafting Traditions, One Piece at a Time
+              Rooted in Tradition,<br>Created with Love
             </h2>
 
             <div class="pb-4 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
@@ -20,9 +20,9 @@
               <h5 class="pb-3">Our Mission</h5>
 
               <p>
-                To preserve and promote India's rich artistic heritage by bringing authentic handcrafted Lippan art,
-                Mandala designs, and home decor to art lovers worldwide. We are committed to empowering rural artisans,
-                sustaining traditional craftsmanship, and making exquisite art accessible to every home.
+                To carry forward India's centuries-old art traditions by bringing authentic handcrafted Lippan art,
+                Mandala designs, and decorative pieces to homes across the country. Every purchase directly supports
+                skilled artisans and keeps these beautiful crafts alive for generations to come.
               </p>
             </div>
 
@@ -31,10 +31,9 @@
               <h5 class="pb-3">Our Vision</h5>
 
               <p>
-                To become a globally recognized destination for authentic Indian handicrafts — where every piece tells
-                a story of heritage, skill, and passion. We envision a world where traditional art forms thrive,
-                artisans
-                are celebrated, and every home is adorned with meaningful, handcrafted decor.
+                To be the most trusted destination for authentic Indian handcraft art — where every piece carries
+                a story of heritage, patience, and skill. We envision homes adorned with meaningful art, and artisans
+                celebrated for the extraordinary work they do.
               </p>
             </div>
 
@@ -117,7 +116,7 @@
             <i class="hgi hgi-stroke hgi-container-truck text-3xl text-light-primary-text"></i>
           </span>
           <h5 class="pt-3 pb-0.5">Free Shipping</h5>
-          <p>Enjoy Free Shipping on Every Order, No Minimum Required</p>
+          <p>Free shipping on all orders above ₹999 — delivered safely to your door</p>
         </div>
         <div
           class="p-6 border-gray-300 border bg-white rounded-2xl text-center lg:w-[390px] w-full wow animate__animated animate__fadeInUp"
@@ -125,8 +124,8 @@
           <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
             <i class="hgi hgi-stroke hgi-customer-support text-3xl text-light-primary-text"></i>
           </span>
-          <h5 class="pt-3 pb-0.5">24x7 Support</h5>
-          <p>Dedicated Customer Support Team Available Around the Clock</p>
+          <h5 class="pt-3 pb-0.5">24/7 Support</h5>
+          <p>Our team is always here — call, email, or WhatsApp us anytime</p>
         </div>
         <div
           class="p-6 border-gray-300 border bg-white rounded-2xl text-center lg:w-[390px] w-full wow animate__animated animate__fadeInUp"
@@ -134,10 +133,8 @@
           <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
             <i class="hgi hgi-stroke hgi-delivery-return-02 text-3xl text-light-primary-text"></i>
           </span>
-          <h5 class="pt-3 pb-0.5">7 Days Return</h5>
-          <p>
-            Hassle-Free Returns Within 7 Days of Delivery
-          </p>
+          <h5 class="pt-3 pb-0.5">Easy Returns</h5>
+          <p>Not satisfied? Return within 7 days — no questions asked</p>
         </div>
       </div>
     </div>
@@ -154,17 +151,17 @@
           <p
             class="text-primary bg-[#00AB5514] py-0.5 px-3 inline-flex gap-x-2.5 items-center rounded-full font-semibold">
             <span class="w-[15px] h-[15px] rounded-full bg-primary"> </span>
-            Why Choose Us
+            Why KiraCollection?
           </p>
         </div>
         <h3 class="pt-4 pb-10 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
-          Authentic Handcrafted Art, Delivered to Your Doorstep
+          Genuine Craft, Every Single Piece
         </h3>
         <p class="pb-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-          At KiraCollection Art, every piece we offer is a labor of love — handcrafted by skilled artisans
-          using traditional techniques that have been passed down through generations. We bring the rich
-          cultural heritage of Indian craftsmanship directly to your home, ensuring authenticity, quality,
-          and timeless beauty in every order.
+          At KiraCollection Art, we never compromise on authenticity. Every piece in our collection is made by
+          hand by skilled artisans in Agra, using techniques refined over generations — from traditional
+          Lippan clay-and-mirror work to intricate dot Mandala paintings. What you receive is not just decor;
+          it is a living piece of India's cultural heritage.
         </p>
         <ul class="pb-6 space-y-4 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
           <li class="flex gap-x-4">
@@ -172,8 +169,7 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              100% Handcrafted: Every piece is made by hand with love and precision — no mass production, no
-              compromises.
+              <strong>100% Handcrafted:</strong> Made by hand with love and precision — no machines, no mass production.
             </p>
           </li>
           <li class="flex gap-x-4">
@@ -181,7 +177,7 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Authentic Materials: We use traditional materials like natural clay, mirrors, and eco-friendly colors.
+              <strong>Traditional Materials:</strong> Natural clay, hand-cut mirrors, and eco-friendly colours — just as it has always been done.
             </p>
           </li>
           <li class="flex gap-x-4">
@@ -189,7 +185,7 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Artisan Empowerment: Each purchase supports rural artisans and helps preserve India's artistic legacy.
+              <strong>Supporting Artisans:</strong> Every purchase directly supports the artisans and their families, keeping these crafts alive.
             </p>
           </li>
           <li class="flex gap-x-4">
@@ -197,14 +193,13 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Secure Packaging: Every artwork is carefully packed to ensure it reaches you in perfect condition.
+              <strong>Careful Packaging:</strong> Each artwork is individually packed to reach you in perfect, gallery-ready condition.
             </p>
           </li>
         </ul>
         <p class="wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
-          From traditional Lippan mirror art to intricate Mandala designs, our collection celebrates the beauty
-          of Indian folk art. Whether you are decorating your home or looking for a meaningful gift, KiraCollection
-          Art offers something truly special.
+          Whether you are looking for a statement wall piece, a thoughtful gift, or something that simply
+          makes your home feel more like you — KiraCollection Art has something truly special waiting for you.
         </p>
       </div>
       <div class="col-span-12 lg:col-span-6 row-start-2 lg:row-start-auto">
@@ -246,16 +241,16 @@
           <p
             class="text-primary bg-[#00AB5514] py-0.5 px-3 inline-flex gap-x-2.5 items-center rounded-full font-semibold">
             <span class="w-[15px] h-[15px] rounded-full bg-primary"> </span>
-            Our Commitment
+            Our Promise
           </p>
         </div>
         <h3 class="pt-4 pb-10 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
-          Focus on Customer Satisfaction
+          Your Satisfaction, Our Responsibility
         </h3>
         <p class="pb-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-          At KiraCollection Art, your satisfaction is at the heart of everything we do. From the moment you browse
-          our collection to the day your artwork arrives at your doorstep, we strive to provide a seamless,
-          delightful experience. Here is what sets us apart:
+          From the moment you discover a piece you love to the day it arrives at your door, we are with you
+          every step of the way. We believe buying handcrafted art should feel as special as the art itself —
+          personal, seamless, and delightful.
         </p>
         <ul class="pb-6 space-y-4 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
           <li class="flex gap-x-4">
@@ -263,7 +258,7 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Premium Quality: Every piece undergoes rigorous quality checks before it reaches you.
+              <strong>Quality You Can Feel:</strong> Every piece passes a thorough quality check before it leaves our studio.
             </p>
           </li>
           <li class="flex gap-x-4">
@@ -271,7 +266,7 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Personalized Service: Need a custom design? Our artisans love bringing your vision to life.
+              <strong>Custom Orders Welcome:</strong> Have a specific design in mind? Our artisans love bringing your vision to life.
             </p>
           </li>
           <li class="flex gap-x-4">
@@ -279,14 +274,13 @@
               <i class="hgi hgi-stroke hgi-tick-02"></i>
             </span>
             <p>
-              Easy Returns: Not happy with your purchase? We offer hassle-free returns within 7 days.
+              <strong>Hassle-Free Returns:</strong> Not happy? Return within 7 days for a full resolution — no fuss, no questions.
             </p>
           </li>
         </ul>
         <p class="wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
-          We believe that art has the power to transform spaces and uplift spirits. Whether you are looking for a
-          statement piece for your living room or a thoughtful gift for a loved one, we are here to help you
-          find the perfect piece.
+          Art has the power to transform a space — and a moment. Whether you are decorating your home,
+          gifting a loved one, or simply treating yourself, we are here to help you find the piece that speaks to you.
         </p>
       </div>
     </div>

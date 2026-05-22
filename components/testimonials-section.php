@@ -10,10 +10,9 @@ if (file_exists($testimonialsDataFile)) {
     <div class="container">
         <div class="py-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
             <span
-                class="inline-block text-secondary font-semibold text-sm uppercase tracking-widest mb-2">Testimonials</span>
-            <h3 class="text-3xl md:text-4xl font-bold font-urbanist text-white">What Our Customers Say</h3>
-            <p class="text-white mt-2 max-w-2xl mx-auto">Hear from our happy customers about their experience with
-                KiraCollection</p>
+                class="inline-block text-secondary font-semibold text-sm uppercase tracking-widest mb-2">Customer Stories</span>
+            <h3 class="text-3xl md:text-4xl font-bold font-urbanist text-white">What Art Lovers Are Saying</h3>
+            <p class="text-white mt-2 max-w-2xl mx-auto">Real reviews from customers who brought KiraCollection into their homes</p>
         </div>
         <?php if (!empty($testimonials)): ?>
             <div class="sellzy-slider testimonials-slider"

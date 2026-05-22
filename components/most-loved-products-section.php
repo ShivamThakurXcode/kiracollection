@@ -3,7 +3,7 @@
     <div class="container">
         <div class="flex items-center md:justify-between justify-center mb-10">
             <div>
-                <h3 class="text-light-primary-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Most Loved Art Pieces</h3>
+                <h3 class="text-light-primary-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Our Bestsellers</h3>
             </div>
             <div class="new-branded-products-multi-vendor-nav md:flex items-center justify-center gap-x-6 hidden wow animate__animated animate__fadeInUp" data-wow-delay="0.2s"></div>
         </div>
