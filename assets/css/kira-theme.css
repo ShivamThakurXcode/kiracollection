@@ -135,10 +135,24 @@ a[style*="bg-amber"],
   color: #fff !important;
 }
 
-/* ── Newsletter strip ── */
-section.kira-newsletter {
-  background-color: #556b2f !important;
-}
+/* ── Footer — white background ── */
+.footer-shell { display: none !important; }     /* hide old dark footer shell */
+.footer-bg    { display: none !important; }
 
-/* ── Footer floating buttons ── */
-/* WhatsApp stays green, Call button matches admin primary */
+/* ── HugeIcons size standard (matches admin 24px inline SVG size) ── */
+/* Navigation / header utility icons */
+header i.hgi    { font-size: 18px; line-height: 1; }
+/* Action icon buttons (cart, wishlist, account) */
+header .size-11 i.hgi,
+header button i.hgi,
+header a[aria-label] i.hgi { font-size: 20px; }
+
+/* Footer icons */
+.kira-social-btn i.hgi   { font-size: 18px; }
+.kira-contact-icon i.hgi { font-size: 18px; }
+
+/* Breadcrumb / section icons */
+section i.hgi { font-size: 20px; }
+
+/* ── HugeIcons in subscribe section ── */
+.kira-subscribe-icon { font-size: 20px; color: #556b2f; }
