@@ -31,3 +31,6 @@
 
     <!-- ========== Custom CSS ========== -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ========== KiraCollection Theme Overrides ========== -->
+    <link rel="stylesheet" href="assets/css/kira-custom.css" />
