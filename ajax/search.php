@@ -57,6 +57,7 @@ try {
             }
         }
     }
+    
 
     echo json_encode($results);
 }
