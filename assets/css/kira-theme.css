@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Sticky header stays cream (not white) ── */
 .sticky-header.sticky-top {
-  background-color: #fffbeb !important;
+  background-color: #fff !important;
   border-bottom: 1px solid #dfe3e8 !important;
   box-shadow: 0 2px 8px rgba(145, 158, 171, 0.10) !important;
 }

@@ -2,7 +2,7 @@
 <header>
 
   <!-- ── TOP BAR ── -->
-  <div class="header-top border-b" style="background:#fffbeb;border-color:#dfe3e8;">
+  <div class="header-top border-b" style="background:#fff;border-color:#dfe3e8;">
     <div class="container">
       <div class="flex items-center xl:justify-between justify-center py-2">
 
@@ -77,7 +77,7 @@
 
 
   <!-- ── MOBILE HEADER ── -->
-  <div class="block xl:hidden sticky-header border-b" style="background:#fffbeb;border-color:#dfe3e8;">
+  <div class="block xl:hidden sticky-header border-b" style="background:#fff;border-color:#dfe3e8;">
     <div class="container">
 
       <!-- Row 1: hamburger / logo / icons -->
@@ -192,7 +192,7 @@
 
 
   <!-- ── DESKTOP HEADER ── -->
-  <div class="hidden xl:flex header-bottom sticky-header border-b" style="background:#fffbeb;border-color:#dfe3e8;">
+  <div class="hidden xl:flex header-bottom sticky-header border-b" style="background:#fff;border-color:#dfe3e8;">
     <div class="container">
       <div class="flex items-center justify-between gap-x-6 py-3">
 
