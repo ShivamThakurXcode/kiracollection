@@ -235,121 +235,8 @@
   <section class="pb-[70px] pt-8">
     <div class="container">
       <div class="grid grid-cols-12 gap-6">
-        <!-- Shop Sidebar -->
-        <div class="xl:col-span-3 col-span-12">
-          <div class="sticky top-4 space-y-6">
-            <!-- Categories -->
-            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.3s">
-              <h3 class="text-lg font-bold text-light-primary-text mb-4">Categories</h3>
-              <div class="space-y-2">
-                <label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
-                  <span class="flex items-center gap-2">
-                    <input type="radio" name="category" value="" <?= !$current_category ? 'checked' : '' ?>
-                      onchange="updateFilters()" class="text-primary" />
-                    <span>All Products</span>
-                  </span>
-                  <span class="text-sm text-light-secondary-text"><?= count($all_products) ?></span>
-                </label>
-                <?php foreach ($categories as $category): ?>
-                  <?php
-                  $category_count = count(array_filter($all_products, function ($p) use ($category) {
-                    return $p['category'] === $category;
-                  }));
-                  ?>
-                  <label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <input type="radio" name="category" value="<?= urlencode($category) ?>"
-                        <?= strtolower($current_category) === strtolower($category) ? 'checked' : '' ?>
-                        onchange="updateFilters()" class="text-primary" />
-                      <span><?= htmlspecialchars($category) ?></span>
-                    </span>
-                    <span class="text-sm text-light-secondary-text"><?= $category_count ?></span>
-                  </label>
-                <?php endforeach; ?>
-              </div>
-            </div>
-
-            <!-- Price Range -->
-            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.4s">
-              <h3 class="text-lg font-bold text-light-primary-text mb-4">Price Range</h3>
-              <div class="space-y-4">
-                <div>
-                  <label class="text-sm text-light-secondary-text block mb-2">Min Price</label>
-                  <input type="number" id="min-price" value="<?= $min_price ?>" min="0" max="10000" step="100"
-                    placeholder="₹0"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                    onchange="updateFilters()" />
-                </div>
-                <div>
-                  <label class="text-sm text-light-secondary-text block mb-2">Max Price</label>
-                  <input type="number" id="max-price" value="<?= $max_price ?>" min="0" max="10000" step="100"
-                    placeholder="₹10000"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                    onchange="updateFilters()" />
-                </div>
-                <div class="flex gap-2 flex-wrap">
-                  <button onclick="setPriceRange(0, 500)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">Under ₹500</button>
-                  <button onclick="setPriceRange(500, 1500)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹500-₹1500</button>
-                </div>
-                <div class="flex gap-2 flex-wrap">
-                  <button onclick="setPriceRange(1500, 3000)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">₹1500-₹3000</button>
-                  <button onclick="setPriceRange(3000, 10000)"
-                    class="flex-1 btn btn-default outline text-sm py-2 rounded-lg">Above ₹3000</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Material Filter -->
-            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.5s">
-              <h3 class="text-lg font-bold text-light-primary-text mb-4">Material</h3>
-              <div class="space-y-2">
-                <?php
-                $materials = ['POP Clay', 'MDF Board', 'Canvas', 'Wooden', 'Iron/Metal', 'Terracotta'];
-                $selected_materials = isset($_GET['materials']) ? (array)$_GET['materials'] : [];
-                foreach ($materials as $mat):
-                ?>
-                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
-                  <input type="checkbox" name="material[]" value="<?= urlencode($mat) ?>"
-                    <?= in_array(urlencode($mat), array_map('urlencode', $selected_materials)) ? 'checked' : '' ?>
-                    onchange="updateFilters()" class="text-primary rounded" />
-                  <?= htmlspecialchars($mat) ?>
-                </label>
-                <?php endforeach; ?>
-              </div>
-            </div>
-
-            <!-- Rating Filter -->
-            <div class="bg-white rounded-2xl p-6 border border-gray-200 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.55s">
-              <h3 class="text-lg font-bold text-light-primary-text mb-4">Rating</h3>
-              <?php $selected_rating = isset($_GET['rating']) ? $_GET['rating'] : ''; ?>
-              <div class="space-y-2">
-                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
-                  <input type="radio" name="rating" value="" <?= !$selected_rating ? 'checked' : '' ?> onchange="updateFilters()" />
-                  All Ratings
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
-                  <input type="radio" name="rating" value="4" <?= $selected_rating === '4' ? 'checked' : '' ?> onchange="updateFilters()" />
-                  <span class="text-amber-400">★★★★</span> 4★ &amp; above
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors text-sm">
-                  <input type="radio" name="rating" value="3" <?= $selected_rating === '3' ? 'checked' : '' ?> onchange="updateFilters()" />
-                  <span class="text-amber-400">★★★</span> 3★ &amp; above
-                </label>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
         <!-- Products Grid -->
-        <div class="xl:col-span-9 col-span-12">
+        <div class="col-span-12">
           <!-- Header + Sort Bar -->
           <div
             class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 wow animate__animated animate__fadeInUp"
@@ -394,7 +281,7 @@
           <?php else: ?>
             <div class="grid grid-cols-12 gap-6" id="products-container">
               <?php foreach ($paginated_products as $index => $product): ?>
-                <div class="md:col-span-6 col-span-12 xl:col-span-4 wow animate__animated animate__fadeInUp"
+                <div class="md:col-span-6 col-span-12 xl:col-span-3 wow animate__animated animate__fadeInUp"
                   data-wow-delay="<?= (0.1 + ($index * 0.05)) ?>s">
                   <?php renderProductCard($product); ?>
                 </div>

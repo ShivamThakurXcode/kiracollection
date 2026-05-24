@@ -1,22 +1,4 @@
-<!-- ========== Newsletter Strip ========== -->
-<section style="background:#556b2f; padding:40px 0;">
-  <div class="container">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <div>
-        <h3 style="font-family:'Urbanist',sans-serif;font-size:1.375rem;font-weight:700;color:#fff;margin-bottom:4px;">Stay Updated with New Art Arrivals</h3>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.80);">Subscribe for exclusive offers and first access to new collections.</p>
-      </div>
-      <form class="flex items-center gap-2 w-full md:w-auto" onsubmit="return false;" style="min-width:0;">
-        <input type="email" placeholder="Enter your email address"
-          style="flex:1;min-width:0;padding:10px 16px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.3);outline:none;font-size:0.875rem;color:#212529;background:#fff;font-family:'DM Sans',sans-serif;" />
-        <button type="submit"
-          style="flex-shrink:0;padding:10px 20px;border-radius:8px;background:#ffd700;color:#3d5a1f;font-size:0.875rem;font-weight:700;border:none;cursor:pointer;white-space:nowrap;font-family:'DM Sans',sans-serif;">
-          Subscribe
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
+
 
 <!-- ========== Footer ========== -->
 <footer style="background:#fff;color:#212529;border-top:1px solid #dfe3e8;">

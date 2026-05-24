@@ -44,10 +44,6 @@
 
   <?php include 'components/about-content.php' ?>
 
-  <?php include 'components/testimonials-section.php' ?>
-
-  <?php include 'components/subscribe-section.php' ?>
-
   <?php include 'components/footer.php' ?>
 
   <?php include 'components/scripts.php' ?>

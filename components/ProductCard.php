@@ -176,7 +176,6 @@ class ProductCard
     {
         return "
         <div class='product-content'>
-            {$this->renderDiscountBadge()}
             {$this->renderCategory()}
             {$this->renderProductName()}
             {$this->renderPriceSection()}
@@ -205,7 +204,12 @@ class ProductCard
     private function renderCategory()
     {
         $category = $this->product['category'] ?? 'Store Name/Category';
-        return "<p class='py-3 text-sm leading-[22px]'>{$category}</p>";
+        $badge = $this->renderDiscountBadge();
+        return "
+        <div class='py-3 flex items-center justify-between gap-3 text-sm leading-[22px]'>
+            <span>{$category}</span>
+            {$badge}
+        </div>";
     }
 
     /**
