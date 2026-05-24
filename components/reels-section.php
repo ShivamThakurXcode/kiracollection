@@ -13,9 +13,6 @@
         ['file' => 'reel-1.mp4', 'poster' => 'reel-1-thumb.jpg', 'caption' => 'Lippan Art Creation'],
         ['file' => 'reel-2.mp4', 'poster' => 'reel-2-thumb.jpg', 'caption' => 'Mandala Painting'],
         ['file' => 'reel-3.mp4', 'poster' => 'reel-3-thumb.jpg', 'caption' => 'Mirror Art Design'],
-        ['file' => 'reel-4.mp4', 'poster' => 'reel-4-thumb.jpg', 'caption' => 'Wall Decor Crafting'],
-        ['file' => 'reel-5.mp4', 'poster' => 'reel-5-thumb.jpg', 'caption' => 'Handcrafted Gift Making'],
-        ['file' => 'reel-6.mp4', 'poster' => 'reel-6-thumb.jpg', 'caption' => 'Home Decor Showcase'],
       ];
       foreach ($reels as $reel):
       ?>
