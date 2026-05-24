@@ -93,7 +93,7 @@
         </button>
 
         <a href="index.php">
-          <img src="images/logo-header.png" alt="KiraCollection Art" class="h-14 w-auto">
+          <img src="images/logo.webp" alt="KiraCollection Art" class="h-14 w-auto">
         </a>
 
         <div class="flex items-center gap-x-2">
@@ -199,48 +199,8 @@
         <!-- Logo + Category Dropdown -->
         <div class="flex items-center gap-x-4 flex-shrink-0">
           <a href="index.php">
-            <img src="images/logo-header.png" alt="KiraCollection Art" class="h-16 w-auto">
+            <img src="images/logo.webp" alt="KiraCollection Art" class="h-16 w-auto">
           </a>
-
-          <!-- Category dropdown button (uses existing main.js #dropdownButton) -->
-          <div class="relative">
-            <button id="dropdownButton"
-              class="flex items-center gap-x-2 text-sm font-semibold px-4 py-2.5 rounded-xl border transition-colors"
-              style="background:#556b2f;color:#fff;border-color:#556b2f;"
-              onmouseover="this.style.background='#3d5a1f'" onmouseout="this.style.background='#556b2f'">
-              <i class="hgi hgi-stroke hgi-grid-view" style="font-size:16px;"></i>
-              All Categories
-              <i id="dropdownIcon" class="hgi hgi-stroke hgi-arrow-down-01 transition-transform" style="font-size:13px;"></i>
-            </button>
-
-            <!-- Dropdown panel (controlled by existing main.js) -->
-            <ul id="dropdownMenu"
-              class="hide bg-white rounded-2xl absolute left-0 top-full mt-2 w-52 z-50 py-2 overflow-hidden"
-              style="border:1px solid #dfe3e8;box-shadow:0 8px 24px rgba(145,158,171,0.14);">
-              <?php
-              $artCategories = [
-                ['href'=>'shop.php?category=Lippan+Art',       'icon'=>'hgi-paint-brush-01', 'label'=>'Lippan Art'],
-                ['href'=>'shop.php?category=Mandala+Art',      'icon'=>'hgi-sun-cloud-01',   'label'=>'Mandala Art'],
-                ['href'=>'shop.php?category=Wall+Decor',       'icon'=>'hgi-image-01',       'label'=>'Wall Decor'],
-                ['href'=>'shop.php?category=Mirror+Art',       'icon'=>'hgi-diamond-01',     'label'=>'Mirror Art'],
-                ['href'=>'shop.php?category=Home+Decor',       'icon'=>'hgi-home-01',        'label'=>'Home Decor'],
-                ['href'=>'shop.php?category=Handcrafted+Gifts','icon'=>'hgi-gift',           'label'=>'Handcrafted Gifts'],
-              ];
-              foreach ($artCategories as $cat): ?>
-              <li>
-                <a href="<?= $cat['href'] ?>"
-                  class="flex items-center gap-x-3 px-4 py-2.5 text-sm font-medium transition-colors"
-                  style="color:#495057;"
-                  onmouseover="this.style.background='#f4f6f8';this.style.color='#556b2f'" onmouseout="this.style.background='';this.style.color='#495057'">
-                  <span class="size-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background:#e8f5e8;">
-                    <i class="hgi hgi-stroke <?= $cat['icon'] ?>" style="font-size:15px;color:#556b2f;"></i>
-                  </span>
-                  <?= $cat['label'] ?>
-                </a>
-              </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
         </div>
 
         <!-- Desktop Search -->
