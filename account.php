@@ -9,7 +9,7 @@
 </head>
 <body>
   <?php include 'components/modal-overlay.php' ?>
-  <?php include 'components/scroll-to-top-button.php' ?>
+  
   <?php include 'components/sidebar.php' ?>
   <?php include 'components/cart-sidebar-inline.php' ?>
   <?php include 'components/register-sidebar.php' ?>

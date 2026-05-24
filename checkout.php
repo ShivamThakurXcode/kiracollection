@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 </head>
 <body>
   <?php include 'components/modal-overlay.php' ?>
-  <?php include 'components/scroll-to-top-button.php' ?>
+  
   <?php include 'components/sidebar.php' ?>
   <?php include 'components/cart-sidebar-inline.php' ?>
   <?php include 'components/register-sidebar.php' ?>

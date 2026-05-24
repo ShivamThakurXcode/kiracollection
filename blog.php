@@ -35,7 +35,7 @@
 
   <?php include 'components/modal-overlay.php' ?>
 
-  <?php include 'components/scroll-to-top-button.php' ?>
+  
 
   <?php include 'components/sidebar.php' ?>
 

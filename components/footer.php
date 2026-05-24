@@ -10,13 +10,6 @@
 
         <!-- Column 1: Brand -->
         <div class="col-span-12 lg:col-span-4">
-          <a href="index.php" style="display:inline-block;margin-bottom:20px;">
-            <img src="images/logo-header.png" alt="KiraCollection Art" style="height:48px;width:auto;">
-          </a>
-          <p style="font-size:0.9375rem;line-height:1.75;color:#495057;margin-bottom:24px;max-width:320px;">
-            Discover exquisite handcrafted lippan art, sacred mandala designs, and elegant home decor pieces.
-            Each piece is crafted with love and tradition to transform your living space.
-          </p>
           <!-- Social icons using HugeIcons (same library as admin for consistency) -->
           <div style="display:flex;flex-wrap:wrap;gap:8px;">
             <!-- UPDATE: add real social URLs -->
@@ -36,6 +29,14 @@
               <i class="hgi hgi-stroke hgi-whatsapp"></i>
             </a>
           </div>
+          <p style="font-size:0.9375rem;line-height:1.75;color:#495057;margin-bottom:24px;max-width:320px;">
+            Discover exquisite handcrafted lippan art, sacred mandala designs, and elegant home decor pieces.
+            Each piece is crafted with love and tradition to transform your living space.
+          </p>
+          <a href="index.php" style="display:inline-block;margin-bottom:20px;">
+            <img src="images/logo.webp" alt="KiraCollection Art" style="height:100px;width:auto;">
+          </a>
+          
         </div>
 
         <!-- Column 2: Quick Links -->
@@ -57,7 +58,7 @@
 
             <!-- Flipkart — uses images/flipkar.svg -->
             <!-- UPDATE: Flipkart store URL -->
-            <a href="#" target="_blank" rel="noopener"
+            <a href="https://www.flipkart.com/kiracollection-vibrant-lippan-art-blue-mandala/p/itm6d5dc0f4f57cc?pid=WDCHKASXXYSHPXMH&lid=LSTWDCHKASXXYSHPXMHRLRE0V&marketplace=FLIPKART&store=arb%2Fa77%2Fsuk&srno=b_1_29&otracker=browse&fm=organic&iid=353fd2d1-6315-4001-af39-ed67d99fadd8.WDCHKASXXYSHPXMH.SEARCH&ppt=browse&ppn=browse&ov_redirect=true&ov_redirect=true" target="_blank" rel="noopener"
               style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:1.5px solid #dfe3e8;background:#f9fafb;text-decoration:none;transition:border-color 0.2s,background 0.2s;"
               onmouseover="this.style.borderColor='#2874F0';this.style.background='#e8f0ff';"
               onmouseout="this.style.borderColor='#dfe3e8';this.style.background='#f9fafb';">
