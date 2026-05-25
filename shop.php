@@ -15,7 +15,7 @@
   // Simple function to render product card
   function renderProductCard($product)
   {
-    $card = new ProductCard($product, 'bordered');
+    $card = new ProductCard($product, 'white-bg');
     echo $card->render();
   }
 

@@ -72,7 +72,7 @@ $maxPerTab = 10;
                         $renderProducts = array_slice($products, 0, $maxPerTab);
                         foreach ($renderProducts as $index => $product):
                             $delay = (0.2 + ($index * 0.1)) . 's';
-                            $card = new ProductCard($product, 'bordered', $delay);
+                            $card = new ProductCard($product, 'white-bg', $delay);
                             echo "<div class=''>" . $card->render() . "</div>";
                         endforeach;
                         ?>

@@ -50,6 +50,11 @@ $pageTitle = $product['name'] ?? 'Product Details';
 
   <!-- ========== Custom CSS ========== -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Force description panel and badges to white background for this page */
+    #product-details-tabs .product-details-tab .product-details-tab-content { background:#fff !important; border:1px solid rgba(0,0,0,0.06); border-radius:1rem; }
+    .product-discount-badge, .discount-percentage { background:#fff !important; border:1px solid rgba(0,0,0,0.06) !important; color:#111 !important; padding:.25rem .5rem !important; border-radius:.375rem !important; }
+  </style>
 </head>
 
 <body>

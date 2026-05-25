@@ -112,10 +112,11 @@ class ProductCard
         $productName = $this->product['name'] ?? 'Product';
         $productId = $this->product['id'] ?? 1;
         $productUrl = 'product-detail.php?id=' . $productId;
+        $imgBgClass = $this->cardType === 'white-bg' ? 'bg-white' : 'bg-primary-lighter';
 
         return "
         <div class='product-image-container relative'>
-            <div class='product-image rounded-xl mb-4 overflow-hidden h-[300px] bg-primary-lighter'>
+            <div class='product-image rounded-xl mb-4 overflow-hidden h-[300px] {$imgBgClass}'>
                 <a href='{$productUrl}'>
                     <img 
                         src='{$imageUrl}' 
@@ -242,7 +243,7 @@ class ProductCard
         }
 
         if (!empty($discountPercentage)) {
-            $priceHtml .= "<span class='discount-percentage text-sm leading-[22px] font-semibold text-error'>{$discountPercentage}</span>";
+            $priceHtml .= "<span class='discount-percentage text-sm leading-[22px] font-semibold text-error bg-white px-2 py-1 rounded-md border border-gray-200 ml-2'>{$discountPercentage}</span>";
         }
 
         return "<div class='price-section flex items-center gap-x-3 mb-3'>{$priceHtml}</div>";

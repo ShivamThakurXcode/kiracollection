@@ -30,8 +30,8 @@ $careInstructions = $product['care_instructions'] ?? '';
       
       <div id="description" class="product-details-tab active fade">
         <h5 class="product-details-tab-title">Description</h5>
-        <div class="product-details-tab-content">
-          <p class="mb-6">
+        <div class="product-details-tab-content bg-white rounded-2xl border border-gray-200 p-6">
+          <p class="mb-6 text-gray-800">
             <?php echo nl2br(htmlspecialchars($description)); ?>
           </p>
           <?php if (!empty($materials)): ?>

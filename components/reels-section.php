@@ -9,37 +9,52 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <?php
-      $reels = [
-        ['file' => 'reel-1.mp4', 'poster' => 'reel-1-thumb.jpg', 'caption' => 'Lippan Art Creation'],
-        ['file' => 'reel-2.mp4', 'poster' => 'reel-2-thumb.jpg', 'caption' => 'Mandala Painting'],
-        ['file' => 'reel-3.mp4', 'poster' => 'reel-3-thumb.jpg', 'caption' => 'Mirror Art Design'],
+      $reelFiles = glob(__DIR__ . '/../images/reels/*.mp4') ?: [];
+      natsort($reelFiles);
+      $captionMap = [
+        'reel-1.mp4' => 'Lippan Art Creation',
+        'reel-2.mp4' => 'Mandala Painting',
+        'reel-3.mp4' => 'Mirror Art Design',
       ];
-      foreach ($reels as $reel):
+      $reels = array_map(function ($filePath) use ($captionMap) {
+        $fileName = basename($filePath);
+        return [
+          'file' => $fileName,
+          'caption' => $captionMap[$fileName] ?? pathinfo($fileName, PATHINFO_FILENAME),
+        ];
+      }, array_values($reelFiles));
+
+      if (empty($reels)):
       ?>
-      <div class="group relative rounded-2xl overflow-hidden shadow-xl bg-black cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+      <div class="col-span-full rounded-2xl border border-white/15 bg-black/20 p-8 text-center text-white/80">
+        No reel videos found in images/reels/.
+      </div>
+      <?php else: ?>
+      <?php foreach ($reels as $reel): ?>
+      <div class="group relative overflow-hidden rounded-2xl shadow-xl bg-black cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
         <video
-          class="w-full aspect-video object-cover"
+          class="w-full aspect-video object-cover bg-black"
           controls
-          preload="none"
-          poster="images/reels/<?= htmlspecialchars($reel['poster']) ?>"
+          preload="metadata"
+          playsinline
+          muted
+          loop
         >
           <source src="images/reels/<?= htmlspecialchars($reel['file']) ?>" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <!-- Play overlay (shown before play) -->
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-has-[:playing]:opacity-0 transition-opacity">
-        </div>
         <!-- Caption -->
         <div class="bg-gradient-to-t from-black/70 to-transparent absolute bottom-0 left-0 right-0 p-4 pointer-events-none">
           <p class="text-white font-semibold text-sm"><?= htmlspecialchars($reel['caption']) ?></p>
         </div>
       </div>
       <?php endforeach; ?>
+      <?php endif; ?>
 
     </div>
 
     <p class="text-center text-green-300 text-sm mt-8 opacity-70">
-      Drop your video files into <code class="bg-black/30 px-2 py-0.5 rounded">images/reels/</code> as reel-1.mp4 … reel-6.mp4
+      Drop your video files into <code class="bg-black/30 px-2 py-0.5 rounded">images/reels/</code> and they will appear here automatically.
     </p>
   </div>
 </section>

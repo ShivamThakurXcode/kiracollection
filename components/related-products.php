@@ -20,7 +20,7 @@ if (!isset($relatedProducts) || empty($relatedProducts)) {
       <?php
       foreach ($relatedProducts as $index => $product):
         $delay = (0.2 + ($index * 0.1)) . 's';
-        $card = new ProductCard($product, 'bordered', $delay);
+        $card = new ProductCard($product, 'white-bg', $delay);
       ?>
         <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
           <?php echo $card->render(); ?>

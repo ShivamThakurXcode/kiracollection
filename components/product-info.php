@@ -89,7 +89,7 @@ $addToCartJson = htmlspecialchars(json_encode([
 ?>
 <!-- ========== Product Info Start ========== -->
 <div class="xl:col-span-5 lg:col-span-6 mt-6 lg:mt-8">
-  <div class="rounded-3xl border border-gray-300 p-6">
+  <div class="rounded-3xl border border-gray-300 p-6 bg-white" style="background:#ffffff !important;">
     <?php if (!empty($discountBadge)): ?>
       <span
         class="product-discount-badge inline-block mb-6 uppercase relative bg-error text-warning-lighter font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-shape.png')] after:bg-contain after:bg-no-repeat"><?php echo htmlspecialchars($discountBadge); ?></span>
@@ -128,8 +128,7 @@ $addToCartJson = htmlspecialchars(json_encode([
           class="old-price text-2xl leading-9 font-normal text-light-disabled-text"><?php echo htmlspecialchars(formatPrice($oldPrice)); ?></span>
       <?php endif; ?>
       <?php if (!empty($discountPercentage)): ?>
-        <span
-          class="product-discount-badge uppercase relative bg-warning text-black font-medium text-sm leading-[22px] px-1 after:absolute after:top-0 after:left-full after:z-10 after:w-1 after:h-full after:bg-[url('images/discount-warning-shape.png')] after:bg-contain after:bg-no-repeat"><?php echo htmlspecialchars(formatDiscountPercentage($discountPercentage)); ?></span>
+          <span class='discount-percentage text-sm leading-[22px] font-semibold text-error bg-white px-2 py-1 rounded-md border border-gray-200 ml-2'><?php echo htmlspecialchars(formatDiscountPercentage($discountPercentage)); ?></span>
       <?php endif; ?>
     </div>
 

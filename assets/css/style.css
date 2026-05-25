@@ -8671,6 +8671,24 @@ Product details Css
 #product-details-tabs .product-details-tab .product-details-tab-content {
   padding: calc(var(--spacing) * 6);
 }
+
+/* Ensure description content panel uses white background and soft border */
+#product-details-tabs .product-details-tab .product-details-tab-content {
+  background-color: #ffffff !important;
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: none;
+}
+
+/* Make discount / badge elements use white background with border for consistency */
+.product-discount-badge,
+.discount-percentage {
+  background: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+  color: #111 !important;
+  padding: .25rem .5rem !important;
+  border-radius: .375rem !important;
+}
 #product-details-tabs
   .product-details-tab#description
   .product-details-tab-content

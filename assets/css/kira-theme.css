@@ -24,13 +24,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Main nav hover & active ── */
-.main-menu > ul > li > a:hover,
-.main-menu > ul > li > a.active {
-  color: #556b2f !important;
+.main-menu {
+  border: 1px solid #dfe3e8;
+  border-radius: 999px;
+  background: #fff;
+  padding: 4px;
+}
+
+.main-menu > ul {
+  gap: 4px;
+}
+
+.main-menu > ul > li > a {
+  border-radius: 999px;
+  background: transparent;
+  padding: 9px 15px;
+  color: #212529 !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-menu > ul > li > a:hover {
+  background: #fff4e8;
+  color: #c45a00 !important;
 }
 
 .main-menu > ul > li > a.active {
+  background: #ff7a00 !important;
+  color: #fff !important;
   font-weight: 700;
+  box-shadow: 0 8px 18px rgba(255, 122, 0, 0.18);
+}
+
+.main-menu > ul > li > a.active:hover {
+  background: #ff7a00 !important;
+  color: #fff !important;
 }
 
 /* ── Buttons — admin style ── */

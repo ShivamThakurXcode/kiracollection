@@ -2,7 +2,7 @@
 <header>
 
   <!-- ── TOP BAR ── -->
-  <div class="header-top border-b" style="background:#fff;border-color:#dfe3e8;">
+  <div class="hidden header-top border-b" style="background:#fff;border-color:#dfe3e8;">
     <div class="container">
       <div class="flex items-center xl:justify-between justify-center py-2">
 
@@ -194,31 +194,24 @@
   <!-- ── DESKTOP HEADER ── -->
   <div class="hidden xl:flex header-bottom sticky-header border-b" style="background:#fff;border-color:#dfe3e8;">
     <div class="container">
-      <div class="flex items-center justify-between gap-x-6 py-3">
+      <div class="flex items-center justify-between gap-x-4 py-2">
 
         <!-- Logo + Category Dropdown -->
         <div class="flex items-center gap-x-4 flex-shrink-0">
           <a href="index.php">
-            <img src="images/logo.webp" alt="KiraCollection Art" class="h-16 w-auto">
+            <img src="images/logo.webp" alt="KiraCollection Art" class="h-12 w-auto">
           </a>
         </div>
 
         <!-- Desktop Search -->
-        <div class="flex-1 max-w-lg relative search-input-container">
-          <div class="input-group px-4 py-2.5 rounded-xl border" style="border-color:#dfe3e8;background:#fff;">
+        <div class="relative search-input-container" style="flex:0 1 280px;max-width:280px;">
+          <div class="input-group px-3 py-2 rounded-md border" style="border-color:#dfe3e8;background:#fff;">
             <div class="input-group-addon inline-flex justify-center items-center" data-align="inline-end">
               <i class="hgi hgi-stroke hgi-search-01 text-xl" style="color:#556b2f;"></i>
             </div>
             <input type="text" id="desktop-search"
-              class="peer form-control header-search-input placeholder-transparent focus:placeholder-transparent"
+              class="form-control header-search-input"
               placeholder="Search art, decor, gifts..." />
-            <label for="desktop-search"
-              class="absolute left-[14px] top-1/2 -translate-y-1/2 text-xs leading-[18px] transition-all
-                     peer-placeholder-shown:text-[#919eab] peer-placeholder-shown:text-[16px] peer-placeholder-shown:top-1/2
-                     peer-focus:text-[12px] peer-focus:top-0 peer-[:not(:placeholder-shown)]:text-[12px] peer-[:not(:placeholder-shown)]:top-0
-                     bg-white peer-focus:px-1 peer-[:not(:placeholder-shown)]:px-1">
-              Search art, decor, gifts...
-            </label>
           </div>
           <!-- Search dropdown -->
           <div data-state="close"
@@ -252,7 +245,7 @@
         </div>
 
         <!-- Nav + Action icons -->
-        <div class="flex items-center gap-x-5 flex-shrink-0">
+        <div class="flex items-center gap-x-3 flex-shrink-0">
 
           <?php
           $currentPage = basename($_SERVER['PHP_SELF']);
@@ -269,6 +262,21 @@
               <li><a class="<?= isActive('contact.php', $currentPage) ?>" href="contact.php">Contact</a></li>
             </ul>
           </nav>
+
+          <div class="flex items-center gap-x-2 flex-shrink-0">
+            <a href="#" target="_blank" rel="noopener" title="Shop on Flipkart"
+              class="inline-flex items-center gap-x-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors"
+              style="border-color:#dfe3e8;background:#f8fbff;color:#2874F0;"
+              onmouseover="this.style.background='#e8f0ff';this.style.borderColor='#b9d0ff'" onmouseout="this.style.background='#f8fbff';this.style.borderColor='#dfe3e8'">
+              <img src="images/flipkar.svg" alt="Flipkart" style="width:72px;height:22px;object-fit:contain;" />
+            </a>
+            <a href="#" target="_blank" rel="noopener" title="Shop on Amazon"
+              class="inline-flex items-center gap-x-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors"
+              style="border-color:#dfe3e8;background:#fff7ef;color:#b45000;"
+              onmouseover="this.style.background='#fff0df';this.style.borderColor='#ffd0a8'" onmouseout="this.style.background='#fff7ef';this.style.borderColor='#dfe3e8'">
+              <img src="images/amzon-black-text.svg" alt="Amazon" style="width:72px;height:22px;object-fit:contain;" />
+            </a>
+          </div>
 
           <!-- Account -->
           <a href="account.php" aria-label="My Account"
