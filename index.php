@@ -45,7 +45,7 @@
 
   <?php include 'components/products-section.php' ?>
 
-  <?php include 'components/limited-time-section.php' ?>
+  <?php include 'components/bento-showcase-section.php' ?>
 
   <?php include 'components/favourite-category-section.php' ?>
 
