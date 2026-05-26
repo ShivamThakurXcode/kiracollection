@@ -41,7 +41,7 @@ function syncProducts() {
             $output .= "        'name' => " . var_export($product['name'], true) . ",\n";
             $output .= "        'category' => " . var_export($product['category'], true) . ",\n";
             $output .= "        'image' => " . var_export($product['image'], true) . ",\n";
-            $output .= "        'url' => 'product-details.php',\n";
+            $output .= "        'url' => 'product-detail.php',\n";
             $output .= "        'current_price' => " . var_export($product['current_price'], true) . ",\n";
             $output .= "        'old_price' => " . var_export($product['old_price'] ?? '', true) . ",\n";
             $output .= "        'discount_percentage' => " . var_export($product['discount_percentage'] ?? '', true) . ",\n";
@@ -76,7 +76,7 @@ function syncProducts() {
             $output .= "        'name' => " . var_export($product['name'], true) . ",\n";
             $output .= "        'category' => " . var_export($product['category'], true) . ",\n";
             $output .= "        'image' => " . var_export($product['image'], true) . ",\n";
-            $output .= "        'url' => 'product-details.php',\n";
+            $output .= "        'url' => 'product-detail.php',\n";
             $output .= "        'current_price' => " . var_export($product['current_price'], true) . ",\n";
             $output .= "        'old_price' => " . var_export($product['old_price'] ?? '', true) . ",\n";
             $output .= "        'discount_percentage' => " . var_export($product['discount_percentage'] ?? '', true) . ",\n";

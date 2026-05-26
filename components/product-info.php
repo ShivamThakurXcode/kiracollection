@@ -24,6 +24,62 @@ $description = $product['description'] ?? '';
 $productId = $product['id'] ?? 0;
 $productImage = $product['image'] ?? 'assets/images/default-product.png';
 
+$normalizeSizeOptions = function ($sizes) {
+  if (empty($sizes) || !is_array($sizes)) {
+    return ['S', 'M', 'L', 'XL', 'XXL'];
+  }
+
+  $normalized = [];
+  foreach ($sizes as $size) {
+    if (is_array($size)) {
+      $label = $size['label'] ?? $size['size_label'] ?? '';
+      if ($label !== '') {
+        $normalized[] = $label;
+      }
+      continue;
+    }
+
+    if ($size !== '') {
+      $normalized[] = $size;
+    }
+  }
+
+  return !empty($normalized) ? $normalized : ['S', 'M', 'L', 'XL', 'XXL'];
+};
+
+$normalizeColorOptions = function ($colors) {
+  if (empty($colors) || !is_array($colors)) {
+    return [
+      ['name' => 'Natural White', 'hex' => '#F5F0E8', 'image' => ''],
+      ['name' => 'Cream Beige', 'hex' => '#E8D5B7', 'image' => ''],
+      ['name' => 'Terracotta', 'hex' => '#C67B5C', 'image' => ''],
+    ];
+  }
+
+  $normalized = [];
+  foreach ($colors as $color) {
+    if (is_array($color)) {
+      $name = $color['name'] ?? $color['color_name'] ?? '';
+      if ($name === '') {
+        continue;
+      }
+
+      $normalized[] = [
+        'name' => $name,
+        'hex' => $color['hex'] ?? $color['color_hex'] ?? '#F5F0E8',
+        'image' => $color['image'] ?? $color['color_image'] ?? '',
+      ];
+      continue;
+    }
+
+    $normalized[] = ['name' => $color, 'hex' => '#F5F0E8', 'image' => ''];
+  }
+
+  return !empty($normalized) ? $normalized : [
+    ['name' => 'Natural White', 'hex' => '#F5F0E8', 'image' => ''],
+  ];
+};
+
 function formatPrice($price)
 {
   if ($price === null || $price === '') {
@@ -66,15 +122,11 @@ function formatDiscountPercentage($discount)
 }
 
 // Size options
-$sizeOptions = $product['size_options'] ?? ['S', 'M', 'L', 'XL', 'XXL'];
+$sizeOptions = $normalizeSizeOptions($product['size_options'] ?? []);
 $selectedSize = $sizeOptions[0] ?? 'S';
 
 // Color options
-$colorOptions = $product['color_options'] ?? [
-  ['name' => 'Natural White', 'hex' => '#F5F0E8', 'image' => ''],
-  ['name' => 'Cream Beige', 'hex' => '#E8D5B7', 'image' => ''],
-  ['name' => 'Terracotta', 'hex' => '#C67B5C', 'image' => ''],
-];
+$colorOptions = $normalizeColorOptions($product['color_options'] ?? []);
 $selectedColor = $colorOptions[0]['name'] ?? 'Natural White';
 
 // Calculate rating percentage
