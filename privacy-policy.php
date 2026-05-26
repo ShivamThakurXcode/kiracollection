@@ -23,7 +23,7 @@
   <?php include "components/header.php" ?>
   <?php
   $pageTitle = 'Privacy Policy';
-  $breadcrumbBg = 'assets/images/about/two-women.jpg';
+  $breadcrumbBg = 'images/breadcrumb/b-1.jpg';
   include 'components/breadcrumb.php';
   ?>
   <section class="py-20 md:py-24">

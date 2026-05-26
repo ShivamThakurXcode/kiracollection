@@ -1,6 +1,6 @@
 <?php
 $pageTitle = $pageTitle ?? 'Page';
-$breadcrumbBg = $breadcrumbBg ?? 'images/breadcrumb/b-2.jpg';
+$breadcrumbBg = $breadcrumbBg ?? 'images/breadcrumb/b-1.jpg';
 ?>
 <!-- ========== Breadcrumb Section Start ========== -->
 <section class="breadcrumb-hero" style="background-image: url('<?php echo htmlspecialchars($breadcrumbBg); ?>');">

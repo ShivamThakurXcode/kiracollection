@@ -22,7 +22,7 @@
 
   <?php
   $pageTitle = 'My Account';
-  $breadcrumbBg = 'assets/images/about/woman-bg.png';
+  $breadcrumbBg = 'images/breadcrumb/b-1.jpg';
   include 'components/breadcrumb.php';
   ?>
 

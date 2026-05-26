@@ -189,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
   <?php
   $pageTitle = 'Checkout';
-  $breadcrumbBg = 'assets/images/about/woman-bg.png';
+  $breadcrumbBg = 'images/breadcrumb/b-1.jpg';
   include 'components/breadcrumb.php';
   ?>
 

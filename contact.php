@@ -118,7 +118,7 @@ unset($_SESSION['contact_success'], $_SESSION['contact_error']);
   <!-- Breadcrumb Section -->
   <?php
   $pageTitle = 'Contact';
-  $breadcrumbBg = 'images/breadcrumb/b-2.jpg';
+  $breadcrumbBg = 'images/breadcrumb/b-1.jpg';
   include 'components/breadcrumb.php';
   ?>
 
