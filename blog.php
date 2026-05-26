@@ -32,6 +32,7 @@
 
 <body>
 
+  <?php include 'components/preloader.php' ?>
 
   <?php include 'components/modal-overlay.php' ?>
 

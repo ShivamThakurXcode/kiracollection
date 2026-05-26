@@ -53,9 +53,6 @@
 
     </div>
 
-    <p class="text-center text-green-300 text-sm mt-8 opacity-70">
-      Drop your video files into <code class="bg-black/30 px-2 py-0.5 rounded">images/reels/</code> and they will appear here automatically.
-    </p>
   </div>
 </section>
 <!-- ========== Reels / Video Section End ========== -->

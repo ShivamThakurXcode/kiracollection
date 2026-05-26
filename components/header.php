@@ -115,21 +115,11 @@
       <!-- Row 2: Mobile search -->
       <div class="pb-3">
         <div class="relative search-input-container">
-          <div class="input-group w-full px-4 py-2.5 rounded-[12px] border" style="border-color:#dfe3e8;background:#fff;">
-            <div class="input-group-addon inline-flex justify-center items-center" data-align="inline-end">
-              <i class="hgi hgi-stroke hgi-search-01 text-xl" style="color:#556b2f;"></i>
-            </div>
-            <input type="text" id="mobile-search"
-              class="peer form-control header-search-input placeholder-transparent focus:placeholder-transparent"
-              placeholder="Search art, decor, gifts..." />
-            <label for="mobile-search"
-              class="absolute left-[14px] top-1/2 -translate-y-1/2 text-xs leading-[18px] transition-all
-                     peer-placeholder-shown:text-[#919eab] peer-placeholder-shown:text-[16px] peer-placeholder-shown:top-1/2
-                     peer-focus:text-[12px] peer-focus:top-0 peer-[:not(:placeholder-shown)]:text-[12px] peer-[:not(:placeholder-shown)]:top-0
-                     bg-white peer-focus:px-1 peer-[:not(:placeholder-shown)]:px-1">
-              Search art, decor, gifts...
-            </label>
-          </div>
+          <i class="hgi hgi-stroke hgi-search-01" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:16px;color:#919eab;pointer-events:none;"></i>
+          <input type="text" id="mobile-search"
+            class="header-search-input"
+            placeholder="Search art, decor, gifts…"
+            style="width:100%;border:1px solid #e5e7eb;border-radius:8px;padding:9px 14px 9px 36px;font-size:13.5px;outline:none;background:#fff;color:#212529;font-family:'DM Sans',sans-serif;transition:border-color 0.18s;" onfocus="this.style.borderColor='#556b2f'" onblur="this.style.borderColor='#e5e7eb'" />
           <!-- Search dropdown -->
           <div data-state="close"
             class="search-result-container p-4 absolute w-full top-[calc(100%+8px)] left-0 border bg-white rounded-2xl z-50
@@ -205,14 +195,11 @@
 
         <!-- Desktop Search -->
         <div class="relative search-input-container" style="flex:0 1 280px;max-width:280px;">
-          <div class="input-group px-3 py-2 rounded-md border" style="border-color:#dfe3e8;background:#fff;">
-            <div class="input-group-addon inline-flex justify-center items-center" data-align="inline-end">
-              <i class="hgi hgi-stroke hgi-search-01 text-xl" style="color:#556b2f;"></i>
-            </div>
-            <input type="text" id="desktop-search"
-              class="form-control header-search-input"
-              placeholder="Search art, decor, gifts..." />
-          </div>
+          <i class="hgi hgi-stroke hgi-search-01" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:16px;color:#919eab;pointer-events:none;"></i>
+          <input type="text" id="desktop-search"
+            class="header-search-input"
+            placeholder="Search art, decor, gifts…"
+            style="width:100%;border:1px solid #e5e7eb;border-radius:8px;padding:9px 14px 9px 36px;font-size:13.5px;outline:none;background:#fff;color:#212529;font-family:'DM Sans',sans-serif;transition:border-color 0.18s;" onfocus="this.style.borderColor='#556b2f'" onblur="this.style.borderColor='#e5e7eb'" />
           <!-- Search dropdown -->
           <div data-state="close"
             class="search-result-container p-4 absolute w-full top-[calc(100%+8px)] left-0 border bg-white rounded-2xl z-50

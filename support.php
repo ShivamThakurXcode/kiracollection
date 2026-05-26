@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <?php include 'components/preloader.php' ?>
   <?php include 'components/modal-overlay.php' ?>
   
   <?php include 'components/sidebar.php' ?>
@@ -181,10 +182,6 @@
       });
     });
 
-    window.addEventListener('load', function () {
-      var preloader = document.getElementById('preloader');
-      if (preloader) preloader.classList.add('hidden');
-    });
   </script>
 </body>
 

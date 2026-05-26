@@ -33,6 +33,7 @@ if ($orderNumber) {
   <?php include 'components/links.php'; ?>
 </head>
 <body>
+  <?php include 'components/preloader.php' ?>
   <?php include 'components/modal-overlay.php' ?>
   
   <?php include 'components/sidebar.php' ?>

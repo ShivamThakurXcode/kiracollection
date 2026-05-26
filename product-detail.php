@@ -58,6 +58,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
 </head>
 
 <body>
+  <?php include 'components/preloader.php'; ?>
   <?php include 'components/modal-overlay.php'; ?>
   <?php include 'components/scroll-to-top-button.php'; ?>
   <?php include 'components/sidebar.php'; ?>
@@ -91,7 +92,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
     <div class="container">
       <div class="grid grid-cols-12 gap-6">
         <div class="md:col-span-6 col-span-12 xl:col-span-3">
-          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp"
+          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp" style="background:#ffffff;"
             data-wow-delay=".2s">
             <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
               <i class="hgi hgi-stroke hgi-container-truck text-3xl text-light-primary-text"></i>
@@ -101,7 +102,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
           </div>
         </div>
         <div class="md:col-span-6 col-span-12 xl:col-span-3">
-          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp"
+          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp" style="background:#ffffff;"
             data-wow-delay=".3s">
             <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
               <i class="hgi hgi-stroke hgi-customer-support text-3xl text-light-primary-text"></i>
@@ -111,7 +112,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
           </div>
         </div>
         <div class="md:col-span-6 col-span-12 xl:col-span-3">
-          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp"
+          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp" style="background:#ffffff;"
             data-wow-delay=".4s">
             <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
               <i class="hgi hgi-stroke hgi-delivery-return-02 text-3xl text-light-primary-text"></i>
@@ -121,7 +122,7 @@ $pageTitle = $product['name'] ?? 'Product Details';
           </div>
         </div>
         <div class="md:col-span-6 col-span-12 xl:col-span-3">
-          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp"
+          <div class="p-6 border-gray-300 border rounded-2xl text-center wow animate__animated animate__fadeInUp" style="background:#ffffff;"
             data-wow-delay=".5s">
             <span class="inline-flex items-center justify-center size-14 bg-warning-lighter rounded-full">
               <i class="hgi hgi-stroke hgi-transaction text-3xl text-light-primary-text"></i>

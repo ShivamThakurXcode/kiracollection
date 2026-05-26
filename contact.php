@@ -93,6 +93,7 @@ unset($_SESSION['contact_success'], $_SESSION['contact_error']);
 
 <body>
 
+  <?php include 'components/preloader.php' ?>
 
   <?php include 'components/modal-overlay.php' ?>
 

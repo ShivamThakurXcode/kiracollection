@@ -9633,3 +9633,16 @@ Others css
     text-align: center;
   }
 }
+
+/*!-----------------------------------------------------------------------------------
+Hide Scrollbar (scroll still works)
+-------------------------------------------------------------------------------------*/
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
