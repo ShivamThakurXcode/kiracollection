@@ -28,7 +28,7 @@
 
 <div id="kira-preloader" aria-hidden="true">
   <img
-    src="images/logo-header.png"
+    src="images/logo.webp"
     alt=""
     class="kira-pl__logo"
     onerror="this.src='images/logo.png'"

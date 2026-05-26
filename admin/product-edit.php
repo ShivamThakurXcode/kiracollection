@@ -39,6 +39,7 @@ $productInfo = $productInfo->fetchAll();
 
 $errors = [];
 $success = false;
+$maxGalleryImages = 4;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -78,12 +79,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Gallery images
             if (isset($_FILES['gallery']) && is_array($_FILES['gallery']['name'])) {
+                $existingGalleryCount = count($productImages);
                 $imgStmt = $db->prepare("INSERT INTO product_images (product_id, image_path, sort_order) VALUES (?, ?, ?)");
                 $maxOrder = $db->prepare("SELECT MAX(sort_order) FROM product_images WHERE product_id = ?");
                 $maxOrder->execute([$id]);
                 $order = ($maxOrder->fetchColumn() ?? 0) + 1;
                 foreach ($_FILES['gallery']['name'] as $i => $name) {
                     if ($_FILES['gallery']['error'][$i] === UPLOAD_ERR_OK) {
+                        if ($existingGalleryCount >= $maxGalleryImages) {
+                            break;
+                        }
                         $file = [
                             'name' => $_FILES['gallery']['name'][$i],
                             'type' => $_FILES['gallery']['type'][$i],
@@ -93,6 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         ];
                         $path = uploadImage($file, __DIR__ . '/../uploads/products', 'gal_' . $id . '_');
                         $imgStmt->execute([$id, 'uploads/products/' . basename($path), $order++]);
+                        $existingGalleryCount++;
                     }
                 }
             }
@@ -245,7 +251,7 @@ require_once __DIR__ . '/partials/header.php';
                 </div>
             </div>
             <div class="form-group">
-                <label>Gallery Images</label>
+                <label>Gallery Images (4 images)</label>
                 <?php if (!empty($productImages)): ?>
                     <div class="gallery-preview existing-gallery">
                         <?php foreach ($productImages as $img): ?>
@@ -259,7 +265,7 @@ require_once __DIR__ . '/partials/header.php';
                     </div>
                 <?php endif; ?>
                 <div class="file-upload">
-                    <input type="file" name="gallery[]" accept="image/jpeg,image/png,image/webp" multiple id="galleryImages" onchange="previewGallery(this)">
+                    <input type="file" name="gallery[]" accept="image/jpeg,image/png,image/webp" multiple id="galleryImages" onchange="previewGallery(this)" data-max-files="4">
                     <div class="upload-placeholder"><span>Click to add more images</span></div>
                 </div>
                 <div id="galleryPreview" class="gallery-preview"></div>
@@ -399,6 +405,12 @@ function previewGallery(input) {
     const container = document.getElementById('galleryPreview');
     container.innerHTML = '';
     if (input.files) {
+        const maxFiles = parseInt(input.getAttribute('data-max-files') || '4', 10);
+        if (input.files.length > maxFiles) {
+            alert(`Please select no more than ${maxFiles} gallery images.`);
+            input.value = '';
+            return;
+        }
         Array.from(input.files).forEach(file => {
             const reader = new FileReader();
             reader.onload = function(e) {

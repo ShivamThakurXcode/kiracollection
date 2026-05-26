@@ -7,6 +7,7 @@ $db = getDB();
 $errors = [];
 $success = false;
 $old = $_POST;
+$maxGalleryImages = 4;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -57,10 +58,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Handle gallery images
             if (isset($_FILES['gallery']) && is_array($_FILES['gallery']['name'])) {
+                $selectedGalleryCount = 0;
                 $imgStmt = $db->prepare("INSERT INTO product_images (product_id, image_path, sort_order) VALUES (?, ?, ?)");
                 $order = 0;
                 foreach ($_FILES['gallery']['name'] as $i => $name) {
                     if ($_FILES['gallery']['error'][$i] === UPLOAD_ERR_OK) {
+                        if ($selectedGalleryCount >= $maxGalleryImages) {
+                            break;
+                        }
                         $file = [
                             'name' => $_FILES['gallery']['name'][$i],
                             'type' => $_FILES['gallery']['type'][$i],
@@ -70,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         ];
                         $path = uploadImage($file, __DIR__ . '/../uploads/products', 'gal_' . $newId . '_');
                         $imgStmt->execute([$newId, 'uploads/products/' . basename($path), $order++]);
+                        $selectedGalleryCount++;
                     }
                 }
             }
@@ -361,13 +367,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
             <div class="form-group">
-                <label>Gallery Images (up to 6)</label>
+                <label>Gallery Images (4 images)</label>
                 <div class="file-upload">
-                    <input type="file" name="gallery[]" accept="image/jpeg,image/png,image/webp" multiple id="galleryImages" onchange="previewGallery(this)">
+                    <input type="file" name="gallery[]" accept="image/jpeg,image/png,image/webp" multiple id="galleryImages" onchange="previewGallery(this)" data-max-files="4">
                     <div class="upload-placeholder">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#919eab" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                         <span>Click to upload gallery images</span>
-                        <span class="file-hint">Select multiple images</span>
+                        <span class="file-hint">Select up to 4 images</span>
                     </div>
                 </div>
                 <div id="galleryPreview" class="gallery-preview"></div>
@@ -560,6 +566,12 @@ function previewGallery(input) {
     const container = document.getElementById('galleryPreview');
     container.innerHTML = '';
     if (input.files) {
+        const maxFiles = parseInt(input.getAttribute('data-max-files') || '4', 10);
+        if (input.files.length > maxFiles) {
+            alert(`Please select no more than ${maxFiles} gallery images.`);
+            input.value = '';
+            return;
+        }
         Array.from(input.files).forEach(file => {
             const reader = new FileReader();
             reader.onload = function(e) {

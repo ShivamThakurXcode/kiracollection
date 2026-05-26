@@ -12,40 +12,34 @@ $galleryImages = array_values(array_filter($galleryImages, function ($image) {
   return !empty($image);
 }));
 
+$galleryImages = array_slice($galleryImages, 0, 4);
+
 $defaultImage = $galleryImages[0] ?? ($product['image'] ?? 'images/product/p-1.jpeg');
 $productName = $product['name'] ?? 'Product Image';
 ?>
 <!-- ========== Product Gallery Start ========== -->
 <div class="xl:col-span-7 lg:col-span-6 mt-6 lg:mt-8">
   <div class="w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-6">
-    <div class="rounded-2xl bg-white border border-gray-200 p-3">
-      <img id="product-gallery-main-image" src="<?php echo htmlspecialchars($defaultImage); ?>"
-        alt="<?php echo htmlspecialchars($productName); ?>"
-        class="w-full max-h-[520px] object-contain rounded-2xl" />
+    <div class="grid grid-cols-2 gap-3 md:gap-4" id="product-gallery-grid">
+      <?php foreach ($galleryImages as $index => $image): ?>
+        <button type="button"
+          class="gallery-thumb group relative overflow-hidden rounded-2xl border <?php echo $index === 0 ? 'border-primary' : 'border-gray-200'; ?> bg-white"
+          style="aspect-ratio: 4 / 3;"
+          data-gallery-image="<?php echo htmlspecialchars($image); ?>"
+          data-gallery-alt="<?php echo htmlspecialchars($productName); ?>">
+          <img src="<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($productName); ?>"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        </button>
+      <?php endforeach; ?>
     </div>
-
-    <?php if (count($galleryImages) > 1): ?>
-      <div class="mt-4 grid grid-cols-4 sm:grid-cols-5 gap-3" id="product-gallery-thumbnails">
-        <?php foreach ($galleryImages as $index => $image): ?>
-          <button type="button"
-            class="gallery-thumb overflow-hidden rounded-xl border <?php echo $index === 0 ? 'border-primary' : 'border-gray-200'; ?> bg-white"
-            data-gallery-image="<?php echo htmlspecialchars($image); ?>"
-            data-gallery-alt="<?php echo htmlspecialchars($productName); ?>">
-            <img src="<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($productName); ?>"
-              class="h-20 w-full object-cover" />
-          </button>
-        <?php endforeach; ?>
-      </div>
-    <?php endif; ?>
   </div>
 </div>
 
 <script>
   (function () {
-    const mainImage = document.getElementById('product-gallery-main-image');
-    const thumbnails = document.getElementById('product-gallery-thumbnails');
+    const thumbnails = document.getElementById('product-gallery-grid');
 
-    if (!mainImage || !thumbnails) {
+    if (!thumbnails) {
       return;
     }
 
@@ -56,12 +50,6 @@ $productName = $product['name'] ?? 'Product Image';
       }
 
       const image = button.getAttribute('data-gallery-image');
-      const altText = button.getAttribute('data-gallery-alt') || mainImage.alt;
-      if (image) {
-        mainImage.src = image;
-        mainImage.alt = altText;
-      }
-
       thumbnails.querySelectorAll('[data-gallery-image]').forEach(function (thumb) {
         thumb.classList.remove('border-primary');
         thumb.classList.add('border-gray-200');
