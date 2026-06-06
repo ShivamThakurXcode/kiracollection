@@ -1,21 +1,48 @@
-<!-- ========== Bento Showcase Start ========== -->
-<section class="mb-[70px]">
-  <div class="container">
-    <div class="grid gap-4 lg:grid-cols-12 lg:items-start">
-      <a href="shop.php" class="group block relative overflow-hidden rounded-[28px] bg-white lg:col-span-6 shadow-[0_12px_40px_rgba(15,23,42,0.08)]" style="aspect-ratio: 4 / 3;">
-        <img src="images/product/p-4.png" alt="Featured product" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-      </a>
+<!-- ========== Premium Bento Showcase Start ========== -->
+<section class="py-16 bg-[#f6f1e7]">
+  <div class="container mx-auto px-4">
 
-      <div class="lg:col-span-6 grid gap-4">
-        <a href="product-detail.php?id=2" class="group block relative overflow-hidden rounded-[28px] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]" style="aspect-ratio: 4 / 3;">
-          <img src="images/product/p-2.png" alt="Featured product" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-        </a>
+    <!-- Main Bento Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
-        <a href="product-detail.php?id=3" class="group block relative overflow-hidden rounded-[28px] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]" style="aspect-ratio: 4 / 3;">
-          <img src="images/product/p-3.jpeg" alt="Featured product" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+      <!-- Left Large Card -->
+      <div class="lg:col-span-6">
+        <a href="shop.php"
+          class="group relative block overflow-hidden rounded-[32px] h-[320px] sm:h-[450px] lg:h-[760px] shadow-[0_15px_40px_rgba(0,0,0,0.12)]">
+
+          <img src="images/bento/bento-1.png"
+            alt="Jewellery Banner"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
         </a>
       </div>
+
+      <!-- Right Side -->
+      <div class="lg:col-span-6 flex flex-col gap-5">
+
+        <!-- Top Card -->
+        <a href="product-detail.php?id=2"
+          class="group relative block overflow-hidden rounded-[32px] h-[320px] lg:h-[370px] shadow-[0_15px_40px_rgba(0,0,0,0.12)]">
+
+          <img src="images/bento/bento-2.png"
+            alt="Earrings"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+        </a>
+
+        <!-- Bottom Card -->
+        <a href="product-detail.php?id=3"
+          class="group relative block overflow-hidden rounded-[32px] h-[320px] lg:h-[370px] shadow-[0_15px_40px_rgba(0,0,0,0.12)]">
+
+          <img src="images/bento/bento-3.png"
+            alt="Necklace"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+        </a>
+
+      </div>
+
     </div>
   </div>
 </section>
-<!-- ========== Bento Showcase End ========== -->
+<!-- ========== Premium Bento Showcase End ========== -->

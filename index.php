@@ -48,9 +48,6 @@
 
   <?php include 'components/bento-showcase-section.php' ?>
 
-  <?php include 'components/favourite-category-section.php' ?>
-
-  <?php include 'components/trusted-by-section.php' ?>
 
   <?php include 'components/testimonials-section.php' ?>
 
