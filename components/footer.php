@@ -51,31 +51,29 @@
           </ul>
         </div>
 
-        <!-- Column 3: Marketplace — using real SVG logos from images/ folder -->
+        <!-- Column 3: Marketplace buttons -->
         <div class="col-span-6 sm:col-span-4 lg:col-span-2">
           <h5 class="kira-footer-title">Also Available On</h5>
           <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px;">
 
-            <!-- Flipkart — uses images/flipkar.svg -->
-            <!-- UPDATE: Flipkart store URL -->
+            <!-- Flipkart product link -->
             <a href="https://www.flipkart.com/kiracollection-vibrant-lippan-art-blue-mandala/p/itm6d5dc0f4f57cc?pid=WDCHKASXXYSHPXMH&lid=LSTWDCHKASXXYSHPXMHRLRE0V&marketplace=FLIPKART&store=arb%2Fa77%2Fsuk&srno=b_1_29&otracker=browse&fm=organic&iid=353fd2d1-6315-4001-af39-ed67d99fadd8.WDCHKASXXYSHPXMH.SEARCH&ppt=browse&ppn=browse&ov_redirect=true&ov_redirect=true" target="_blank" rel="noopener"
               style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:1.5px solid #dfe3e8;background:#f9fafb;text-decoration:none;transition:border-color 0.2s,background 0.2s;"
               onmouseover="this.style.borderColor='#2874F0';this.style.background='#e8f0ff';"
               onmouseout="this.style.borderColor='#dfe3e8';this.style.background='#f9fafb';">
               <span style="width:80px;height:24px;display:flex;align-items:center;flex-shrink:0;">
-                <img src="images/flipkar.svg" alt="Flipkart" style="width:80px;height:24px;object-fit:contain;" />
+                <img src="images/flipkart.png" alt="Flipkart" style="width:80px;height:24px;object-fit:contain;" />
               </span>
               <span style="font-size:11px;color:#919eab;font-weight:500;white-space:nowrap;">Shop Now →</span>
             </a>
 
-            <!-- Amazon — uses images/amzon-black-text.svg (dark text, suits white bg) -->
-            <!-- UPDATE: Amazon store URL -->
-            <a href="#" target="_blank" rel="noopener"
+            <!-- Meesho store link -->
+            <a href="https://www.meesho.com/" target="_blank" rel="noopener"
               style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:1.5px solid #dfe3e8;background:#f9fafb;text-decoration:none;transition:border-color 0.2s,background 0.2s;"
-              onmouseover="this.style.borderColor='#FF9900';this.style.background='#fff8ee';"
+              onmouseover="this.style.borderColor='#ff8f2b';this.style.background='#fff3ea';"
               onmouseout="this.style.borderColor='#dfe3e8';this.style.background='#f9fafb';">
               <span style="width:80px;height:24px;display:flex;align-items:center;flex-shrink:0;">
-                <img src="images/amzon-black-text.svg" alt="Amazon" style="width:80px;height:24px;object-fit:contain;" />
+                <img src="images/messo.png" alt="Meesho" style="width:80px;height:24px;object-fit:contain;" />
               </span>
               <span style="font-size:11px;color:#919eab;font-weight:500;white-space:nowrap;">Shop Now →</span>
             </a>

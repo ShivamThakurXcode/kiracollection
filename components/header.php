@@ -21,21 +21,17 @@
 
           <!-- Marketplace badges -->
           <div class="flex items-center gap-x-2">
-            <a href="#" target="_blank" rel="noopener" title="Shop on Flipkart"
-              class="flex items-center gap-x-1.5 py-1 px-3 rounded-[60px] text-xs font-semibold transition-colors"
-              style="background:#e8f0ff;color:#2874F0;"
-              onmouseover="this.style.background='#d0e0ff'" onmouseout="this.style.background='#e8f0ff'">
-              <!-- UPDATE: Flipkart store URL -->
-              <svg width="12" height="12" viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="#2874F0"/><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">F</text></svg>
-              Flipkart
+            <a href="https://www.flipkart.com/kiracollection-vibrant-lippan-art-blue-mandala/p/itm6d5dc0f4f57cc?pid=WDCHKASXXYSHPXMH&lid=LSTWDCHKASXXYSHPXMHRLRE0V&marketplace=FLIPKART&store=arb%2Fa77%2Fsuk&srno=b_1_29&otracker=browse&fm=organic&iid=353fd2d1-6315-4001-af39-ed67d99fadd8.WDCHKASXXYSHPXMH.SEARCH&ppt=browse&ppn=browse&ov_redirect=true&ov_redirect=true" target="_blank" rel="noopener" title="Shop on Flipkart"
+              class="inline-flex items-center justify-center rounded-[60px] border transition-colors"
+              style="border-color:#dfe3e8;background:#f8fbff;padding:6px 12px;"
+              onmouseover="this.style.background='#e8f0ff';this.style.borderColor='#b9d0ff'" onmouseout="this.style.background='#f8fbff';this.style.borderColor='#dfe3e8'">
+              <img src="images/flipkart.png" alt="Flipkart" style="width:86px;height:26px;object-fit:contain;display:block;" />
             </a>
-            <a href="#" target="_blank" rel="noopener" title="Shop on Amazon"
-              class="flex items-center gap-x-1.5 py-1 px-3 rounded-[60px] text-xs font-semibold transition-colors"
-              style="background:#fff3e0;color:#b45000;"
-              onmouseover="this.style.background='#ffe0b2'" onmouseout="this.style.background='#fff3e0'">
-              <!-- UPDATE: Amazon store URL -->
-              <svg width="12" height="12" viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="#FF9900"/><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">a</text></svg>
-              Amazon
+            <a href="https://www.meesho.com/" target="_blank" rel="noopener" title="Shop on Meesho"
+              class="inline-flex items-center justify-center rounded-[60px] border transition-colors"
+              style="border-color:#dfe3e8;background:#fff7ef;padding:6px 12px;"
+              onmouseover="this.style.background='#fff0df';this.style.borderColor='#ffd0a8'" onmouseout="this.style.background='#fff7ef';this.style.borderColor='#dfe3e8'">
+              <img src="images/messo.png" alt="Meesho" style="width:86px;height:26px;object-fit:contain;display:block;" />
             </a>
           </div>
         </div>
@@ -251,17 +247,17 @@
           </nav>
 
           <div class="flex items-center gap-x-2 flex-shrink-0">
-            <a href="#" target="_blank" rel="noopener" title="Shop on Flipkart"
-              class="inline-flex items-center gap-x-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors"
-              style="border-color:#dfe3e8;background:#f8fbff;color:#2874F0;"
+            <a href="https://www.flipkart.com/kiracollection-vibrant-lippan-art-blue-mandala/p/itm6d5dc0f4f57cc?pid=WDCHKASXXYSHPXMH&lid=LSTWDCHKASXXYSHPXMHRLRE0V&marketplace=FLIPKART&store=arb%2Fa77%2Fsuk&srno=b_1_29&otracker=browse&fm=organic&iid=353fd2d1-6315-4001-af39-ed67d99fadd8.WDCHKASXXYSHPXMH.SEARCH&ppt=browse&ppn=browse&ov_redirect=true&ov_redirect=true" target="_blank" rel="noopener" title="Shop on Flipkart"
+              class="inline-flex items-center justify-center rounded-md border px-3 py-2 transition-colors"
+              style="border-color:#dfe3e8;background:#f8fbff;"
               onmouseover="this.style.background='#e8f0ff';this.style.borderColor='#b9d0ff'" onmouseout="this.style.background='#f8fbff';this.style.borderColor='#dfe3e8'">
-              <img src="images/flipkar.svg" alt="Flipkart" style="width:72px;height:22px;object-fit:contain;" />
+              <img src="images/flipkart.png" alt="Flipkart" style="width:78px;height:24px;object-fit:contain;display:block;" />
             </a>
-            <a href="#" target="_blank" rel="noopener" title="Shop on Amazon"
-              class="inline-flex items-center gap-x-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors"
-              style="border-color:#dfe3e8;background:#fff7ef;color:#b45000;"
+            <a href="https://www.meesho.com/" target="_blank" rel="noopener" title="Shop on Meesho"
+              class="inline-flex items-center justify-center rounded-md border px-3 py-2 transition-colors"
+              style="border-color:#dfe3e8;background:#fff7ef;"
               onmouseover="this.style.background='#fff0df';this.style.borderColor='#ffd0a8'" onmouseout="this.style.background='#fff7ef';this.style.borderColor='#dfe3e8'">
-              <img src="images/amzon-black-text.svg" alt="Amazon" style="width:72px;height:22px;object-fit:contain;" />
+              <img src="images/messo.png" alt="Meesho" style="width:78px;height:24px;object-fit:contain;display:block;" />
             </a>
           </div>
 
