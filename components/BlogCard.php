@@ -17,7 +17,7 @@ function renderBlogCard($blog, $delay = '0.2s', $showFullExcerpt = false)
     ?>
     <div class="wow animate__animated animate__fadeInUp" data-wow-delay="<?= $delay ?>">
         <div
-            class="bg-white blog-card border border-gray-300 rounded-2xl p-6 hover:transform hover:translate-y-[-5px] hover:transition-all hover:ease-[cubic-bezier(0.02,0.01,0.47,1)] hover:duration-250 transition-all ease-[cubic-bezier(0.02,0.01,0.47,1)] duration-250 h-full flex flex-col">
+            class="border border-gray-300 rounded-2xl p-6 hover:transform hover:translate-y-[-5px] hover:transition-all hover:ease-[cubic-bezier(0.02,0.01,0.47,1)] hover:duration-250 transition-all ease-[cubic-bezier(0.02,0.01,0.47,1)] duration-250 h-full flex flex-col">
             <div class="mb-6 aspect-[16/9] overflow-hidden rounded-2xl">
                 <a href='blog-details.php?slug=<?= $blog['slug'] ?>'>
                     <img src="<?= $blog['image'] ?>" alt="<?= htmlspecialchars($blog['title']) ?>"
@@ -82,7 +82,7 @@ function renderBlogCardSimple($blog, $delay = '0.2s')
     ?>
     <div class="wow animate__animated animate__fadeInUp" data-wow-delay="<?= $delay ?>">
         <div
-            class="bg-white blog-card border border-gray-300 rounded-2xl p-6 hover:transform hover:translate-y-[-5px] hover:transition-all hover:ease-[cubic-bezier(0.02,0.01,0.47,1)] hover:duration-250 transition-all ease-[cubic-bezier(0.02,0.01,0.47,1)] duration-250">
+            class="border border-gray-300 rounded-2xl p-6 hover:transform hover:translate-y-[-5px] hover:transition-all hover:ease-[cubic-bezier(0.02,0.01,0.47,1)] hover:duration-250 transition-all ease-[cubic-bezier(0.02,0.01,0.47,1)] duration-250">
             <div class="mb-6">
                 <a href='blog-details.php?slug=<?= $blog['slug'] ?>'>
                     <img src="<?= $blog['image'] ?>" alt="<?= htmlspecialchars($blog['title']) ?>"

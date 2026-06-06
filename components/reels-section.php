@@ -13,7 +13,7 @@
       natsort($reelFiles);
       $captionMap = [
         'reel-1.mp4' => 'Lippan Art Creation',
-        'reel-2.mp4' => 'Mandala Painting',++
+        'reel-2.mp4' => 'Mandala Painting',
         'reel-3.mp4' => 'Mirror Art Design',
       ];
       $reels = array_map(function ($filePath) use ($captionMap) {

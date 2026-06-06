@@ -8,7 +8,12 @@ if (file_exists($testimonialsDataFile)) {
 <!-- ========== Testimonials Section Start ========== -->
 <section class="py-28 md:py-32 my-10 bg-primary">
     <div class="container">
-        <!-- simplified: showing only reviews -->
+        <div class="py-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <span
+                class="inline-block text-secondary font-semibold text-sm uppercase tracking-widest mb-2">Customer Stories</span>
+            <h3 class="text-3xl md:text-4xl font-bold font-urbanist text-white">What Art Lovers Are Saying</h3>
+            <p class="text-white mt-2 max-w-2xl mx-auto">Real reviews from customers who brought KiraCollection into their homes</p>
+        </div>
         <?php if (!empty($testimonials)): ?>
             <div class="sellzy-slider testimonials-slider"
                 data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": true, "dots": false, "autoplay": true, "autoplaySpeed": 4000, "responsive": [{"breakpoint": 1025, "settings": {"slidesToShow": 2}}, {"breakpoint": 769, "settings": {"slidesToShow": 1}}]}'>
@@ -22,12 +27,33 @@ if (file_exists($testimonialsDataFile)) {
                     }
                     ?>
                     <div class="px-3 py-4 h-full flex">
-                        <div class="testimonial-card bg-white rounded-2xl p-6 border border-gray-200 w-full flex flex-col hover:shadow transition-shadow duration-300">
-                            <p class="text-gray-800 text-sm leading-relaxed flex-grow mt-2 mb-4 italic">
+                        <div
+                            class="testimonial-card bg-white rounded-2xl p-8 border border-gray-300 w-full flex flex-col hover:shadow-lg transition-shadow duration-300">
+                            <div class="flex items-center gap-x-1 mb-4">
+                                <?php for ($i = 1; $i <= 5; $i++): ?>
+                                    <i
+                                        class="hgi hgi-stroke hgi-star <?= $i <= $rating ? 'text-secondary' : 'text-gray-300' ?> text-lg"></i>
+                                <?php endfor; ?>
+                            </div>
+                            <p
+                                class="text-light-secondary-text text-sm leading-relaxed flex-grow mt-2 mb-6 italic line-clamp-4">
                                 "<?= htmlspecialchars($t['content']) ?>"
                             </p>
-                            <div class="pt-2">
-                                <h6 class="text-sm font-semibold text-gray-900"><?= htmlspecialchars($t['name']) ?></h6>
+                            <div class="flex items-center gap-x-4 pt-4 border-t border-gray-200">
+                                <div class="size-12 rounded-full overflow-hidden bg-primary-lighter flex-shrink-0">
+                                    <?php if (!empty($t['image'])): ?>
+                                        <img src="<?= htmlspecialchars($t['image']) ?>" alt="<?= htmlspecialchars($t['name']) ?>"
+                                            class="w-full h-full object-cover" onerror="this.style.display='none'">
+                                    <?php endif; ?>
+                                </div>
+                                <div>
+                                    <h6 class="text-sm font-semibold text-light-primary-text">
+                                        <?= htmlspecialchars($t['name']) ?>
+                                    </h6>
+                                    <?php if (!empty($t['designation'])): ?>
+                                        <p class="text-xs text-light-secondary-text"><?= htmlspecialchars($t['designation']) ?></p>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     </div>

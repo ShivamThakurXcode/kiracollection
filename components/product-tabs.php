@@ -26,7 +26,6 @@ $careInstructions = $product['care_instructions'] ?? '';
           <button class="active" data-tab="description">Description</button>
         </li>
         <li><button data-tab="additional-info">Additional Info</button></li>
-        <li><button data-tab="reviews">Reviews</button></li>
       </ul>
       
       <div id="description" class="product-details-tab active fade">
@@ -79,58 +78,6 @@ $careInstructions = $product['care_instructions'] ?? '';
               <?php endforeach; ?>
             </tbody>
           </table>
-        </div>
-      </div>
-      <div id="reviews" class="product-details-tab hidden">
-        <h5 class="product-details-tab-title">Reviews</h5>
-        <div class="product-details-tab-content">
-          <div class="comment-list-wrapper p-6">
-            <div class="comment-list-title pb-4 border-b border-gray-300 mb-4">
-              <h5>Customer Ratings & Review</h5>
-            </div>
-            <ol class="comment-list space-y-6">
-              <li class="comment">
-                <div class="comment-body">
-                  <div class="comment-avatar-card flex items-center gap-x-4 mb-3">
-                    <div class="comment-author-avatar size-12 rounded-full overflow-hidden bg-gray-200">
-                    </div>
-                    <div class="comment-author-info flex-1">
-                      <p class="comment-author font-semibold text-gray-800">Robert Fox</p>
-                    </div>
-                  </div>
-                  <div class="flex items-center mb-3">
-                    <div class="rating-section flex items-center">
-                      <div class="text-sm font-medium mr-2">4.5</div>
-                      <div class="stars text-yellow-400">★★★★☆</div>
-                    </div>
-                  </div>
-                  <div class="comment-content mb-3">
-                    <p class="text-gray-700">Very nice! The art looks beautiful and the packaging was great.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="comment">
-                <div class="comment-body">
-                  <div class="comment-avatar-card flex items-center gap-x-4 mb-3">
-                    <div class="comment-author-avatar size-12 rounded-full overflow-hidden bg-gray-200">
-                    </div>
-                    <div class="comment-author-info flex-1">
-                      <p class="comment-author font-semibold text-gray-800">Jenny Wilson</p>
-                    </div>
-                  </div>
-                  <div class="flex items-center mb-3">
-                    <div class="rating-section flex items-center">
-                      <div class="text-sm font-medium mr-2">5.0</div>
-                      <div class="stars text-yellow-400">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="comment-content mb-3">
-                    <p class="text-gray-700">Absolutely love it — colors and texture are perfect.</p>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>
         </div>
       </div>
       
