@@ -166,6 +166,45 @@ a[style*="bg-amber"],
 .footer-shell { display: none !important; }     /* hide old dark footer shell */
 .footer-bg    { display: none !important; }
 
+/* ── Universal white card treatment (site-wide consistency) ── */
+.product-card-1,
+.testimonial-card,
+.border.border-gray-300.rounded-2xl,
+.bg-white.rounded-2xl.border,
+.blog-card,
+.related-product-card,
+.kira-card {
+  background-color: #fff !important;
+  border: 1px solid #dfe3e8 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 8px rgba(145, 158, 171, 0.10) !important;
+  transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1),
+              box-shadow 0.25s cubic-bezier(0.02, 0.01, 0.47, 1) !important;
+}
+.product-card-1:hover,
+.testimonial-card:hover,
+.border.border-gray-300.rounded-2xl:hover,
+.blog-card:hover,
+.related-product-card:hover,
+.kira-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(145, 158, 171, 0.18) !important;
+}
+/* keep inner product image panel white, not tinted */
+.product-card-1 .product-image.bg-primary-lighter {
+  background-color: #fff !important;
+}
+
+/* ── Section rhythm: consistent cream base ── */
+main > section,
+body > section {
+  background-color: transparent;
+}
+/* the single intentional olive band keeps its color */
+section.bg-primary {
+  background-color: #556b2f !important;
+}
+
 /* ── HugeIcons size standard (matches admin 24px inline SVG size) ── */
 /* Navigation / header utility icons */
 header i.hgi    { font-size: 18px; line-height: 1; }
