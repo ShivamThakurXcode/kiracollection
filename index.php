@@ -41,20 +41,11 @@
 
   <?php include 'components/category-section.php' ?>
 
-  <?php include 'components/most-loved-products-section.php' ?>
-
-
   <?php include 'components/products-section.php' ?>
 
   <?php include 'components/bento-showcase-section.php' ?>
 
-  <?php include 'components/favourite-category-section.php' ?>
-
-  <?php include 'components/trusted-by-section.php' ?>
-
   <?php include 'components/testimonials-section.php' ?>
-
-  <?php include 'components/blog-section.php' ?>
 
   <?php include 'components/reels-section.php' ?>
 
