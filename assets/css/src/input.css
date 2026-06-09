@@ -1,0 +1,77 @@
+/*! KiraCollection — Tailwind v4 source
+    Build:  npm run build:css   (one-off)
+    Watch:  npm run watch:css   (during development)
+    Output: assets/css/style.css
+*/
+
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Tell Tailwind which files to scan for class names (v4 @source).
+   Paths are relative to THIS file (assets/css/src/).
+------------------------------------------------------------------- */
+@source "../../../**/*.php";
+@source "../../../**/*.html";
+@source "../../js/main.js";
+
+/* ------------------------------------------------------------------
+   Brand theme tokens — these generate utilities automatically
+   (bg-primary, text-secondary, font-urbanist, rounded-4xl, etc.)
+------------------------------------------------------------------- */
+@theme {
+  --font-urbanist: "Urbanist", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --color-light-primary-text: #212529;
+  --color-light-secondary-text: #495057;
+  --color-light-disabled-text: #919eab;
+  --color-dark-secondary-text: #919eab;
+
+  --color-primary-lighter: #e8f5e8;
+  --color-primary-light: #a8d5a8;
+  --color-primary: #556b2f;
+  --color-primary-dark: #3d5a1f;
+  --color-primary-darker: #2d4a1a;
+
+  --color-secondary: #ffd700;
+  --color-secondary-dark: #daa520;
+
+  --color-info: #1890ff;
+  --color-info-dark: #0c53b7;
+  --color-info-darker: #04297a;
+
+  --color-success-lighter: #e9fcd4;
+  --color-success-light: #aaf27f;
+  --color-success: #54d62c;
+  --color-success-dark: #229a16;
+
+  --color-warning-lighter: #fff7cd;
+  --color-warning-light: #ffe16a;
+  --color-warning: #ffc107;
+  --color-warning-dark: #b78103;
+
+  --color-error-lighter: #fcd1ca;
+  --color-error-light: #ef6168;
+  --color-error: #cb0233;
+  --color-error-dark: #ae013c;
+
+  --color-gray-100: #f9fafb;
+  --color-gray-200: #f4f6f8;
+  --color-gray-300: #dfe3e8;
+  --color-gray-400: #c4cdd5;
+  --color-gray-500: #919eab;
+  --color-gray-800: #212b36;
+  --color-gray-900: #161c24;
+
+  --radius-4xl: 2rem;
+  --radius-5xl: 3rem;
+
+  --animate-bounce: bounce 1.4s infinite ease-in-out both;
+  --animate-fadeInDown: fadeInDown 700ms ease-in-out 0s 1 normal none running;
+  --animate-marquee: marquee-animation 20s linear infinite;
+}
+
+/* ------------------------------------------------------------------
+   Hand-written component CSS (menu, preloader, sliders, keyframes…)
+------------------------------------------------------------------- */
+@import "./custom.css";

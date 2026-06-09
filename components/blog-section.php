@@ -6,7 +6,7 @@ include 'components/BlogCard.php';
 // Get latest 4 blogs for home page
 $latest_blogs = array_slice($blogs, 0, 4);
 ?>
-<section class="pb-[70px]">
+<section class="py-16 md:py-24">
     <div class="container">
         <?php if (!empty($latest_blogs)): ?>
         <div class="md:flex md:justify-between md:items-end mb-10">

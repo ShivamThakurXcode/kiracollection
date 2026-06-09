@@ -1,7 +1,7 @@
 <?php include_once 'data/products.php'; ?>
 
 <!-- ========== Category Section Start ========== -->
-<section class="py-[70px]">
+<section class="py-16 md:py-24">
     <div class="container">
         <div class="md:flex md:justify-between md:items-center mb-10">
             <div class="text-center md:text-left wow animate__animated animate__fadeInUp" data-wow-delay=".2s">

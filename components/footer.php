@@ -4,8 +4,8 @@
 <footer style="background:#fff;color:#212529;border-top:1px solid #dfe3e8;">
 
   <!-- Main footer columns -->
-  <div style="padding:52px 0 40px;">
-    <div class="container">
+  <div style="padding:48px 0 36px;">
+    <div class="container mx-auto px-4 sm:px-6">
       <div class="grid grid-cols-12 gap-x-8 gap-y-10">
 
         <!-- Column 1: Brand -->
@@ -122,11 +122,11 @@
   </div>
 
   <!-- Bottom bar -->
-  <div style="border-top:1px solid #dfe3e8;padding:16px 0;">
+  <div style="border-top:1px solid #dfe3e8;padding:14px 0;">
     <div class="container">
       <div class="kira-footer-bottom">
-        <p style="font-size:13px;color:#919eab;margin:0;">© 2026 KiraCollection Art &nbsp;|&nbsp; Developed by Dynexia IT Solutions</p>
-        <div style="display:flex;align-items:center;gap:12px;font-size:13px;">
+         <p style="font-size:13px;color:#919eab;margin:0;line-height:1.4;">© 2026 KiraCollection Art &nbsp;|&nbsp; Developed by Dynexia IT Solutions</p>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;flex-wrap:wrap;justify-content:center;">
           <a href="privacy-policy.php" class="kira-bottom-link">Privacy</a>
           <span style="color:#dfe3e8;">•</span>
           <a href="terms-and-conditions.php" class="kira-bottom-link">Terms</a>

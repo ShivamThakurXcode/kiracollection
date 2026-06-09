@@ -183,7 +183,7 @@
 
   <!-- ── DESKTOP HEADER ── -->
   <div class="hidden xl:flex header-bottom sticky-header border-b" style="background:#fff;border-color:#dfe3e8;">
-    <div class="container">
+    <div class="container mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between gap-x-4 py-2">
 
         <!-- Logo + Category Dropdown -->

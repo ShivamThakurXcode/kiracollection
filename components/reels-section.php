@@ -1,5 +1,5 @@
 <!-- ========== Reels / Video Section Start ========== -->
-<section class="py-16 bg-gradient-to-br from-[#4a5240] via-[#5c6b4e] to-[#3d4a35]">
+<section class="py-16 md:py-24 bg-gradient-to-br from-[#4a5240] via-[#5c6b4e] to-[#3d4a35]">
   <div class="container">
     <div class="text-center mb-10">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Watch Our Art Come to Life</h2>

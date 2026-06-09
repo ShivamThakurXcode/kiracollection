@@ -397,6 +397,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
         .container {
             max-width: 680px;
             width: 100%;
+            margin-inline: auto ;
         }
 
         .card {

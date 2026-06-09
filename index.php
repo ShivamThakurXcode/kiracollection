@@ -37,11 +37,9 @@
 
   <?php include "components/header.php" ?>
 
-  <?php include 'components/hero-section.php' ?>
+  <?php include 'components/animated-banner-section.php' ?>
 
   <?php include 'components/category-section.php' ?>
-
-  <?php include 'components/most-loved-products-section.php' ?>
 
 
   <?php include 'components/products-section.php' ?>

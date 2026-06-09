@@ -5,6 +5,7 @@
 
 /* ── Global body & page background ── */
 body {
+  margin: 0;
   background-color: #fffbeb !important;
   color: #212529;
   font-family: 'DM Sans', sans-serif;
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu > ul > li > a {
   border-radius: 999px;
   background: transparent;
-  padding: 9px 15px;
+  padding: 3px 15px;
   color: #212529 !important;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
